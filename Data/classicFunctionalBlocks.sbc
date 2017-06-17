@@ -7522,5 +7522,246 @@
       </BlockVariants>
     </Definition>
 <!-- Remote Control end -->
+<!-- artificial masses start -->
+    <Definition xsi:type="MyObjectBuilder_VirtualMassDefinition"> <!-- 5x5x5 Artificial Mass -->
+      <Id>
+        <TypeId>VirtualMass</TypeId>
+        <SubtypeId>supersize_5x5x5ArtificialMass</SubtypeId>
+      </Id>
+      <DisplayName>Large Artificial Mass</DisplayName>
+      <Public>true</Public>
+      <Icon>Textures\GUI\Icons\Cubes\ArtificialMass.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\VirtualMassBlock.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="30" />
+        <Component Subtype="Superconductor" Count="20" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="Computer" Count="20" />
+        <Component Subtype="GravityGenerator" Count="9" />
+        <Component Subtype="SteelPlate" Count="60" />
+      </Components>
+      <CriticalComponent Subtype="GravityGenerator" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Left" StartX="0.5" StartY="0.5" EndX="4.5" EndY="4.5" />
+        <MountPoint Side="Right" StartX="0.5" StartY="0.5" EndX="4.5" EndY="4.5" />
+        <MountPoint Side="Top" StartX="0.5" StartY="0.5" EndX="4.5" EndY="4.5" />
+        <MountPoint Side="Bottom" StartX="0.5" StartY="0.5" EndX="4.5" EndY="4.5" Default="true" />
+        <MountPoint Side="Back" StartX="0.5" StartY="0.5" EndX="4.5" EndY="4.5" />
+        <MountPoint Side="Front" StartX="0.5" StartY="0.5" EndX="4.5" EndY="4.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\VirtualMassBlockConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\VirtualMassBlockConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\VirtualMassBlockConstruction_3.mwm" />
+      </BuildProgressModels>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <VirtualMass>50000</VirtualMass>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.6</RequiredPowerInput>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <EmissiveColorPreset>GravityBlock</EmissiveColorPreset>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_VirtualMassDefinition"> <!-- 1x1x1 Artificial Mass -->
+      <Id>
+        <TypeId>VirtualMass</TypeId>
+        <SubtypeId>supersize_1x1x1ArtificialMass</SubtypeId>
+      </Id>
+      <DisplayName>Small Artificial Mass</DisplayName>
+      <Public>true</Public>
+      <Icon>Textures\GUI\Icons\Cubes\ArtificialMass.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\VirtualMassBlock.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Superconductor" Count="2" />
+        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="GravityGenerator" Count="1" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="GravityGenerator" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.55" File="Models\Cubes\Small\VirtualMassBlockConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\VirtualMassBlockConstruction_2.mwm" />
+      </BuildProgressModels>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <VirtualMass>2000</VirtualMass>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.025</RequiredPowerInput>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <EmissiveColorPreset>GravityBlock</EmissiveColorPreset>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>VirtualMass</TypeId>
+          <SubtypeId>supersize_5x5x5ArtificialMass</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_SpaceBallDefinition"> <!-- 5x5x5 Spaceball -->
+      <Id>
+        <TypeId>SpaceBall</TypeId>
+        <SubtypeId>supersize_5x5x5Spaceball</SubtypeId>
+      </Id>
+      <DisplayName>Large Spaceball</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\SpaceBall.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\SpaceBallBlock.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="90" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="Computer" Count="20" />
+        <Component Subtype="GravityGenerator" Count="3" />
+        <Component Subtype="SteelPlate" Count="135" />
+      </Components>
+      <CriticalComponent Subtype="GravityGenerator" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\SpaceBallBlockConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SpaceBallBlockConstruction_2.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Left" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Right" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Back" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Front" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+      </MountPoints>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <MaxVirtualMass>20000</MaxVirtualMass>
+      <RequiredPowerInput>0.0</RequiredPowerInput>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>GravityBlock</EmissiveColorPreset>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_SpaceBallDefinition"> <!-- 1x1x1 Spaceball -->
+      <Id>
+        <TypeId>SpaceBall</TypeId>
+        <SubtypeId>supersize_1x1x1Spaceball</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_SpaceBall</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\SpaceBall.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\SpaceBallBlock.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="50" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="Computer" Count="7" />
+        <Component Subtype="GravityGenerator" Count="1" />
+        <Component Subtype="SteelPlate" Count="20" />
+      </Components>
+      <CriticalComponent Subtype="GravityGenerator" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\SpaceBallBlockConstruction_1.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Left" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Right" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Back" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Front" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Top" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+        <MountPoint Side="Bottom" StartX="0.1" StartY="0.1" EndX="0.9" EndY="0.9" />
+      </MountPoints>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <MaxVirtualMass>5000</MaxVirtualMass>
+      <RequiredPowerInput>0.0</RequiredPowerInput>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>GravityBlock</EmissiveColorPreset>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>SpaceBall</TypeId>
+          <SubtypeId>supersize_5x5x5Spaceball</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+    </Definition>
+<!-- artificial masses end -->
+<!-- cover wall start -->
+<!-- cover walls have some weird issue with physics when placed by themselves -->
+    <Definition> <!-- 5x2x1 Full Cover Wall -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_FullCoverWall</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_FullCoverWall</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\cover_wall_full.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="2" z="1" />
+      <ModelOffset x="0" y="0.75" z="-1" />
+      <Model>Models\Cubes\Large\CoverWall.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="4" />
+        <Component Subtype="Construction" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="5.0" EndY="1.0" Default="true" />
+        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.0" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="1.0" EndY="2.0" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.40" File="Models\Cubes\Large\CoverWallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\CoverWallConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>supersize_HalfCoverWall</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+    </Definition>
+    <Definition> <!-- Half Cover Wall -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_HalfCoverWall</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_HalfCoverWall</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\cover_wall.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="1" />
+      <ModelOffset x="0.63" y="0.75" z="-0.97" />
+      <Model>Models\Cubes\Large\CoverWallHalf.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="2" />
+        <Component Subtype="Construction" Count="6" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="3.0" EndY="1.0" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\CoverWallHalfConstruction_1.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+    </Definition>
+<!-- cover wall end -->
   </CubeBlocks>
 </Definitions>
