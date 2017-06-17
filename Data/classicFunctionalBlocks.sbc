@@ -3406,7 +3406,7 @@
       <GuiVisible>false</GuiVisible>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
-      <ModelOffset x="0" y="0" z="0" />
+      <ModelOffset x="0" y="0" z="-0.4" />
       <Model>Models\Cubes\small\Corner_LCD_2.mwm</Model>
       <Components>
         <Component Subtype="Construction" Count="3" />
@@ -7763,5 +7763,50 @@
       <BuildTimeSeconds>5</BuildTimeSeconds>
     </Definition>
 <!-- cover wall end -->
+<!-- passage start -->
+    <Definition> <!-- 5x5x5 Interior Passage -->
+      <Id>
+        <TypeId>Passage</TypeId>
+        <SubtypeId>supersize_5x5x5InteriorPassage</SubtypeId>
+      </Id>
+      <DisplayName>Interior Passage</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\passage.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\passage.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="74" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SmallTube" Count="48" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="5" EndY="5" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="5" EndY="5" Default="true" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="5" EndY="5" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="5" EndY="1.35" />
+        <MountPoint Side="Top" StartX="0" StartY="4.25" EndX="5" EndY="5" />
+        <MountPoint Side="Top" StartX="0" StartY="1.35" EndX="1.25" EndY="4.25" />
+        <MountPoint Side="Top" StartX="3.75" StartY="1.35" EndX="5" EndY="4.25" />
+        <MountPoint Side="Bottom" StartX="0" StartY="3.65" EndX="5" EndY="5" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="0.75" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0.75" EndX="1.25" EndY="3.65" />
+        <MountPoint Side="Bottom" StartX="3.75" StartY="0.75" EndX="5" EndY="3.65" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="0.75" EndY="5" />
+        <MountPoint Side="Front" StartX="4.25" StartY="0" EndX="5" EndY="5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\PassageConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\PassageConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\PassageConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>18</BuildTimeSeconds>
+    </Definition>
+<!-- passage end -->
   </CubeBlocks>
 </Definitions>
