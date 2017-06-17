@@ -1204,7 +1204,45 @@
       <TextureAspectRadio>1</TextureAspectRadio>
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
     </Definition>
-<!-- hide lights -->
+<!-- hide interior lights -->
+    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition">
+      <Id>
+        <TypeId>InteriorLight</TypeId>
+        <SubtypeId>SmallLight</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_InteriorLight</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\interior_light.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\InteriorLight.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Construction" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" ExclusionMask="3" PropertiesMask="3" StartX="0.4" StartY="0.44" EndX="0.6" EndY="0.55" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\InteriorLightConstruction_1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>InteriorLight</BlockPairName>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <LightRadius Min="1" Max="20" Default="3.6" />
+      <LightFalloff Min="1" Max="3" Default="1.3" />
+      <LightIntensity Min="0.5" Max="5" Default="1.5" />
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.00006</RequiredPowerInput>
+      <Flare>InteriorLightSmall</Flare>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+    </Definition>
     <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition">
       <Id>
         <TypeId>InteriorLight</TypeId>
@@ -8502,6 +8540,134 @@
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
       <MaxRange>50</MaxRange>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+    </Definition>
+<!-- interior pillar -->
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeInteriorPillar</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_InteriorPillar</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\interior_pillar.dds</Icon>
+      <Public>false</Public>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\InteriorPillar.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="25" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SmallTube" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0.45" StartY="0.45" EndX="0.55" EndY="0.55" />
+        <MountPoint Side="Bottom" StartX="0.45" StartY="0.45" EndX="0.55" EndY="0.55" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\InteriorPillarConstruction_1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>InteriorPillar</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <AutorotateMode>OppositeDirections</AutorotateMode>
+    </Definition>
+<!-- hide remote controls -->
+    <Definition xsi:type="MyObjectBuilder_RemoteControlDefinition">
+      <Id>
+        <TypeId>RemoteControl</TypeId>
+        <SubtypeId>LargeBlockRemoteControl</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_RemoteControl</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\RemoteControl.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\RemoteControl.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="5" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="Computer" Count="15" />
+        <Component Subtype="InteriorPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="0.7" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.3" EndY="0.7" />
+        <MountPoint Side="Left" StartX="0.3" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.7" EndY="1" />
+        <MountPoint Side="Right" StartX="0.7" StartY="0" EndX="1" EndY="0.7" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="0.7" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\RemoteControlConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\RemoteControlConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>RemoteControl</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <MirroringY>Z</MirroringY>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.01</RequiredPowerInput>
+      <EnableFirstPerson>false</EnableFirstPerson>
+      <EnableShipControl>true</EnableShipControl>
+      <EnableBuilderCockpit>false</EnableBuilderCockpit>
+      <Public>false</Public>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_RemoteControlDefinition">
+      <Id>
+        <TypeId>RemoteControl</TypeId>
+        <SubtypeId>SmallBlockRemoteControl</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_RemoteControl</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\RemoteControl.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\RemoteControl.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="1" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="InteriorPlate" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\RemoteControlConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\RemoteControlConstruction_1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>RemoteControl</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.01</RequiredPowerInput>
+      <EnableFirstPerson>false</EnableFirstPerson>
+      <EnableShipControl>true</EnableShipControl>
+      <EnableBuilderCockpit>false</EnableBuilderCockpit>
+      <Public>false</Public>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
       <EmissiveColorPreset>Extended</EmissiveColorPreset>
     </Definition>
   </CubeBlocks>

@@ -2459,10 +2459,10 @@
     </Definition>
 <!-- Spotlight End -->
 <!-- Lights Start -->
-    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition">
+    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition"> <!-- 1x1x1 Interior Light -->
       <Id>
         <TypeId>InteriorLight</TypeId>
-        <SubtypeId>SmallLight</SubtypeId>
+        <SubtypeId>supersize_InteriorLight</SubtypeId>
       </Id>
       <DisplayName>DisplayName_Block_InteriorLight</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\interior_light.dds</Icon>
@@ -7223,7 +7223,7 @@
     </Definition>
 <!-- buttons end -->
 <!-- medical start -->
-    <Definition xsi:type="MyObjectBuilder_MedicalRoomDefinition"> <!-- Large Medical Room -->
+    <Definition xsi:type="MyObjectBuilder_MedicalRoomDefinition"> <!-- 10x5x10 Medical Room -->
       <Id>
         <TypeId>MedicalRoom</TypeId>
         <SubtypeId>supersize_LargeMedicalRoom</SubtypeId>
@@ -7389,5 +7389,138 @@
       </BlockVariants>
     </Definition>
 <!-- Air Vent end -->
+<!-- Interior Pillar start -->
+<!-- Should revisit and add more mount points -->
+    <Definition> <!-- 1x1x5 Interior Pillar -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_1x1x5InteriorPillar</SubtypeId>
+      </Id>
+      <DisplayName>Interior Pillar</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\interior_pillar.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="5" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\InteriorPillar.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="25" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="SmallTube" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\InteriorPillarConstruction_1.mwm" />
+      </BuildProgressModels>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <AutorotateMode>OppositeDirections</AutorotateMode>
+    </Definition>
+<!-- Interior Pillar end -->
+<!-- Remote Control start -->
+    <Definition xsi:type="MyObjectBuilder_RemoteControlDefinition"> <!-- 5x5x5 Remote Control -->
+      <Id>
+        <TypeId>RemoteControl</TypeId>
+        <SubtypeId>supersize_5x5x5RemoteControl</SubtypeId>
+      </Id>
+      <DisplayName>Large Remote Control</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\RemoteControl.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\RemoteControl.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="5" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="Computer" Count="15" />
+        <Component Subtype="InteriorPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" Default="true" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="5" EndY="5" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="5" EndY="3.5" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1.5" EndY="3.5" />
+        <MountPoint Side="Left" StartX="1.5" StartY="0" EndX="5" EndY="5" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="3.5" EndY="5" />
+        <MountPoint Side="Right" StartX="3.5" StartY="0" EndX="5" EndY="3.5" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="5" EndY="3.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\RemoteControlConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\RemoteControlConstruction_2.mwm" />
+      </BuildProgressModels>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <MirroringY>Z</MirroringY>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.01</RequiredPowerInput>
+      <EnableFirstPerson>false</EnableFirstPerson>
+      <EnableShipControl>true</EnableShipControl>
+      <EnableBuilderCockpit>false</EnableBuilderCockpit>
+      <Public>true</Public>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_RemoteControlDefinition"> <!-- 1x1x1 Remote Control -->
+      <Id>
+        <TypeId>RemoteControl</TypeId>
+        <SubtypeId>supersize_1x1x1RemoteControl</SubtypeId>
+      </Id>
+      <DisplayName>Small Remote Control</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\RemoteControl.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\RemoteControl.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="1" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="InteriorPlate" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\RemoteControlConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\RemoteControlConstruction_1.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.01</RequiredPowerInput>
+      <EnableFirstPerson>false</EnableFirstPerson>
+      <EnableShipControl>true</EnableShipControl>
+      <EnableBuilderCockpit>false</EnableBuilderCockpit>
+      <Public>true</Public>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>RemoteControl</TypeId>
+          <SubtypeId>supersize_5x5x5RemoteControl</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+    </Definition>
+<!-- Remote Control end -->
   </CubeBlocks>
 </Definitions>
