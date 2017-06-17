@@ -7808,5 +7808,161 @@
       <BuildTimeSeconds>18</BuildTimeSeconds>
     </Definition>
 <!-- passage end -->
+<!-- catwalks start -->
+    <Definition> <!-- 5x3x5 Catwalk with wall -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_5x3x5WalledCatwalk</SubtypeId>
+      </Id>
+      <DisplayName>5x3x5 Catwalk - Single Wall</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\steel_catwalk.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="3" z="5" />
+      <ModelOffset x="0" y="0.5" z="0" />
+      <Model>Models\Cubes\Large\SteelCatwalk.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="20" />
+        <Component Subtype="Construction" Count="5" />        
+        <Component Subtype="SmallTube" Count="20" />
+        <Component Subtype="InteriorPlate" Count="7" />
+      </Components>
+      <CriticalComponent Subtype="SmallTube" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="5" Default="true" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="2.5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="0.1" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="0.1" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.1" EndY="2.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.1" EndY="2.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SteelCatwalkConstruction_1.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>supersize_5x3x5DoubleWalledCatwalk</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>supersize_5x3x5CornerCatwalk</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>supersize_5x1x5Catwalk</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+    </Definition>
+    <Definition> <!-- 5x3x5 Catwalk with 2 Walls -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_5x3x5DoubleWalledCatwalk</SubtypeId>
+      </Id>
+      <DisplayName>5x3x5 Catwalk - Double Wall</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\SteelCatwalk_2Sides.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="3" z="5" />
+      <ModelOffset x="0" y="0.5" z="0" />
+      <Model>Models\Cubes\Large\SteelCatwalk_2Sides.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="20" />
+        <Component Subtype="Construction" Count="7" />
+        <Component Subtype="SmallTube" Count="25" />
+        <Component Subtype="InteriorPlate" Count="12" />
+      </Components>
+      <CriticalComponent Subtype="SmallTube" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="5" Default="true" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="2.6" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="2.6" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="2.6" />
+        <MountPoint Side="Back" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="2.6" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SteelCatwalk_2SidesConstruction_1.mwm" />
+      </BuildProgressModels>
+      <MirroringY>X</MirroringY>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+    </Definition>
+    <Definition> <!-- 5x3x5 Catwalk Corner -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_5x3x5CornerCatwalk</SubtypeId>
+      </Id>
+      <DisplayName>5x3x5 Catwalk - Corner</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\SteelCatwalk_Corner.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="3" z="5" />
+      <ModelOffset x="0" y="0.5" z="0" />
+      <Model>Models\Cubes\Large\SteelCatwalk_Corner.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="20" />
+        <Component Subtype="Construction" Count="7" />
+        <Component Subtype="SmallTube" Count="25" />
+        <Component Subtype="InteriorPlate" Count="12" />
+      </Components>
+      <CriticalComponent Subtype="SmallTube" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="5" Default="true" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="2.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="2.5" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="2.5" />
+        <MountPoint Side="Back" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="2.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SteelCatwalk_CornerConstruction_1.mwm" />
+      </BuildProgressModels>
+      <MirroringY>ZHalfY</MirroringY>
+      <MirroringZ>HalfY</MirroringZ>
+      <MirroringX>MinusHalfY</MirroringX>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+    </Definition>
+    <Definition> <!-- 5x1x5 Catwalk -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_5x1x5Catwalk</SubtypeId>
+      </Id>
+      <DisplayName>5x1x5 Catwalk - Flat</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\SteelCatwalk_Plate.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="1" z="5" />
+      <ModelOffset x="0" y="1" z="0" />
+      <Model>Models\Cubes\Large\SteelCatwalk_Plate.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="15" />
+        <Component Subtype="Construction" Count="7" />
+        <Component Subtype="SmallTube" Count="17" />
+        <Component Subtype="InteriorPlate" Count="8" />
+      </Components>
+      <CriticalComponent Subtype="SmallTube" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="5" Default="true" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="0.25" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="0.25" />
+        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="0.25" />
+        <MountPoint Side="Back" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="0.25" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SteelCatwalk_PlateConstruction_1.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+    </Definition>
+<!-- catwalks end -->
   </CubeBlocks>
 </Definitions>
