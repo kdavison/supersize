@@ -1,0 +1,816 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+<!-- fix conflicts with existing piston definitions -->
+    <Definition>
+      <Id>
+        <TypeId>PistonTop</TypeId>
+        <SubtypeId>SmallPistonTop</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_PistonTop</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Piston.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\PistonTop.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="4" />
+        <Component Subtype="LargeTube" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Small\PistonTopConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\PistonTopConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>invalid_PistonTop</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>PistonTop</TypeId>
+        <SubtypeId>LargePistonTop</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_PistonTop</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Piston.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\PistonTop.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="LargeTube" Count="8" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0.2" StartY="0.8" EndX="0.8" EndY="1" />
+        <MountPoint Side="Right" StartX="0.2" StartY="0.8" EndX="0.8" EndY="1" />
+        <MountPoint Side="Front" StartX="0.2" StartY="0.8" EndX="0.8" EndY="1" />
+        <MountPoint Side="Back" StartX="0.2" StartY="0.8" EndX="0.8" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\PistonTopConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\PistonTopConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\PistonTopConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>invalid_PistonTop</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+    </Definition>
+<!-- piston start -->
+    <Definition xsi:type="MyObjectBuilder_PistonBaseDefinition"> <!-- Small Piston Base -->
+      <Id>
+        <TypeId>PistonBase</TypeId>
+        <SubtypeId>supersize_SmallPistonBase</SubtypeId>
+      </Id>
+      <DisplayName>Small Piston</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Piston.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="2" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\PistonBase.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="2" />g
+        <Component Subtype="Construction" Count="4" />
+        <Component Subtype="SmallTube" Count="4" />
+        <Component Subtype="Motor" Count="2" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+        <MountPoint Side="Left" StartX="0.25" StartY="0" EndX="0.75" EndY="1.7" />
+        <MountPoint Side="Right" StartX="0.25" StartY="0" EndX="0.75" EndY="1.7" />
+        <MountPoint Side="Front" StartX="0.25" StartY="0" EndX="0.75" EndY="1.7" />
+        <MountPoint Side="Back" StartX="0.25" StartY="0" EndX="0.75" EndY="1.7" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Small\PistonBaseConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1" File="Models\Cubes\Small\PistonBaseConstruction_2.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <PrimarySound>BlockPiston</PrimarySound>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.0002</RequiredPowerInput>
+      <TopPart>supersize_SmallPistonTop</TopPart>
+      <Maximum>2</Maximum>
+      <Public>false</Public>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_ExtendedPistonBaseDefinition"> <!-- Small Piston Extended Base -->
+      <Id>
+        <TypeId>ExtendedPistonBase</TypeId>
+        <SubtypeId>supersize_SmallPistonBase</SubtypeId>
+      </Id>
+      <DisplayName>Small Piston</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Piston.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="3" z="1" />
+      <Center x="0" y="0" z="0"></Center>
+      <ModelOffset x="0" y="-0.25" z="0" />
+      <Model>Models\Cubes\Small\PistonBase.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="2" />
+        <Component Subtype="Construction" Count="4" />
+        <Component Subtype="SmallTube" Count="4" />
+        <Component Subtype="Motor" Count="2" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+        <MountPoint Side="Left" StartX="0.25" StartY="0" EndX="0.75" EndY="1.7" />
+        <MountPoint Side="Right" StartX="0.25" StartY="0" EndX="0.75" EndY="1.7" />
+        <MountPoint Side="Front" StartX="0.25" StartY="0" EndX="0.75" EndY="1.7" />
+        <MountPoint Side="Back" StartX="0.25" StartY="0" EndX="0.75" EndY="1.7" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Small\PistonBaseConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1" File="Models\Cubes\Small\PistonBaseConstruction_2.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <PrimarySound>BlockPiston</PrimarySound>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.0002</RequiredPowerInput>
+      <TopPart>supersize_SmallPistonTop</TopPart>
+      <Maximum>2</Maximum>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_PistonBaseDefinition"> <!-- Large Piston Base -->
+      <Id>
+        <TypeId>PistonBase</TypeId>
+        <SubtypeId>supersize_LargePistonBase</SubtypeId>
+      </Id>
+      <DisplayName>Large Piston</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Piston.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="10" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\PistonBase.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="LargeTube" Count="4" />
+        <Component Subtype="Motor" Count="4" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="1.0" StartY="1.0" EndX="4.0" EndY="4.0" Default="true"/>
+        <MountPoint Side="Left" StartX="1.25" StartY="0" EndX="3.75" EndY="8.5" />
+        <MountPoint Side="Right" StartX="1.25" StartY="0" EndX="3.75" EndY="8.5" />
+        <MountPoint Side="Front" StartX="1.25" StartY="0" EndX="3.75" EndY="8.5" />
+        <MountPoint Side="Back" StartX="1.25" StartY="0" EndX="3.75" EndY="8.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\PistonBaseConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\PistonBaseConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\PistonBaseConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <PrimarySound>BlockPiston</PrimarySound>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.002</RequiredPowerInput>
+      <TopPart>supersize_LargePistonTop</TopPart>
+      <Public>false</Public>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_ExtendedPistonBaseDefinition"> <!-- Large Piston Extended Base -->
+      <Id>
+        <TypeId>ExtendedPistonBase</TypeId>
+        <SubtypeId>supersize_LargePistonBase</SubtypeId>
+      </Id>
+      <DisplayName>Large Piston</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Piston.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="15" z="5" />
+      <Center x="0" y="0" z="0"></Center>
+      <ModelOffset x="0" y="-1.25" z="0" />
+      <Model>Models\Cubes\Large\PistonBase.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="LargeTube" Count="4" />
+        <Component Subtype="Motor" Count="4" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="1.0" StartY="1.0" EndX="4.0" EndY="4.0" Default="true" />
+        <MountPoint Side="Left" StartX="1.25" StartY="0" EndX="3.75" EndY="8.5" />
+        <MountPoint Side="Right" StartX="1.25" StartY="0" EndX="3.75" EndY="8.5" />
+        <MountPoint Side="Front" StartX="1.25" StartY="0" EndX="3.75" EndY="8.5" />
+        <MountPoint Side="Back" StartX="1.25" StartY="0" EndX="3.75" EndY="8.5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\PistonBaseConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\PistonBaseConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\PistonBaseConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <PrimarySound>BlockPiston</PrimarySound>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.002</RequiredPowerInput>
+      <TopPart>supersize_LargePistonTop</TopPart>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+    </Definition>
+    <Definition> <!-- Small Piston Top -->
+      <Id>
+        <TypeId>PistonTop</TypeId>
+        <SubtypeId>supersize_SmallPistonTop</SubtypeId>
+      </Id>
+      <DisplayName>Small Piston Top</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Piston.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <Public>false</Public>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\PistonTop.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="4" />
+        <Component Subtype="LargeTube" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Small\PistonTopConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\PistonTopConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>supersize_SmallPistonTop</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+    </Definition>
+    <Definition> <!-- Large Piston Top -->
+      <Id>
+        <TypeId>PistonTop</TypeId>
+        <SubtypeId>supersize_LargePistonTop</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_PistonTop</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Piston.dds</Icon>
+      <Public>false</Public>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\PistonTop.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="LargeTube" Count="8" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="5" EndY="5" />
+        <MountPoint Side="Left" StartX="1.0" StartY="4.0" EndX="4.0" EndY="5" />
+        <MountPoint Side="Right" StartX="1.0" StartY="4.0" EndX="4.0" EndY="5" />
+        <MountPoint Side="Front" StartX="1.0" StartY="4.0" EndX="4.0" EndY="5" />
+        <MountPoint Side="Back" StartX="1.0" StartY="4.0" EndX="4.0" EndY="5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\PistonTopConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\PistonTopConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\PistonTopConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>supersize_LargePistonTop</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+    </Definition>
+<!-- piston end -->
+<!-- fix conflicts with existing rotor definitions -->
+    <Definition>
+      <Id>
+        <TypeId>MotorRotor</TypeId>
+        <SubtypeId>LargeRotor</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_RotorPart</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\RotorPart.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
+      <BlockPairName>invalid_MotorRotor</BlockPairName>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\MotorRotor.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <!-- top part  cost is not balance-only issue,  rotor "overtravel" issue  when rotation limits are set is reduced by adding more weight into top part -->
+        <Component Subtype="SteelPlate" Count="30" />
+        <Component Subtype="LargeTube" Count="24" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\MotorRotorConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\MotorRotorConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\MotorRotorConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>MotorRotor</TypeId>
+        <SubtypeId>SmallRotor</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_RotorPart</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\RotorPart.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\MotorRotor.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <!-- top part  cost is not balance-only issue, rotor "overtravel" issue when rotation limits are set is reduced by adding more weight into top part -->
+        <Component Subtype="SteelPlate" Count="12" />
+        <Component Subtype="SmallTube" Count="6" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\MotorRotorConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\MotorRotorConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>invalid_MotorRotor</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>2</BuildTimeSeconds>
+      <RotorPart>MotorRotor</RotorPart>
+    </Definition>
+<!-- rotor start -->
+    <Definition xsi:type="MyObjectBuilder_MotorStatorDefinition"> <!-- Large Motor Stator -->
+      <Id>
+        <TypeId>MotorStator</TypeId>
+        <SubtypeId>supersize_LargeStator</SubtypeId>
+      </Id>
+      <DisplayName>Large Rotor</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\motor.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="10" z="5" />
+      <ModelOffset x="0" y="-1.25" z="0" />
+      <Model>Models\Cubes\Large\MotorStator.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="LargeTube" Count="4" />
+        <Component Subtype="Motor" Count="4" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="1.0" StartY="1.0" EndX="4.0" EndY="4.0" Default="true" />
+        <MountPoint Side="Left" StartX="1.25" StartY="0" EndX="3.75" EndY="3.05" />
+        <MountPoint Side="Right" StartX="1.25" StartY="0" EndX="3.75" EndY="3.05" />
+        <MountPoint Side="Front" StartX="1.25" StartY="0" EndX="3.75" EndY="3.05" />
+        <MountPoint Side="Back" StartX="1.25" StartY="0" EndX="3.75" EndY="3.05" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\MotorStatorConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\MotorStatorConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\MotorStatorConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <PrimarySound>BlockRotor</PrimarySound>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.002</RequiredPowerInput>
+      <MaxForceMagnitude>3.36E+07</MaxForceMagnitude>
+      <PropulsionForce>4000</PropulsionForce>
+      <RotorPart>supersize_LargeMotorRotor</RotorPart>
+      <RotorDisplacementMin>-0.4</RotorDisplacementMin>
+      <RotorDisplacementMax>0.2</RotorDisplacementMax>
+      <RotorDisplacementInModel>0.0</RotorDisplacementInModel>
+      <GuiVisible>false</GuiVisible>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+    </Definition>
+    <Definition> <!-- Large Motor Rotor (Head) -->
+      <Id>
+        <TypeId>MotorRotor</TypeId>
+        <SubtypeId>supersize_LargeRotor</SubtypeId>
+      </Id>
+      <DisplayName>Large Rotor Head</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\RotorPart.dds</Icon>
+      <BlockPairName>supersize_LargeMotorRotor</BlockPairName>
+      <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\MotorRotor.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <!-- top part  cost is not balance-only issue,  rotor "overtravel" issue  when rotation limits are set is reduced by adding more weight into top part -->
+        <Component Subtype="SteelPlate" Count="30" />
+        <Component Subtype="LargeTube" Count="24" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="5" EndY="5" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\MotorRotorConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\MotorRotorConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\MotorRotorConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_MotorStatorDefinition"> <!-- Small Motor Stator -->
+      <Id>
+        <TypeId>MotorStator</TypeId>
+        <SubtypeId>supersize_SmallStator</SubtypeId>
+      </Id>
+      <DisplayName>Small Rotor</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\motor.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="2" z="1" />
+      <ModelOffset x="0" y="-0.25" z="0" />
+      <Model>Models\Cubes\Small\MotorStator.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="3" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="SmallTube" Count="1" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+        <MountPoint Side="Left" StartX="0.25" StartY="0" EndX="0.75" EndY="0.61" />
+        <MountPoint Side="Right" StartX="0.25" StartY="0" EndX="0.75" EndY="0.61" />
+        <MountPoint Side="Front" StartX="0.25" StartY="0" EndX="0.75" EndY="0.61" />
+        <MountPoint Side="Back" StartX="0.25" StartY="0" EndX="0.75" EndY="0.61" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\MotorStatorConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\MotorStatorConstruction_2.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <PrimarySound>BlockRotorSmall</PrimarySound>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.0002</RequiredPowerInput>
+      <MaxForceMagnitude>448000</MaxForceMagnitude>
+      <RotorPart>supersize_SmallMotorRotor</RotorPart>
+      <RotorDisplacementMin>-0.11</RotorDisplacementMin>
+      <RotorDisplacementMax>0.11</RotorDisplacementMax>
+      <RotorDisplacementInModel>0.045</RotorDisplacementInModel>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>MotorStator</TypeId>
+          <SubtypeId>supersize_LargeStator</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+    </Definition>
+    <Definition> <!-- Small Motor Rotor (Head) -->
+      <Id>
+        <TypeId>MotorRotor</TypeId>
+        <SubtypeId>supersize_SmallRotor</SubtypeId>
+      </Id>
+      <DisplayName>Small Motor Rotor</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\RotorPart.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\MotorRotor.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <!-- top part  cost is not balance-only issue, rotor "overtravel" issue when rotation limits are set is reduced by adding more weight into top part -->
+        <Component Subtype="SteelPlate" Count="12" />
+        <Component Subtype="SmallTube" Count="6" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\MotorRotorConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\MotorRotorConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>supersize_SmallMotorRotor</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>2</BuildTimeSeconds>
+      <RotorPart>supersize_SmallMotorRotor</RotorPart>
+    </Definition>
+<!-- rotor end -->
+<!-- fix conflicts with existing advanced rotor definitions -->
+    <Definition>
+      <Id>
+        <TypeId>MotorAdvancedRotor</TypeId>
+        <SubtypeId>LargeAdvancedRotor</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_AdvancedRotorPart</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\AdvancedRotorPart.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\MotorAdvancedRotor.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="5" />
+        <Component Subtype="LargeTube" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\MotorAdvancedRotorConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\MotorAdvancedRotorConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\MotorAdvancedRotorConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>invalid_MotorAdvancedRotor</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>MotorAdvancedRotor</TypeId>
+        <SubtypeId>SmallAdvancedRotor</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_RotorPart</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\AdvencedMotor.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="3" />
+      <ModelOffset x="0" y="-0.25" z="0" />
+      <Model>Models\Cubes\Small\MotorAdvancedRotor.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="SmallTube" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="4" EndY="4" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\MotorAdvancedRotorConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\MotorAdvancedRotorConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>invalid_MotorAdvancedRotor</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>2</BuildTimeSeconds>
+      <RotorPart>invalid_MotorAdvancedRotor</RotorPart>i
+    </Definition>
+<!-- advanced rotor start -->
+    <Definition xsi:type="MyObjectBuilder_MotorAdvancedStatorDefinition"> <!-- Large Advanced Rotor -->
+      <Id>
+        <TypeId>MotorAdvancedStator</TypeId>
+        <SubtypeId>supersize_LargeAdvancedStator</SubtypeId>
+      </Id>
+      <Public>true</Public>
+      <DisplayName>Large Advanced Rotor</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\AdvencedMotor.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="10" z="5" />
+      <ModelOffset x="0" y="-1.25" z="0" />
+      <Model>Models\Cubes\Large\MotorAdvancedStator.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="LargeTube" Count="4" />
+        <Component Subtype="Motor" Count="4" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\MotorAdvancedStatorConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\MotorAdvancedStatorConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\MotorAdvancedStatorConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <PrimarySound>BlockRotor</PrimarySound>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.002</RequiredPowerInput>
+      <MaxForceMagnitude>3.36E+07</MaxForceMagnitude>
+      <RotorPart>supersize_LargeAdvancedMotorRotor</RotorPart>
+      <RotorDisplacementMin>-0.4</RotorDisplacementMin>
+      <RotorDisplacementMax>0.2</RotorDisplacementMax>
+      <RotorDisplacementInModel>0.0</RotorDisplacementInModel>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+    </Definition>
+    <Definition> <!-- Large Advanced Motor Rotor (Head) -->
+      <Id>
+        <TypeId>MotorAdvancedRotor</TypeId>
+        <SubtypeId>supersize_LargeAdvancedRotor</SubtypeId>
+      </Id>
+      <DisplayName>Large Advanced Rotor Head</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\AdvancedRotorPart.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\MotorAdvancedRotor.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="5" />
+        <Component Subtype="LargeTube" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="5" EndY="5" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\MotorAdvancedRotorConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\MotorAdvancedRotorConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\MotorAdvancedRotorConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>supersize_LargeAdvancedMotorRotor</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_MotorAdvancedStatorDefinition"> <!-- Small Advanced Rotor -->
+      <Id>
+        <TypeId>MotorAdvancedStator</TypeId>
+        <SubtypeId>supersize_SmallAdvancedStator</SubtypeId>
+      </Id>
+      <Public>true</Public>
+      <DisplayName>Small Advanced Rotor</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\AdvencedMotor.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="3" />
+      <ModelOffset x="0" y="-0.25" z="0" />
+      <Model>Models\Cubes\Small\MotorAdvancedStator.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="3" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="SmallTube" Count="1" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="Motor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="4" EndY="4" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\MotorAdvancedStatorConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\MotorAdvancedStatorConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>MotorAdvancedStator</TypeId>
+          <SubtypeId>supersize_LargeAdvancedStator</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+      <PrimarySound>BlockRotorSmall</PrimarySound>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <RequiredPowerInput>0.0002</RequiredPowerInput>
+      <MaxForceMagnitude>448000</MaxForceMagnitude>
+      <RotorPart>supersize_SmallAdvancedMotorRotor</RotorPart>
+      <RotorDisplacementMin>-0.11</RotorDisplacementMin>
+      <RotorDisplacementMax>0.11</RotorDisplacementMax>
+      <RotorDisplacementInModel>0.11</RotorDisplacementInModel>
+      <DamageEffectId>212</DamageEffectId>
+      <DamagedSound>ParticleHeavyMech</DamagedSound>
+    </Definition>
+    <Definition> <!-- Small Advanced Motor Rotor (Head) -->
+      <Id>
+        <TypeId>MotorAdvancedRotor</TypeId>
+        <SubtypeId>supersize_SmallAdvancedRotor</SubtypeId>
+      </Id>
+      <DisplayName>Large Advanced Rotor Head</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\AdvencedMotor.dds</Icon>
+      <Public>false</Public>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="3" />
+      <ModelOffset x="0" y="-0.25" z="0" />
+      <Model>Models\Cubes\Small\MotorAdvancedRotor.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="SmallTube" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="4" EndY="4" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\MotorAdvancedRotorConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\MotorAdvancedRotorConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>supersize_SmallAdvancedMotorRotor</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>2</BuildTimeSeconds>
+      <RotorPart>supersize_SmallAdvancedMotorRotor</RotorPart>i
+    </Definition>
+<!-- advanced rotor end -->
+  </CubeBlocks>
+</Definitions>
