@@ -9534,5 +9534,94 @@
       <WarheadExplosionDamage>15000</WarheadExplosionDamage>
       <EmissiveColorPreset>Timer</EmissiveColorPreset>
     </Definition>
+<!-- hide ramps -->
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeStairs</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_Stairs</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\stairs.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\Stairs.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="40" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="InteriorPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.66" EndY="0.2" />
+        <MountPoint Side="Left" StartX="0.66" StartY="0" EndX="1.33" EndY="0.55" />
+        <MountPoint Side="Left" StartX="1.33" StartY="0" EndX="2" EndY="0.9" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.66" EndY="0.9" />
+        <MountPoint Side="Right" StartX="0.66" StartY="0" EndX="1.33" EndY="0.55" />
+        <MountPoint Side="Right" StartX="1.33" StartY="0" EndX="2" EndY="0.2" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="2" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\StairsConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\StairsConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\StairsConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>LargeRamp</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <BlockPairName>Stairs</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>25</BuildTimeSeconds>
+    </Definition>
+    <Definition>
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeRamp</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_Ramp</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\ramp.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\Ramp.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="60" />
+        <Component Subtype="Construction" Count="16" />
+        <Component Subtype="InteriorPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="0.66" EndY="0.2" />
+        <MountPoint Side="Left" StartX="0.66" StartY="0" EndX="1.33" EndY="0.55" />
+        <MountPoint Side="Left" StartX="1.33" StartY="0" EndX="2" EndY="0.9" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="0.66" EndY="0.9" />
+        <MountPoint Side="Right" StartX="0.66" StartY="0" EndX="1.33" EndY="0.55" />
+        <MountPoint Side="Right" StartX="1.33" StartY="0" EndX="2" EndY="0.2" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="2" Default="true" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\RampConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\RampConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\RampConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Ramp</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+    </Definition>
   </CubeBlocks>
 </Definitions>
