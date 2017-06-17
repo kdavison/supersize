@@ -1607,10 +1607,10 @@
     </Definition>
 <!-- End Region Reactor-->
 <!-- Gatling Turret Start -->
-    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition"> <!-- 5x8x9 Gatling Turret -->
       <Id>
         <TypeId>LargeGatlingTurret</TypeId>
-        <SubtypeId>LargeBlockLargeGatling</SubtypeId>
+        <SubtypeId>supersize_5x8x9GatlingTurret</SubtypeId>
       </Id>
       <DisplayName>Large Gatling Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\gatling_turret.dds</Icon>
@@ -1673,17 +1673,11 @@
       <MinFov>0.1</MinFov>
       <MaxFov>1.04719755</MaxFov>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <BlockVariants>
-        <BlockVariant>
-          <TypeId>LargeGatlingTurret</TypeId>
-          <SubtypeId>SmallBlockLargeGatling</SubtypeId>
-        </BlockVariant>
-      </BlockVariants>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition"> <!-- 5x5x5 Gatling Turret -->
       <Id>
         <TypeId>LargeGatlingTurret</TypeId>
-        <SubtypeId>SmallBlockLargeGatling</SubtypeId>
+        <SubtypeId>supersize_5x5x5GatlingTurret</SubtypeId>
       </Id>
       <DisplayName>Medium Gatling Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\gatling_turret.dds</Icon>
@@ -1750,12 +1744,66 @@
       <MaxFov>1.04719755</MaxFov>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
     </Definition>
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition"> <!-- 1x1x4 Gatling Gun -->
+      <Id>
+        <TypeId>SmallGatlingGun</TypeId>
+        <SubtypeId>supersize_1x1x4GatlingGun</SubtypeId>
+      </Id>
+      <DisplayName>Gatling Gun</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\gatling_gun.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\GatlingGun.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="MetalGrid" Count="2" />
+        <Component Subtype="SmallTube" Count="3" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="SteelPlate" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="3" EndX="1" EndY="4" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="3" StartY="0" EndX="4" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\GatlingGunConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\GatlingGunConstruction_2.mwm" />
+      </BuildProgressModels>
+      <Center x="0" y="0" z="3" />
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>13</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="GatlingGun" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.064</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>LargeGatlingTurret</TypeId>
+          <SubtypeId>supersize_5x5x5GatlingTurret</SubtypeId>
+        </BlockVariant>
+         <BlockVariant>
+          <TypeId>LargeGatlingTurret</TypeId>
+          <SubtypeId>supersize_5x8x9GatlingTurret</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+    </Definition>
 <!-- Gatling Turret End -->
 <!-- Missile Turret Start -->
-    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition"> <!-- 9x9x9 Missile Turret -->
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
-        <SubtypeId>LargeBlockLargeMissleTurret</SubtypeId>
+        <SubtypeId>supersize_9x9x9MissileTurret</SubtypeId>
       </Id>
       <DisplayName>Large Missle Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\missile_turret.dds</Icon>
@@ -1822,14 +1870,14 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>LargeMissileTurret</TypeId>
-          <SubtypeId>SmallMissileTurret6</SubtypeId>
+          <SubtypeId>supersize_5x5x5MissileTurret</SubtypeId>
         </BlockVariant>
       </BlockVariants>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition">
+    <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition"> <!-- 5x5x5 Missile Turret -->
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
-        <SubtypeId>SmallMissileTurret</SubtypeId>
+        <SubtypeId>supersize_5x5x5MissileTurret</SubtypeId>
       </Id>
       <DisplayName>Medium Missle Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\missile_turret.dds</Icon>
@@ -2644,12 +2692,12 @@
     </Definition>
 <!-- Lights End -->
 <!-- Cockpits Start -->
-    <Definition xsi:type="MyObjectBuilder_CockpitDefinition">
+    <Definition xsi:type="MyObjectBuilder_CockpitDefinition"> <!-- 3x4x4 Station Control  Seat -->
       <Id>
         <TypeId>Cockpit</TypeId>
-        <SubtypeId>LargeBlockCockpit</SubtypeId><!-- Station control seat -->
+        <SubtypeId>supersize_3x4x4StationControlSeat</SubtypeId>
       </Id>
-      <DisplayName>DisplayName_Block_Cockpit2</DisplayName>
+      <DisplayName>Station Control Seat</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Cockpit.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2676,12 +2724,6 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\CockpitLargeConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\CockpitLargeConstruction_3.mwm" />
       </BuildProgressModels>
-      <BlockVariants>
-        <BlockVariant>
-          <TypeId>Cockpit</TypeId>
-          <SubtypeId>CockpitOpen</SubtypeId>
-        </BlockVariant>
-      </BlockVariants>
       <VoxelPlacement>
         <StaticMode>
           <PlacementMode>OutsideVoxel</PlacementMode>
@@ -2708,19 +2750,31 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>Cockpit</TypeId>
-          <SubtypeId>CockpitOpen</SubtypeId>
+          <SubtypeId>supersize_3x4x4FlightSeat</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>Cockpit</TypeId>
+          <SubtypeId>supersize_2x3x2PassengerSeat</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>Cockpit</TypeId>
+          <SubtypeId>supersize_3x3x3Cockpit</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>Cockpit</TypeId>
+          <SubtypeId>supersize_3x4x6FighterCockpit</SubtypeId>
         </BlockVariant>
       </BlockVariants>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_CockpitDefinition">
+    <Definition xsi:type="MyObjectBuilder_CockpitDefinition"> <!-- 3x4x4 Flight Seat -->
       <Id>
         <TypeId>Cockpit</TypeId>
-        <SubtypeId>CockpitOpen</SubtypeId><!-- Flight seat -->
+        <SubtypeId>supersize_3x4x4FlightSeat</SubtypeId>
       </Id>
-      <public>false</public>
-      <DisplayName>DisplayName_Block_Cockpit3</DisplayName>
+      <DisplayName>Flight Seat</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\CockpitOpen.dds</Icon>
       <GuiVisible>false</GuiVisible>
+      <public>false</public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="4" z="4" />
@@ -2769,12 +2823,12 @@
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_CockpitDefinition"> <!-- Small block passenger seat -->
+    <Definition xsi:type="MyObjectBuilder_CockpitDefinition"> <!-- 2x3x2 Passenger Seat -->
       <Id>
         <TypeId>Cockpit</TypeId>
         <SubtypeId>supersize_2x3x2PassengerSeat</SubtypeId>
       </Id>
-      <DisplayName>DisplayName_Block_PassengerSeat</DisplayName>
+      <DisplayName>Passenger Seat</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\PassengerSeat.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2818,6 +2872,144 @@
       <IsPressurized>false</IsPressurized>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_CockpitDefinition"> <!-- 3x3x3 Standard Cockpit -->
+      <Id>
+        <TypeId>Cockpit</TypeId>
+        <SubtypeId>supersize_3x3x3Cockpit</SubtypeId><!-- Small block cockpit -->
+      </Id>
+      <DisplayName>Cockpit</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\CockpitSmall.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\cockpit.mwm</Model>
+      <PrimarySound>BlockCockpitSm</PrimarySound>
+      <InteriorModel>Models\Cubes\Small\cockpitinterior.mwm</InteriorModel>
+      <GlassModel>Models\Cubes\Small\cockpitglass.mwm</GlassModel>
+      <CharacterAnimation>cockpit1_small</CharacterAnimation>
+      <Components>
+        <Component Subtype="SteelPlate" Count="5" />
+        <Component Subtype="Construction" Count="10" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="Display" Count="5" />
+        <Component Subtype="Computer" Count="15" />
+        <Component Subtype="SteelPlate" Count="5" />
+        <Component Subtype="BulletproofGlass" Count="30" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" Default="true" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="3" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="1" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="3" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="3" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\CockpitConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\CockpitConstruction_2.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <BuildTimeSeconds>30</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <EnableFirstPerson>true</EnableFirstPerson>
+      <EnableShipControl>true</EnableShipControl>
+      <EnableBuilderCockpit>true</EnableBuilderCockpit>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <PrimarySound>BlockCockpitSm</PrimarySound>
+      <OxygenCapacity>60</OxygenCapacity>
+      <IsPressurized>true</IsPressurized>
+      <GetInSound>ShipSmCockpitIn</GetInSound>
+      <GetOutSound>ShipSmCockpitOut</GetOutSound>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_CockpitDefinition"> <!-- 3x4x6 Fighter Cockpit -->
+      <Id>
+        <TypeId>Cockpit</TypeId>
+        <SubtypeId>supersize_3x4x6FighterCockpit</SubtypeId><!-- Fighter cockpit -->
+      </Id>
+      <!-- DBLargeBlockFighterCockpit : Original Name w/ auto initials -->
+      <DisplayName>Fighter Cockpit</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\FighterCockpit.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="4" z="6" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\small\CockpitFighter.mwm</Model>
+      <PrimarySound>BlockCockpitSm</PrimarySound>
+      <InteriorModel>Models\Cubes\small\CockpitFighterInterior.mwm</InteriorModel>
+      <CharacterAnimation>FighterCockpitPosture</CharacterAnimation>
+      <Components>
+        <Component Subtype="SteelPlate" Count="2" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="SteelPlate" Count="10" />
+        <Component Subtype="MetalGrid" Count="10" />
+        <Component Subtype="InteriorPlate" Count="15" />
+        <Component Subtype="Display" Count="4" />
+        <Component Subtype="Computer" Count="20" />
+        <Component Subtype="BulletproofGlass" Count="40" />
+        <Component Subtype="SteelPlate" Count="8" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="6" Default="true" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="3.5" />
+        <MountPoint Side="Back" StartX="0.5" StartY="3.5" EndX="2.5" EndY="4" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="1.5" />
+        <MountPoint Side="Front" StartX="0.5" StartY="1.5" EndX="2.5" EndY="2" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="6" EndY="1" />
+        <MountPoint Side="Left" StartX="4" StartY="1" EndX="5" EndY="2" />
+        <MountPoint Side="Left" StartX="5" StartY="1" EndX="6" EndY="3" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="6" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="1" EndX="1" EndY="3" />
+        <MountPoint Side="Right" StartX="1" StartY="1" EndX="2" EndY="2" />
+      </MountPoints>
+      <VoxelPlacement>
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.2</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\small\CockpitFighterConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\small\CockpitFighterConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\small\CockpitFighterConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <BuildTimeSeconds>34</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <EnableFirstPerson>true</EnableFirstPerson>
+      <EnableShipControl>true</EnableShipControl>
+      <EnableBuilderCockpit>true</EnableBuilderCockpit>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <OxygenCapacity>60</OxygenCapacity>
+      <PrimarySound>BlockCockpitSm</PrimarySound>
+      <IsPressurized>true</IsPressurized>
+      <GetInSound>ShipSmCockpitIn</GetInSound>
+      <GetOutSound>ShipSmCockpitOut</GetOutSound>
     </Definition>
 <!-- Cockpits End -->
 <!-- Cryo Chamber Start -->
