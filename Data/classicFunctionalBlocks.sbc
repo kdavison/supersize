@@ -1867,12 +1867,6 @@
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <MinFov>0.1</MinFov>
       <MaxFov>1.04719755</MaxFov>
-      <BlockVariants>
-        <BlockVariant>
-          <TypeId>LargeMissileTurret</TypeId>
-          <SubtypeId>supersize_5x5x5MissileTurret</SubtypeId>
-        </BlockVariant>
-      </BlockVariants>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition"> <!-- 5x5x5 Missile Turret -->
       <Id>
@@ -1944,6 +1938,156 @@
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <MinFov>0.1</MinFov>
       <MaxFov>1.04719755</MaxFov>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition"> <!-- 1x1x4 Missile Launcher -->
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>supersize_1x1x4MissileLauncher</SubtypeId>
+      </Id>
+      <DisplayName>Missile Launcher - Manual Reload</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\missile_launcher_small.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\RocketLauncher.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="MetalGrid" Count="1" />
+        <Component Subtype="LargeTube" Count="4" />
+        <Component Subtype="Motor" Count="1" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="SteelPlate" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="3" EndX="1" EndY="4" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="3" StartY="0" EndX="4" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\RocketLauncherConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\RocketLauncherConstruction_2.mwm" />
+      </BuildProgressModels>
+      <Center x="0" y="0" z="3" />
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="SmallMissileLauncher" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>0.24</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>SmallMissileLauncherReload</TypeId>
+          <SubtypeId>supersize_1x3x3MissileLauncher</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>SmallMissileLauncher</TypeId>
+          <SubtypeId>supersize_5x5x10MissileLauncher</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>LargeMissileTurret</TypeId>
+          <SubtypeId>supersize_5x5x5MissileTurret</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>LargeMissileTurret</TypeId>
+          <SubtypeId>supersize_9x9x9MissileTurret</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition"> <!-- 5x5x10 Missile Launcher -->
+      <Id>
+        <TypeId>SmallMissileLauncher</TypeId>
+        <SubtypeId>supersize_5x5x10MissileLauncher</SubtypeId>
+      </Id>
+      <DisplayName>Large Missile Launcher - Reloadable</DisplayName>
+      <public>false</public>
+      <Icon>Textures\GUI\Icons\Cubes\missile_launcher.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="10" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\RocketLauncher.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="Construction" Count="8" />
+        <Component Subtype="MetalGrid" Count="30" />
+        <Component Subtype="LargeTube" Count="25" />
+        <Component Subtype="Motor" Count="6" />
+        <Component Subtype="Computer" Count="4" />
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="5" EndY="5" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="5" EndY="10" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="10" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="10" EndY="5" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="10" EndY="5" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\RocketLauncherConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\RocketLauncherConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\RocketLauncherConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringZ>Y</MirroringZ>
+      <Center x="0" y="0" z="1" />
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <WeaponDefinitionId Subtype="LargeMissileLauncher" />
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <InventoryMaxVolume>1.14</InventoryMaxVolume>
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition"> <!-- 1x3x3 Reloadable Missile Launcher -->
+      <Id>
+        <TypeId>SmallMissileLauncherReload</TypeId>
+        <SubtypeId>supersize_1x3x3MissileLauncher</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_SmallRocketLauncherReload</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\RocketLauncherReload.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\RocketLauncherReload.mwm</Model>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="3" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="3" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="3" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="3" EndY="3" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="3" EndY="3" />
+      </MountPoints>
+      <Components>
+        <Component Subtype="SteelPlate" Count="2" />
+        <Component Subtype="SmallTube" Count="50" />
+        <Component Subtype="InteriorPlate" Count="40" />
+        <Component Subtype="Construction" Count="24" />
+        <Component Subtype="LargeTube" Count="8" />
+        <Component Subtype="MetalGrid" Count="10" />
+        <Component Subtype="Motor" Count="4" />
+        <Component Subtype="Computer" Count="2" />
+        <Component Subtype="SteelPlate" Count="6" />
+        <Component Subtype="InteriorPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\small\RocketLauncherReloadConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\RocketLauncherReloadConstruction_2.mwm" />
+      </BuildProgressModels>
+      <Center x="0" y="0" z="1" />
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <InventoryMaxVolume>0.24</InventoryMaxVolume>
+      <ResourceSinkGroup>Defense</ResourceSinkGroup>
+      <WeaponDefinitionId Subtype="SmallMissileLauncher" />
+      <DamageEffectId>213</DamageEffectId>
+      <DamagedSound>ParticleWeapExpl</DamagedSound>
     </Definition>
 <!-- Missile Turret Stop -->
 <!-- Sensor Start -->
@@ -8623,5 +8767,313 @@
       <BuildTimeSeconds>20</BuildTimeSeconds>
     </Definition>
 <!-- ramp end -->
+<!-- blast doors 5x5x5 - start -->
+    <Definition> <!-- 5x5x5 Blast Door - Center -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_5x5x5BlastDoorCenter</SubtypeId>
+      </Id>
+      <DisplayName>Blast Door 5x5x5 - Center</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\ArmorCenter.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ArmorCenter.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="125" />
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.3" File="Models\Cubes\Large\ArmorCenterConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.6" File="Models\Cubes\Large\ArmorCenterConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\ArmorCenterConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Left" StartX="0.5" StartY="0.0" EndX="4.5" EndY="5.0" />
+        <MountPoint Side="Right" StartX="0.5" StartY="0.0" EndX="4.5" EndY="5.0" />
+        <MountPoint Side="Top" StartX="0.0" StartY="0.5" EndX="5.0" EndY="4.5" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.5" EndX="5.0" EndY="4.5" />
+      </MountPoints>
+      <DeformationRatio>0.2</DeformationRatio>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>24</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+      <Public>true</Public>
+    </Definition>
+    <Definition> <!-- 5x5x5 Blast Door - Corner -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_5x5x5BlastDoorCorner</SubtypeId>
+      </Id>
+      <DisplayName>Blast Door 5x5x5 - Corner</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\ArmorCorner.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ArmorCorner.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="105" />
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.3" File="Models\Cubes\Large\ArmorCornerConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.6" File="Models\Cubes\Large\ArmorCornerConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\ArmorCornerConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Right" StartX="0.5" StartY="0.0" EndX="4.5" EndY="3.0" />
+        <MountPoint Side="Right" StartX="1.5" StartY="3.0" EndX="3.5" EndY="5.0" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="1.5" EndX="2.0" EndY="3.5" />
+        <MountPoint Side="Bottom" StartX="2.0" StartY="0.5" EndX="5.0" EndY="4.5" />
+        <MountPoint Side="Left" StartX="1.9" StartY="0.0" EndX="3.1" EndY="5.0" />
+        <MountPoint Side="Top" StartX="0.0" StartY="1.9" EndX="5.0" EndY="3.1" />
+      </MountPoints>
+      <MirroringY>X</MirroringY>
+      <MirroringX>Y</MirroringX>
+      <DeformationRatio>0.2</DeformationRatio>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>24</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+      <Public>true</Public>
+    </Definition>
+    <Definition> <!-- 5x5x5 Blast Door - Inverted Corner -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_5x5x5BlastDoorInvertedCorner</SubtypeId>
+      </Id>
+      <DisplayName>Blast Door 5x5x5 - Inverted Corner</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\BlastDoorCornerInverted.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ArmorInvCorner.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="120" />
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.3" File="Models\Cubes\Large\ArmorInvCornerConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.6" File="Models\Cubes\Large\ArmorInvCornerConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\ArmorInvCornerConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Left" StartX="0.5" StartY="0.0" EndX="4.5" EndY="3.0" />
+        <MountPoint Side="Left" StartX="1.5" StartY="3.0" EndX="3.5" EndY="5.0" />
+        <MountPoint Side="Top" StartX="0.0" StartY="1.5" EndX="2.0" EndY="3.5" />
+        <MountPoint Side="Top" StartX="2.0" StartY="0.5" EndX="5.0" EndY="4.5" />
+        <MountPoint Side="Right" StartX="0.5" StartY="0.0" EndX="4.5" EndY="5.0" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.5" EndX="5.0" EndY="4.0" />
+      </MountPoints>
+      <MirroringY>X</MirroringY>
+      <MirroringX>Y</MirroringX>
+      <DeformationRatio>0.2</DeformationRatio>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>24</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+      <Public>true</Public>
+    </Definition>
+    <Definition> <!-- 5x5x5 Blast Door - Side -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_5x5x5BlastDoorSide</SubtypeId>
+      </Id>
+      <DisplayName>Blast Door 5x5x5 - Side</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\ArmorSide.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ArmorSide.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="115" />
+        <Component Subtype="SteelPlate" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.3" File="Models\Cubes\Large\ArmorSideConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.6" File="Models\Cubes\Large\ArmorSideConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\ArmorSideConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Right" StartX="0.5" StartY="0.0" EndX="3.5" EndY="3.0" />
+        <MountPoint Side="Right" StartX="1.5" StartY="3.0" EndX="3.5" EndY="5.0" />
+        <MountPoint Side="Left" StartX="0.5" StartY="0.0" EndX="4.5" EndY="3.0" />
+        <MountPoint Side="Left" StartX="1.5" StartY="3.0" EndX="3.5" EndY="5.0" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.5" EndX="5.0" EndY="4.5" />
+        <MountPoint Side="Top" StartX="0.0" StartY="1.9" EndX="5.0" EndY="3.1" />
+      </MountPoints>
+      <MirroringY>X</MirroringY>
+      <DeformationRatio>0.2</DeformationRatio>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>24</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+      <Public>true</Public>
+    </Definition>
+<!-- blast doors 5x5x5 - end -->
+<!-- blast doors 1x1x1 - start -->
+    <Definition> <!-- 1x1x1 Blast Door Center -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_1x1x1BlastDoorCenter</SubtypeId>
+      </Id>
+      <DisplayName>Blast Door 1x1x1 - Center</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\ArmorCenter.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ArmorCenter.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="3" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Small\ArmorCenterConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Small\ArmorCenterConstruction_2.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Left" StartX="0.1" StartY="0.0" EndX="0.9" EndY="1.0" />
+        <MountPoint Side="Right" StartX="0.1" StartY="0.0" EndX="0.9" EndY="1.0" />
+        <MountPoint Side="Top" StartX="0.0" StartY="0.1" EndX="1.0" EndY="0.9" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.1" EndX="1.0" EndY="0.9" />
+      </MountPoints>
+      <EdgeType>Light</EdgeType>
+      <DeformationRatio>0.24</DeformationRatio>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+      <Public>true</Public>
+    </Definition>
+    <Definition> <!-- 1x1x1 Blast Door - Corner -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_1x1x1BlastDoorCorner</SubtypeId>
+      </Id>
+      <DisplayName>Blast Door 1x1x1 - Corner</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\ArmorCorner.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ArmorCorner.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="3" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Small\ArmorCornerConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Small\ArmorCornerConstruction_2.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Right" StartX="0.1" StartY="0.0" EndX="0.9" EndY="0.6" />
+        <MountPoint Side="Right" StartX="0.3" StartY="0.6" EndX="0.7" EndY="1.0" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.3" EndX="0.4" EndY="0.7" />
+        <MountPoint Side="Bottom" StartX="0.4" StartY="0.1" EndX="1.0" EndY="0.9" />
+        <MountPoint Side="Left" StartX="0.38" StartY="0.0" EndX="0.62" EndY="1.0" />
+        <MountPoint Side="Top" StartX="0.0" StartY="0.38" EndX="1.0" EndY="0.62" />
+      </MountPoints>
+      <MirroringY>X</MirroringY>
+      <MirroringX>Y</MirroringX>
+      <EdgeType>Light</EdgeType>
+      <DeformationRatio>0.24</DeformationRatio>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+      <Public>true</Public>
+    </Definition>
+    <Definition> <!-- 1x1x1 Blast Door - Inverted Corner -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_1x1x1BlastDoorInvertedCorner</SubtypeId>
+      </Id>
+      <DisplayName>Blast Door 1x1x1 - Inverted Corner</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\BlastDoorCornerInverted.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ArmorInvCorner.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="3" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Small\ArmorInvCornerConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Small\ArmorInvCornerConstruction_2.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Left" StartX="0.1" StartY="0.0" EndX="0.9" EndY="0.6" />
+        <MountPoint Side="Left" StartX="0.3" StartY="0.6" EndX="0.7" EndY="1.0" />
+        <MountPoint Side="Top" StartX="0.0" StartY="0.3" EndX="0.4" EndY="0.7" />
+        <MountPoint Side="Top" StartX="0.4" StartY="0.1" EndX="1.0" EndY="0.9" />
+        <MountPoint Side="Right" StartX="0.1" StartY="0.0" EndX="0.9" EndY="1.0" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.1" EndX="1.0" EndY="0.9" />
+      </MountPoints>
+      <MirroringY>X</MirroringY>
+      <MirroringX>Y</MirroringX>
+      <EdgeType>Light</EdgeType>
+      <DeformationRatio>0.24</DeformationRatio>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+      <Public>true</Public>
+    </Definition>
+    <Definition> <!-- 1x1x1 Blast Door - Side -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_1x1x1BlastDoorSide</SubtypeId>
+      </Id>
+      <DisplayName>Blast Door 1x1x1 - Side</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\ArmorSide.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ArmorSide.mwm</Model>
+      <UseModelIntersection>true</UseModelIntersection>
+      <Components>
+        <Component Subtype="SteelPlate" Count="3" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Small\ArmorSideConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Small\ArmorSideConstruction_2.mwm" />
+      </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Right" StartX="0.1" StartY="0.0" EndX="0.9" EndY="0.6" />
+        <MountPoint Side="Right" StartX="0.3" StartY="0.6" EndX="0.7" EndY="1.0" />
+        <MountPoint Side="Left" StartX="0.1" StartY="0.0" EndX="0.9" EndY="0.6" />
+        <MountPoint Side="Left" StartX="0.3" StartY="0.6" EndX="0.7" EndY="1.0" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.1" EndX="1.0" EndY="0.9" />
+        <MountPoint Side="Top" StartX="0.0" StartY="0.38" EndX="1.0" EndY="0.62" />
+      </MountPoints>
+      <MirroringY>X</MirroringY>
+      <EdgeType>Light</EdgeType>
+      <DeformationRatio>0.24</DeformationRatio>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <DisassembleRatio>3</DisassembleRatio>
+      <Public>true</Public>
+    </Definition>
+<!-- blast doors end -->
   </CubeBlocks>
 </Definitions>
