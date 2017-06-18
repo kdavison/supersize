@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <CubeBlocks>
+  <!-- TODO: figure out deformation issue -->
 <!-- RIGID blocks start -->
 <!-- Vanilla 1x1x1 Armor Blocks -->
     <Definition> <!-- 1x1x1 Armor - Cube -->
@@ -3665,10 +3666,10 @@
       <BlockTopology>TriangleMesh</BlockTopology>
       <Model>Models\InteriorWall_2_2_2_supersize.mwm</Model>
       <Components>
-        <Component Subtype="InteriorPlate" Count="20" />
-        <Component Subtype="Construction" Count="8" />
-        <Component Subtype="InteriorPlate" Count="5" />
-        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="InteriorPlate" Count="8" />
+        <Component Subtype="Construction" Count="3" />
+        <Component Subtype="InteriorPlate" Count="2" />
+        <Component Subtype="Construction" Count="1" />
       </Components>
       <CriticalComponent Subtype="Construction" Index="0" />
       <BuildProgressModels>
@@ -3690,6 +3691,61 @@
         </BlockVariant>
       </BlockVariants>
     </Definition>
+    <Definition> <!-- 2x2x2 Light Armor - Cube -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_2x2x2LightArmorCube</SubtypeId>
+      </Id>
+      <DisplayName>Light Armor 2x2x2</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\light_armor_cube.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <Size x="2" y="2" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Model>Models\LightArmorCube_2_2_2_supersize.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="8" />
+        <Component Subtype="SteelPlate" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\SquarePlateConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\SquarePlateConstruction_2.mwm" RandomOrientation="true" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\SquarePlateConstruction_3.mwm" RandomOrientation="true" />
+      </BuildProgressModels>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+      <NavigationDefinition>Default</NavigationDefinition>
+    </Definition>
+    <Definition> <!-- 2x2x2 Light Armor - Slope 45 -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_2x2x2LightArmorSlope45</SubtypeId>
+      </Id>
+      <DisplayName>Light Armor Slope 2x2x2</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\light_armor_slope.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <Size x="2" y="2" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Model>Models\LightArmorSlope45_2_2_2_supersize.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="8" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\SlopePlateConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\SlopePlateConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\SlopePlateConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
 <!-- 3x3x3 Armor Blocks -->
     <Definition> <!-- 3x3x3 Interior Wall -->
       <Id>
@@ -3704,10 +3760,10 @@
       <BlockTopology>TriangleMesh</BlockTopology>
       <Model>Models\InteriorWall_3_3_supersize.mwm</Model>
       <Components>
-        <Component Subtype="InteriorPlate" Count="20" />
-        <Component Subtype="Construction" Count="8" />
-        <Component Subtype="InteriorPlate" Count="5" />
-        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="InteriorPlate" Count="12" />
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="InteriorPlate" Count="3" />
+        <Component Subtype="Construction" Count="1" />
       </Components>
       <CriticalComponent Subtype="Construction" Index="0" />
       <BuildProgressModels>
@@ -3718,6 +3774,61 @@
       <MirroringY>X</MirroringY>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>20</BuildTimeSeconds>
+    </Definition>
+    <Definition> <!-- 3x3x3 Light Armor - Cube -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_3x3x3LightArmorCube</SubtypeId>
+      </Id>
+      <DisplayName>Light Armor 3x3x3</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\light_armor_cube.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Model>Models\LightArmorCube_3_3_3_supersize.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="12" />
+        <Component Subtype="SteelPlate" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\SquarePlateConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\SquarePlateConstruction_2.mwm" RandomOrientation="true" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\SquarePlateConstruction_3.mwm" RandomOrientation="true" />
+      </BuildProgressModels>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+      <NavigationDefinition>Default</NavigationDefinition>
+    </Definition>
+    <Definition> <!-- 3x3x3 Light Armor - Slope 45 -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_3x3x3LightArmorSlope45</SubtypeId>
+      </Id>
+      <DisplayName>Light Armor Slope 3x3x3</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\light_armor_slope.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Model>Models\LightArmorSlope45_3_3_3_supersize.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="12" />
+        <Component Subtype="SteelPlate" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\SlopePlateConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\SlopePlateConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\SlopePlateConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
     </Definition>
 <!-- 5x5x5 Armor Blocks -->
     <Definition> <!-- 5x5x5 Interior Wall -->
@@ -3747,6 +3858,61 @@
       <MirroringY>X</MirroringY>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>20</BuildTimeSeconds>
+    </Definition>
+    <Definition> <!-- 5x5x5 Light Armor - Cube -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_5x5x5LightArmorCube</SubtypeId>
+      </Id>
+      <DisplayName>Light Armor 5x5x5</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\light_armor_cube.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Model>Models\LightArmorCube_5_5_5_supersize.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\SquarePlateConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\SquarePlateConstruction_2.mwm" RandomOrientation="true" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\SquarePlateConstruction_3.mwm" RandomOrientation="true" />
+      </BuildProgressModels>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+      <NavigationDefinition>Default</NavigationDefinition>
+    </Definition>
+    <Definition> <!-- 5x5x5 Light Armor - Slope 45 -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_5x5x5LightArmorSlope45</SubtypeId>
+      </Id>
+      <DisplayName>Light Armor Slope 5x5x5</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\light_armor_slope.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Model>Models\LightArmorSlope45_5_5_5_supersize.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="20" />
+        <Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\SlopePlateConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\SlopePlateConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\SlopePlateConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
     </Definition>
 <!-- RIGID blocks end -->
 <!-- SMOOTH blocks start -->
