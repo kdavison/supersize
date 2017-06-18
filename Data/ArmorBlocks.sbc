@@ -3836,6 +3836,36 @@
       <BuildTimeSeconds>5</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
     </Definition>
+    <Definition> <!-- 2x2x2 Light Armor - Corner 2x1x1 Tip -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_2x2x2LightArmorCorner2x1x1Tip</SubtypeId>
+      </Id>
+      <DisplayName>Light Armor Corner 2x1x1 Tip 2x2x2</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Corner2x1x1Tip.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Model>Models\LightArmor_Corner2x1x1Tip_2_2_2_supersize.mwm</Model>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Components>
+        <Component Subtype="SteelPlate" Count="3" />
+        <Component Subtype="SteelPlate" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2TipConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2TipConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2TipConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringX>HalfZ</MirroringX>
+      <MirroringY>MinusHalfZ</MirroringY>
+      <MirroringZ>XMinusHalfZ</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
 <!-- 3x3x3 Armor Blocks -->
     <Definition> <!-- 3x3x3 Interior Wall -->
       <Id>
@@ -4008,6 +4038,36 @@
       <MirroringZ>HalfX</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>5</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <Definition> <!-- 3x3x3 Light Armor - Corner 2x1x1 Tip -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_3x3x3LightArmorCorner2x1x1Tip</SubtypeId>
+      </Id>
+      <DisplayName>Light Armor Corner 2x1x1 Tip 3x3x3</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Corner2x1x1Tip.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Model>Models\LightArmor_Corner2x1x1Tip_3_3_3_supersize.mwm</Model>
+      <Size x="2" y="2" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Components>
+        <Component Subtype="SteelPlate" Count="3" />
+        <Component Subtype="SteelPlate" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2TipConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2TipConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2TipConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringX>HalfZ</MirroringX>
+      <MirroringY>MinusHalfZ</MirroringY>
+      <MirroringZ>XMinusHalfZ</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
     </Definition>
 <!-- 5x5x5 Armor Blocks -->
@@ -4293,6 +4353,36 @@
       <MirroringZ>HalfX</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>5</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <Definition> <!-- 5x5x5 Light Armor - Corner 2x1x1 Tip -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_5x5x5LightArmorCorner2x1x1Tip</SubtypeId>
+      </Id>
+      <DisplayName>Light Armor Corner 2x1x1 Tip 5x5x5</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Corner2x1x1Tip.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Model>Models\LightArmor_Corner2x1x1Tip_5_5_5_supersize.mwm</Model>
+      <Size x="3" y="3" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Components>
+        <Component Subtype="SteelPlate" Count="3" />
+        <Component Subtype="SteelPlate" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2TipConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2TipConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2TipConstruction_3.mwm" />
+      </BuildProgressModels>
+      <MirroringX>HalfZ</MirroringX>
+      <MirroringY>MinusHalfZ</MirroringY>
+      <MirroringZ>XMinusHalfZ</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
     </Definition>
 <!-- RIGID blocks end -->
