@@ -5699,18 +5699,18 @@
       <MirroringZ>YMinusHalfZ</MirroringZ>
       <PhysicalMaterial>Glass</PhysicalMaterial>
     </Definition>
-    <Definition> <!-- 5x10 Triangle Window -->
+    <Definition> <!-- 5x10 Triangle Window - Side Right-->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window1x2SideLeft</SubtypeId>
+        <SubtypeId>supersize_Window1x2SideRight</SubtypeId>
       </Id>
-      <DisplayName>5x10 Triangle Window</DisplayName>
+      <DisplayName>5x10 Triangle Window - Right</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2SideLeft.dds</Icon>
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="5" z="10" />
-      <ModelOffset x="-1" y="0" z="0" />
+      <ModelOffset x="-1.0" y="0" z="0" /> <!-- -1.2 to center -->
       <Model>Models\Cubes\Large\Window1x2SideLeft.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="13" />
@@ -5738,18 +5738,18 @@
       <MirroringBlock>supersize_Window1x2SideLeft</MirroringBlock>
       <PhysicalMaterial>Glass</PhysicalMaterial>
     </Definition>
-    <Definition> <!-- 5x10 Triangle Window - Inverted -->
+    <Definition> <!-- 5x10 Triangle Window - Side Left -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window1x2SideLeftInv</SubtypeId>
+        <SubtypeId>supersize_Window1x2SideLeft</SubtypeId>
       </Id>
-      <DisplayName>5x10 Triangle Window - Inverted</DisplayName>
+      <DisplayName>5x10 Triangle Window - Left</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2SideLeftInv.dds</Icon>
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="5" z="10" />
-      <ModelOffset x="-1" y="0" z="0" />
+      <ModelOffset x="-1.45" y="0" z="0" /> <!-- -1.2 to center -->
       <Model>Models\Cubes\Large\Window1x2SideLeftInv.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="13" />
@@ -5765,7 +5765,7 @@
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
         <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="10.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="5.0" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="5.0" EndY="10.0" PropertiesMask="2" />
         <MountPoint Side="Right" StartX="10.0" StartY="0.0" EndX="8.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
         <MountPoint Side="Right" StartX="8.0" StartY="0.0" EndX="6.0" EndY="1.5" PropertiesMask="2" ExclusionMask="1" />
         <MountPoint Side="Right" StartX="6.0" StartY="0.0" EndX="4.0" EndY="2.5" PropertiesMask="2" ExclusionMask="1" />
@@ -5990,18 +5990,17 @@
       <MirroringZ>MinusHalfX</MirroringZ>
       <PhysicalMaterial>Glass</PhysicalMaterial>
     </Definition>
-    <Definition> <!-- Flat 5x10 Window -->
+    <Definition> <!-- 5x10 Flat Window -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window1x2Flat</SubtypeId>
+        <SubtypeId>supersize_5x10FlatWindow</SubtypeId>
       </Id>
       <DisplayName>Flat Window - 5x10</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2Flat.dds</Icon>
-      <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="5" z="10" />
-      <ModelOffset x="-1.2" y="0" z="0" />
+      <ModelOffset x="-1" y="0" z="0" /> <!-- -1.2 to center window -->
       <Model>Models\Cubes\Large\Window1x2Flat.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="15" />
@@ -6016,15 +6015,51 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="2.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="10.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="10.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="10.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringX>Z</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
     </Definition>   
+    <Definition> <!-- 5x10 Flat Window - Inverted -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_5x10FlatWindowInverted</SubtypeId>
+      </Id>
+      <DisplayName>Flat Window - 5x10 Inverted</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Window1x2FlatInv.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="5" z="10" />
+      <ModelOffset x="-1" y="0" z="0" /> <!-- -1.2 to center -->
+      <Model>Models\Cubes\Large\Window1x2FlatInv.mwm</Model>
+      <Components>
+        <Component Subtype="Girder" Count="15" />
+        <Component Subtype="BulletproofGlass" Count="35" />
+        <Component Subtype="BulletproofGlass" Count="15" />
+      </Components>
+      <CriticalComponent Subtype="BulletproofGlass" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x2FlatInvConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x2FlatInvConstruction_2.mwm" />
+      </BuildProgressModels>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="10.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="10.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="10.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
+      </MountPoints>
+      <MirroringX>Z</MirroringX>
+      <PhysicalMaterial>Glass</PhysicalMaterial>
+    </Definition>
     <Definition> <!-- Flat 5x5 Window -->
       <Id>
         <TypeId>CubeBlock</TypeId>
@@ -6036,7 +6071,7 @@
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="5" z="5" />
-      <ModelOffset x="-1.2" y="0" z="0" />
+      <ModelOffset x="-1" y="0" z="0" /> <!-- -1.2 to center in block -->
       <Model>Models\Cubes\Large\Window1x1Flat.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="10" />
@@ -6062,7 +6097,11 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_Window1x2Flat</SubtypeId>
+          <SubtypeId>supersize_5x10FlatWindow</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>supersize_5x10FlatWindowInverted</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
@@ -6084,7 +6123,7 @@
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="15" z="15" />
-      <ModelOffset x="-1.20" y="0" z="0" />
+      <ModelOffset x="-1.0" y="0" z="0" /> <!-- 1.2 to center in block -->
       <Model>Models\Cubes\Large\Window3x3Flat.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="40" />
@@ -6119,7 +6158,7 @@
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="10" z="15" />
-      <ModelOffset x="-1.2" y="0" z="0" />
+      <ModelOffset x="-1.0" y="0" z="0" /> <!-- -1.2 to cente rin block -->
       <Model>Models\Cubes\Large\Window2x3Flat.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="25" />
