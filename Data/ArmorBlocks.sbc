@@ -3652,407 +3652,6 @@
       <BuildTimeSeconds>7</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
     </Definition>
-<!-- 2x2x2 Armor Blocks -->
-    <Definition> <!-- 2x2x2 Interior Wall -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_2x2x2InteriorWall</SubtypeId>
-      </Id>
-      <DisplayName>Interior Wall 2x2x2</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\interior_wall.dds</Icon>
-      <CubeSize>Small</CubeSize>
-      <Size x="2" y="2" z="2" />
-      <ModelOffset x="0" y="0" z="0" />
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\InteriorWall_2_2_2_supersize.mwm</Model>
-      <Components>
-        <Component Subtype="InteriorPlate" Count="8" />
-        <Component Subtype="Construction" Count="3" />
-        <Component Subtype="InteriorPlate" Count="2" />
-        <Component Subtype="Construction" Count="1" />
-      </Components>
-      <CriticalComponent Subtype="Construction" Index="0" />
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\InteriorWallConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\InteriorWallConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\InteriorWallConstruction_3.mwm" />
-      </BuildProgressModels>
-      <MirroringY>X</MirroringY>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>20</BuildTimeSeconds>
-      <BlockVariants>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_3x3x3InteriorWall</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_5x5x5InteriorWall</SubtypeId>
-        </BlockVariant>
-      </BlockVariants>
-    </Definition>
-    <Definition> <!-- 2x2x2 Light Armor - Cube -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_2x2x2LightArmorCube</SubtypeId>
-      </Id>
-      <DisplayName>Light Armor 2x2x2</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\light_armor_cube.dds</Icon>
-      <CubeSize>Small</CubeSize>
-      <Size x="2" y="2" z="2" />
-      <ModelOffset x="0" y="0" z="0" />
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\LightArmorCube_2_2_2_supersize.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="8" />
-        <Component Subtype="SteelPlate" Count="1" />
-      </Components>
-      <CriticalComponent Subtype="SteelPlate" Index="0" />
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\SquarePlateConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\SquarePlateConstruction_2.mwm" RandomOrientation="true" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\SquarePlateConstruction_3.mwm" RandomOrientation="true" />
-      </BuildProgressModels>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>3</BuildTimeSeconds>
-      <DisassembleRatio>2.5</DisassembleRatio>
-      <NavigationDefinition>Default</NavigationDefinition>
-      <BlockVariants>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_2x2x2LightArmorSlope45</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_2x2x2LightArmorCorner</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_2x2x2LightArmorInvertedCorner</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_2x2x2LightArmorCorner2x1x1Base</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_2x2x2LightArmorCorner2x1x1Tip</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_2x2x2LightArmorSlope2x1x1Base</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_2x2x2LightArmorSlope2x1x1Tip</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_2x2x2LightArmorInvertedCorner2x1x1Base</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_2x2x2LightArmorInvertedCorner2x1x1Tip</SubtypeId>
-        </BlockVariant>
-      </BlockVariants>
-    </Definition>
-    <Definition> <!-- 2x2x2 Light Armor - Slope 45 -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_2x2x2LightArmorSlope45</SubtypeId>
-      </Id>
-      <DisplayName>Light Armor Slope 2x2x2</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\light_armor_slope.dds</Icon>
-      <GuiVisible>false</GuiVisible>
-      <Public>false</Public>
-      <CubeSize>Small</CubeSize>
-      <Size x="2" y="2" z="2" />
-      <ModelOffset x="0" y="0" z="0" />
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\LightArmorSlope45_2_2_2_supersize.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="8" />
-        <Component Subtype="SteelPlate" Count="2" />
-      </Components>
-      <CriticalComponent Subtype="SteelPlate" Index="0" />
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\SlopePlateConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\SlopePlateConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\SlopePlateConstruction_3.mwm" />
-      </BuildProgressModels>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>3</BuildTimeSeconds>
-      <DisassembleRatio>2.5</DisassembleRatio>
-    </Definition>
-    <Definition> <!-- 2x2x2 Light Armor - Corner -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_2x2x2LightArmorCorner</SubtypeId>
-      </Id>
-      <DisplayName>Light Armor Corner 2x2x2</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\light_armor_corner.dds</Icon>
-      <GuiVisible>false</GuiVisible>
-      <Public>false</Public>
-      <CubeSize>Small</CubeSize>
-      <Size x="2" y="2" z="2" />
-      <ModelOffset x="0" y="0" z="0" />
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\LightArmorCorner_2_2_2_supersize.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="1" />
-        <Component Subtype="SteelPlate" Count="1" />
-      </Components>
-      <CriticalComponent Subtype="SteelPlate" Index="0" />
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\FaceTrianglePlateConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\FaceTrianglePlateConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\FaceTrianglePlateConstruction_3.mwm" />
-      </BuildProgressModels>
-      <PhysicsOption>Convex</PhysicsOption>
-      <MirroringX>YHalfX</MirroringX>
-      <MirroringY>ZHalfY</MirroringY>
-      <MirroringZ>YHalfY</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>2</BuildTimeSeconds>
-      <DisassembleRatio>2.5</DisassembleRatio>
-    </Definition>
-    <Definition> <!-- 2x2x2 Light Armor - Inverted Corner -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_2x2x2LightArmorInvertedCorner</SubtypeId>
-      </Id>
-      <DisplayName>Light Armor Inverted Corner 2x2x2</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\light_armor_inv_corner.dds</Icon>
-      <GuiVisible>false</GuiVisible>
-      <Public>false</Public>
-      <CubeSize>Small</CubeSize>
-      <Size x="2" y="2" z="2" />
-      <ModelOffset x="0" y="0" z="0" />
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\LightArmorInvCorner_2_2_2_supersize.mwm</Model>
-      <Components>
-        <Component Subtype="SteelPlate" Count="10" />
-        <Component Subtype="SteelPlate" Count="3" />
-      </Components>
-      <CriticalComponent Subtype="SteelPlate" Index="0" />
-      <PhysicsOption>Convex</PhysicsOption>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\InvFaceTrianglePlateConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\InvFaceTrianglePlateConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\InvFaceTrianglePlateConstruction_3.mwm" />
-      </BuildProgressModels>
-      <MirroringX>YHalfX</MirroringX>
-      <MirroringY>ZHalfY</MirroringY>
-      <MirroringZ>YHalfZ</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>7</BuildTimeSeconds>
-      <DisassembleRatio>2.5</DisassembleRatio>
-    </Definition>
-    <Definition> <!-- 2x2x2 Light Armor - Corner 2x1x1 Base -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_2x2x2LightArmorCorner2x1x1Base</SubtypeId>
-      </Id>
-      <DisplayName>Light Armor Corner 2x1x1 Base 2x2x2</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\Corner2x1x1Base.dds</Icon>
-      <GuiVisible>false</GuiVisible>
-      <Public>false</Public>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\LightArmor_Corner2x1x1Base_2_2_2_supersize.mwm</Model>
-      <Size x="2" y="2" z="2" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Components>
-        <Component Subtype="SteelPlate" Count="4" />
-        <Component Subtype="SteelPlate" Count="1" />
-      </Components>
-      <CriticalComponent Subtype="SteelPlate" Index="0" />
-      <PhysicsOption>Convex</PhysicsOption>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_3.mwm" />
-      </BuildProgressModels>
-	<MountPoints>
-		<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00" />
-		<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00" />
-		<MountPoint Side="Right" StartX="1.00" StartY="0.00" EndX="2.00" EndY="1.00" />
-		<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="2.00" EndY="2.00" />
-	</MountPoints>
-	<MirroringX>YHalfX</MirroringX>
-	<MirroringY>MinusHalfX</MirroringY>
-	<MirroringZ>HalfX</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>5</BuildTimeSeconds>
-      <DisassembleRatio>2.5</DisassembleRatio>
-    </Definition>
-    <Definition> <!-- 2x2x2 Light Armor - Corner 2x1x1 Tip -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_2x2x2LightArmorCorner2x1x1Tip</SubtypeId>
-      </Id>
-      <DisplayName>Light Armor Corner 2x1x1 Tip 2x2x2</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\Corner2x1x1Tip.dds</Icon>
-      <GuiVisible>false</GuiVisible>
-      <Public>false</Public>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\LightArmor_Corner2x1x1Tip_2_2_2_supersize.mwm</Model>
-      <Size x="1" y="1" z="2" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Components>
-        <Component Subtype="SteelPlate" Count="3" />
-        <Component Subtype="SteelPlate" Count="1" />
-      </Components>
-      <CriticalComponent Subtype="SteelPlate" Index="0" />
-      <PhysicsOption>Convex</PhysicsOption>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2TipConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2TipConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2TipConstruction_3.mwm" />
-      </BuildProgressModels>
-      <MountPoints>
-        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00" />
-        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="2.00" EndY="1.00" />
-        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="2.00" />
-      </MountPoints>
-      <MirroringX>MinusHalfZ</MirroringX>
-      <MirroringY>HalfZ</MirroringY>
-      <MirroringZ>XHalfZ</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>3</BuildTimeSeconds>
-      <DisassembleRatio>2.5</DisassembleRatio>
-    </Definition>
-    <Definition> <!-- 2x2x2 Light Armor - Slope 2x1x1 Base -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_2x2x2LightArmorSlope2x1x1Base</SubtypeId>
-      </Id>
-      <DisplayName>Light Armor Slope 2x1x1 2x2x2</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\Slope2x1x1Base.dds</Icon>
-      <GuiVisible>false</GuiVisible>
-      <Public>false</Public>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\ArmorSlope2x1x1Base_2_2_2_supersize.mwm</Model>
-      <Size x="2" y="2" z="2" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Components>
-        <Component Subtype="SteelPlate" Count="12" />
-        <Component Subtype="SteelPlate" Count="3" />
-      </Components>
-      <CriticalComponent Subtype="SteelPlate" Index="0" />
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Slope2BaseConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Slope2BaseConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Slope2BaseConstruction_3.mwm" />
-      </BuildProgressModels>
-      <PhysicsOption>Convex</PhysicsOption>
-      <MirroringX>HalfZ</MirroringX>
-      <MirroringY>MinusHalfZ</MirroringY>
-      <MirroringZ>XMinusHalfZ</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>6</BuildTimeSeconds>
-      <DisassembleRatio>2.5</DisassembleRatio>
-    </Definition>
-    <Definition> <!-- 2x2x2 Light Armor - Slope 2x1x1 Tip -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_2x2x2LightArmorSlope2x1x1Tip</SubtypeId>
-      </Id>
-      <DisplayName>Light Armor Slope 2x1x1 Tip 2x2x2</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\Slope2x1x1Tip.dds</Icon>
-      <GuiVisible>false</GuiVisible>
-      <Public>false</Public>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\ArmorSlope2x1x1Tip_2_2_2_supersize.mwm</Model>
-      <CubeSize>Small</CubeSize>
-      <Size x="2" y="1" z="2" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Components>
-        <Component Subtype="SteelPlate" Count="1" />
-        <Component Subtype="SteelPlate" Count="1" />
-      </Components>
-      <CriticalComponent Subtype="SteelPlate" Index="0" />
-      <PhysicsOption>Convex</PhysicsOption>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2TipConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2TipConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2TipConstruction_3.mwm" />
-      </BuildProgressModels>
-      <MirroringX>HalfZ</MirroringX>
-      <MirroringY>MinusHalfZ</MirroringY>
-      <MirroringZ>XMinusHalfZ</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>3</BuildTimeSeconds>
-      <DisassembleRatio>2.5</DisassembleRatio>
-    </Definition>
-    <Definition> <!-- 2x2x2 Light Armor - Inverted Corner 2x1x1 Tip -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_2x2x2LightArmorInvertedCorner2x1x1Tip</SubtypeId>
-      </Id>
-      <DisplayName>Light Armor Inverted Corner 2x1x1 Tip 2x2x2</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\InvCorner2x1x1Tip.dds</Icon>
-      <GuiVisible>false</GuiVisible>
-      <Public>false</Public>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\ArmorInvertedCorner2x1x1Tip_2_2_2_supersize.mwm</Model>
-      <Size x="3" y="3" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Components>
-        <Component Subtype="SteelPlate" Count="6" />
-        <Component Subtype="SteelPlate" Count="1" />
-      </Components>
-      <CriticalComponent Subtype="SteelPlate" Index="0" />
-      <PhysicsOption>Convex</PhysicsOption>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\InvCorner2TipConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\InvCorner2TipConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\InvCorner2TipConstruction_3.mwm" />
-      </BuildProgressModels>
-      <MirroringX>HalfZ</MirroringX>
-      <MirroringY>MinusHalfZ</MirroringY>
-      <MirroringZ>XMinusHalfZ</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>7</BuildTimeSeconds>
-      <DisassembleRatio>2.5</DisassembleRatio>
-    </Definition>
-    <Definition> <!-- 2x2x2 Light Armor - Inverted Corner 2x1x1 Base -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_2x2x2LightArmorInvertedCorner2x1x1Base</SubtypeId>
-      </Id>
-      <DisplayName>Light Armor Inverted Corner 2x1x1 Base 2x2x2</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\InvCorner2x1x1Base.dds</Icon>
-      <GuiVisible>false</GuiVisible>
-      <Public>false</Public>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\ArmorInvertedCorner2x1x1Base_2x2x2_supersize.mwm</Model>
-      <Size x="2" y="2" z="2" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Components>
-        <Component Subtype="SteelPlate" Count="8" />
-        <Component Subtype="SteelPlate" Count="2" />
-      </Components>
-      <CriticalComponent Subtype="SteelPlate" Index="0" />
-      <PhysicsOption>Convex</PhysicsOption>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\InvCorner2BaseConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\InvCorner2BaseConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\InvCorner2BaseConstruction_3.mwm" />
-      </BuildProgressModels>
-      <MirroringX>HalfZ</MirroringX>
-      <MirroringY>MinusHalfZ</MirroringY>
-      <MirroringZ>XMinusHalfZ</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>7</BuildTimeSeconds>
-      <DisassembleRatio>2.5</DisassembleRatio>
-    </Definition>
 <!-- 3x3x3 Armor Blocks -->
     <Definition> <!-- 3x3x3 Interior Wall -->
       <Id>
@@ -4171,7 +3770,14 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\SlopePlateConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\SlopePlateConstruction_3.mwm" />
       </BuildProgressModels>
-      <MirroringY>Z</MirroringY>
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+      </MountPoints>
+      <MirroringX>None</MirroringX>
+      <MirroringY>HalfX</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>5</BuildTimeSeconds>
@@ -4201,10 +3807,15 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\FaceTrianglePlateConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\FaceTrianglePlateConstruction_3.mwm" />
       </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+      </MountPoints>
       <PhysicsOption>Convex</PhysicsOption>
-      <MirroringX>YHalfX</MirroringX>
-      <MirroringY>ZHalfY</MirroringY>
-      <MirroringZ>YHalfY</MirroringZ>
+      <MirroringX>None</MirroringX>
+      <MirroringY>HalfZ</MirroringY>
+      <MirroringZ>None</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>3</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -4222,7 +3833,7 @@
       <Size x="3" y="3" z="3" />
       <ModelOffset x="0" y="0" z="0" />
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\LightArmorInvCorner_3_3_3_supersize.mwm</Model>
+      <Model>Models\LightArmorInvertedCorner_3_3_3_supersize.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="10" />
         <Component Subtype="SteelPlate" Count="3" />
@@ -4234,9 +3845,17 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\InvFaceTrianglePlateConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\InvFaceTrianglePlateConstruction_3.mwm" />
       </BuildProgressModels>
-      <MirroringX>YHalfX</MirroringX>
-      <MirroringY>ZHalfY</MirroringY>
-      <MirroringZ>YHalfZ</MirroringZ>
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+      </MountPoints>
+      <MirroringX>HalfY</MirroringX>
+      <MirroringY>HalfX</MirroringY>
+      <MirroringZ>MinusHalfX</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>7</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -4327,7 +3946,7 @@
       <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\ArmorSlope2x1x1Base_3_3_3_supersize.mwm</Model>
+      <Model>Models\LightArmorSlope2x1x1Base_3_3_3_supersize.mwm</Model>
       <Size x="3" y="3" z="3" />
       <ModelOffset x="0" y="0" z="0" />
       <Components>
@@ -4340,9 +3959,16 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Slope2BaseConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Slope2BaseConstruction_3.mwm" />
       </BuildProgressModels>
-      <PhysicsOption>Convex</PhysicsOption>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.50" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+      </MountPoints>
+      <MirroringX>Y</MirroringX>
+      <MirroringY>X</MirroringY>
+      <MirroringZ>None</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>6</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -4357,10 +3983,10 @@
       <GuiVisible>false</GuiVisible>
       <Public>false</Public>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\ArmorSlope2x1x1Tip_3_3_3_supersize.mwm</Model>
+      <Model>Models\LightArmorSlope2x1x1Tip_3_3_3_supersize.mwm</Model>
       <CubeSize>Small</CubeSize>
       <Size x="3" y="2" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
+      <ModelOffset x="0" y="0.25" z="0" />
       <Components>
         <Component Subtype="SteelPlate" Count="2" />
         <Component Subtype="SteelPlate" Count="1" />
@@ -4372,9 +3998,9 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2TipConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2TipConstruction_3.mwm" />
       </BuildProgressModels>
-      <MirroringX>HalfZ</MirroringX>
-      <MirroringY>MinusHalfZ</MirroringY>
-      <MirroringZ>XMinusHalfZ</MirroringZ>
+      <MirroringX>None</MirroringX>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>3</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -4390,7 +4016,7 @@
       <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\ArmorInvertedCorner2x1x1Tip_3_3_3_supersize.mwm</Model>
+      <Model>Models\LightArmorInvertedCorner2x1x1Tip_3_3_3_supersize.mwm</Model>
       <Size x="3" y="3" z="3" />
       <ModelOffset x="0" y="0" z="0" />
       <Components>
@@ -4404,10 +4030,17 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\InvCorner2TipConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\InvCorner2TipConstruction_3.mwm" />
       </BuildProgressModels>
-      <MirroringY>Z</MirroringY>
-<!--      <MirroringX>HalfZ</MirroringX>
-      <MirroringY>MinusHalfZ</MirroringY>
-      <MirroringZ>XMinusHalfZ</MirroringZ> -->
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.50" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.50" />
+      </MountPoints>
+      <MirroringX>ZHalfX</MirroringX>
+      <MirroringY>HalfX</MirroringY>
+      <MirroringZ>MinusHalfX</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>7</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -4423,7 +4056,7 @@
       <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\ArmorInvertedCorner2x1x1Base_3x3x3_supersize.mwm</Model>
+      <Model>Models\LightArmorInvertedCorner2x1x1Base_3_3_3_supersize.mwm</Model>
       <Size x="3" y="3" z="3" />
       <ModelOffset x="0" y="0" z="0" />
       <Components>
@@ -4437,9 +4070,17 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\InvCorner2BaseConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\InvCorner2BaseConstruction_3.mwm" />
       </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+      </MountPoints>
       <MirroringX>HalfZ</MirroringX>
       <MirroringY>MinusHalfZ</MirroringY>
-      <MirroringZ>XMinusHalfZ</MirroringZ>
+      <MirroringZ>YHalfZ</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>7</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -4487,7 +4128,7 @@
       <Model>Models\LightArmorCube_5_5_5_supersize.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="20" />
-        <Component Subtype="SteelPlate" Count="5" />
+        <Component Subtype="SteelPlate" Count="10" />
       </Components>
       <CriticalComponent Subtype="SteelPlate" Index="0" />
       <BuildProgressModels>
@@ -4495,10 +4136,11 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\SquarePlateConstruction_2.mwm" RandomOrientation="true" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\SquarePlateConstruction_3.mwm" RandomOrientation="true" />
       </BuildProgressModels>
+      <ShowEdges>true</ShowEdges>
+      <DeformationRatio>0.32</DeformationRatio>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
-      <NavigationDefinition>Default</NavigationDefinition>
       <BlockVariants>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
@@ -4562,9 +4204,15 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\SlopePlateConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\SlopePlateConstruction_3.mwm" />
       </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+      </MountPoints>
       <MirroringX>None</MirroringX>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>X</MirroringZ>
+      <MirroringY>HalfX</MirroringY>
+      <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -4593,10 +4241,14 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\FaceTrianglePlateConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\FaceTrianglePlateConstruction_3.mwm" />
       </BuildProgressModels>
-      <PhysicsOption>Convex</PhysicsOption>
-      <MirroringX>YHalfX</MirroringX>
-      <MirroringY>ZHalfY</MirroringY>
-      <MirroringZ>YHalfY</MirroringZ>
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+      </MountPoints>
+      <MirroringX>None</MirroringX>
+      <MirroringY>HalfZ</MirroringY>
+      <MirroringZ>None</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>3</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -4614,7 +4266,7 @@
       <Size x="5" y="5" z="5" />
       <ModelOffset x="0" y="0" z="0" />
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\LightArmorInvCorner_5_5_5_supersize.mwm</Model>
+      <Model>Models\LightArmorInvertedCorner_5_5_5_supersize.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="16" />
         <Component Subtype="SteelPlate" Count="5" />
@@ -4626,9 +4278,17 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\InvFaceTrianglePlateConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\InvFaceTrianglePlateConstruction_3.mwm" />
       </BuildProgressModels>
-      <MirroringX>YHalfX</MirroringX>
-      <MirroringY>ZHalfY</MirroringY>
-      <MirroringZ>YHalfZ</MirroringZ>
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+      </MountPoints>
+      <MirroringX>HalfY</MirroringX>
+      <MirroringY>HalfX</MirroringY>
+      <MirroringZ>MinusHalfX</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>7</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -4719,7 +4379,7 @@
       <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\ArmorSlope2x1x1Base_5_5_5_supersize.mwm</Model>
+      <Model>Models\LightArmorSlope2x1x1Base_5_5_5_supersize.mwm</Model>
       <Size x="5" y="5" z="5" />
       <ModelOffset x="0" y="0" z="0" />
       <Components>
@@ -4732,9 +4392,17 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Slope2BaseConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Slope2BaseConstruction_3.mwm" />
       </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.50" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+      </MountPoints>
       <PhysicsOption>Convex</PhysicsOption>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
+      <MirroringX>Y</MirroringX>
+      <MirroringY>X</MirroringY>
+      <MirroringZ>None</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -4749,10 +4417,10 @@
       <GuiVisible>false</GuiVisible>
       <Public>false</Public>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\ArmorSlope2x1x1Tip_5_5_5_supersize.mwm</Model>
+      <Model>Models\LightArmorSlope2x1x1Tip_5_5_5_supersize.mwm</Model>
       <CubeSize>Small</CubeSize>
       <Size x="5" y="3" z="5" />
-      <ModelOffset x="0" y="0" z="0" />
+      <ModelOffset x="0" y="0.5" z="0" />
       <Components>
         <Component Subtype="SteelPlate" Count="3" />
         <Component Subtype="SteelPlate" Count="1" />
@@ -4764,9 +4432,9 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2TipConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2TipConstruction_3.mwm" />
       </BuildProgressModels>
-      <MirroringX>HalfZ</MirroringX>
-      <MirroringY>MinusHalfZ</MirroringY>
-      <MirroringZ>XMinusHalfZ</MirroringZ>
+      <MirroringX>None</MirroringX>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>3</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -4782,7 +4450,7 @@
       <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\ArmorInvertedCorner2x1x1Tip_5_5_5_supersize.mwm</Model>
+      <Model>Models\LightArmorInvertedCorner2x1x1Tip_5_5_5_supersize.mwm</Model>
       <Size x="5" y="5" z="5" />
       <ModelOffset x="0" y="0" z="0" />
       <Components>
@@ -4796,9 +4464,17 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\InvCorner2TipConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\InvCorner2TipConstruction_3.mwm" />
       </BuildProgressModels>
-      <MirroringX>HalfZ</MirroringX>
-      <MirroringY>MinusHalfZ</MirroringY>
-      <MirroringZ>XMinusHalfZ</MirroringZ>
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.50" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="5.00" EndY="2.50" />
+      </MountPoints>
+      <MirroringX>ZHalfX</MirroringX>
+      <MirroringY>HalfX</MirroringY>
+      <MirroringZ>MinusHalfX</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>7</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -4814,7 +4490,7 @@
       <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\ArmorInvertedCorner2x1x1Base_5x5x5_supersize.mwm</Model>
+      <Model>Models\LightArmorInvertedCorner2x1x1Base_5_5_5_supersize.mwm</Model>
       <Size x="5" y="5" z="5" />
       <ModelOffset x="0" y="0" z="0" />
       <Components>
@@ -4828,9 +4504,17 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\InvCorner2BaseConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\InvCorner2BaseConstruction_3.mwm" />
       </BuildProgressModels>
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+      </MountPoints>
       <MirroringX>HalfZ</MirroringX>
       <MirroringY>MinusHalfZ</MirroringY>
-      <MirroringZ>XMinusHalfZ</MirroringZ>
+      <MirroringZ>YHalfZ</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>7</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>

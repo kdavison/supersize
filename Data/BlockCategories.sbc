@@ -6,6 +6,18 @@
         <TypeId>GuiBlockCategoryDefinition</TypeId>
         <SubtypeId/>
       </Id>
+      <DisplayName>5x5x5 Blocks</DisplayName>
+      <Name>5x5x5 Blocks</Name>
+      <Public>false</Public>
+      <ItemIds>
+      </ItemIds>
+    </Category>
+<!-- old categories -->
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
       <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
       <Name>LargeBlocks</Name>
       <Public>false</Public>

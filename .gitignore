@@ -1,7 +1,5 @@
-blends/block_2_2/*.xml
-blends/block_3_3/*.xml
-blends/block_5_5/*.xml
+blends/exported_blocks
 *.log
 *_Small.mwm
 *_Small.fbx
-*.blend1
+modinfo.sbmi

@@ -1257,7 +1257,7 @@
     </Definition>
 <!--Atmospheric Thrusters End -->
 <!--Gyroscope Start-->
-    <Definition xsi:type="MyObjectBuilder_GyroDefinition">
+    <Definition xsi:type="MyObjectBuilder_GyroDefinition"> <!-- 5x5x5 Gyroscope -->
       <Id>
         <TypeId>Gyro</TypeId>
         <SubtypeId>supersize_LargeGryoscope</SubtypeId>
@@ -1305,7 +1305,7 @@
       <DamagedSound>ParticleHeavyMech</DamagedSound>
       <EmissiveColorPreset>Extended</EmissiveColorPreset>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_GyroDefinition">
+    <Definition xsi:type="MyObjectBuilder_GyroDefinition"> <!-- 1x1x1 Gyroscope -->
       <Id>
         <TypeId>Gyro</TypeId>
         <SubtypeId>supersize_SmallGyroscope</SubtypeId>
@@ -2144,7 +2144,7 @@
     </Definition>
 <!-- Sensor Stop -->
 <!-- Door Start -->
-    <Definition xsi:type="MyObjectBuilder_DoorDefinition">
+    <Definition xsi:type="MyObjectBuilder_DoorDefinition"> <!-- 5x5x3 Door -->
       <Id>
         <TypeId>Door</TypeId>
         <SubtypeId>supersize_LargeBlockDoor</SubtypeId>
@@ -2201,7 +2201,7 @@
         </BlockVariant>
       </BlockVariants>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_AirtightSlideDoorDefinition">
+    <Definition xsi:type="MyObjectBuilder_AirtightSlideDoorDefinition"> <!-- 5x5x5 Airlock Door -->
       <Id>
         <TypeId>AirtightSlideDoor</TypeId>
         <SubtypeId>supersize_LargeBlockSlideDoor</SubtypeId>
@@ -2263,7 +2263,7 @@
     </Definition>
 <!-- Door End -->
 <!-- Airtight Hangar Doors Start -->
-    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition">
+    <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition"> <!-- 5x15x5 Hangar Door -->
       <Id>
         <TypeId>AirtightHangarDoor</TypeId>
         <SubtypeId>supersize_LargeAirtightHangarDoor</SubtypeId>
@@ -2898,6 +2898,10 @@
         </BlockVariant>
         <BlockVariant>
           <TypeId>Cockpit</TypeId>
+          <SubtypeId>supersize_2x3x2ControlSeat</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>Cockpit</TypeId>
           <SubtypeId>supersize_2x3x2PassengerSeat</SubtypeId>
         </BlockVariant>
         <BlockVariant>
@@ -2921,8 +2925,8 @@
       <public>false</public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="4" z="4" />
-      <ModelOffset x="0" y="0" z="0" />
+      <Size x="3" y="1" z="4" />
+      <ModelOffset x="0" y="1.0" z="0" />
       <Model>Models\Cubes\Large\CockpitOpen.mwm</Model>
       <PrimarySound>BlockCockpitFlightSeat</PrimarySound>
       <CharacterAnimation>cockpit23</CharacterAnimation>
@@ -3701,7 +3705,6 @@
       <DisplayName>Small Corner LCD</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Corner_LCD_1.dds</Icon>
       <GuiVisible>false</GuiVisible>
-      <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -3861,7 +3864,7 @@
     </Definition>
 <!-- LCD Strip End -->
 <!-- Gas Tanks Start -->
-    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition"> <!-- 3x3x3 Oxygen Tank -->
       <Id>
         <TypeId>OxygenTank</TypeId>
         <SubtypeId>supersize_OxygenTankSmall</SubtypeId>
@@ -3934,7 +3937,7 @@
         </BlockVariant>
       </BlockVariants>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition"> <!-- 5x10x5 Oxygen Tank -->
       <Id>
         <TypeId>OxygenTank</TypeId>
         <SubtypeId>supersize_LargeOxygenTank</SubtypeId>
@@ -4005,7 +4008,7 @@
       <DestroySound>WepSmallMissileExpl</DestroySound>
       <EmissiveColorPreset>Extended</EmissiveColorPreset>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition"> <!-- 15x15x15 Hydrogen Tank -->
       <Id>
         <TypeId>OxygenTank</TypeId>
         <SubtypeId>supersize_LargeHydrogenTank</SubtypeId>
@@ -4074,7 +4077,7 @@
       <DamagedSound>ParticleWeapExpl</DamagedSound>
       <EmissiveColorPreset>Extended</EmissiveColorPreset>
     </Definition>  
-    <Definition xsi:type="MyObjectBuilder_GasTankDefinition">
+    <Definition xsi:type="MyObjectBuilder_GasTankDefinition"> <!-- 5x5x5 Hydrogren Tank -->
       <Id>
         <TypeId>OxygenTank</TypeId>
         <SubtypeId>supersize_SmallHydrogenTank</SubtypeId>
@@ -4592,10 +4595,10 @@
     </Definition>
 <!-- Upgrade Modules End -->
 <!-- Cargo Containers Start -->
-    <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+    <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition"> <!-- 1x1x1 Container -->
       <Id>
         <TypeId>CargoContainer</TypeId>
-        <SubtypeId>supersize_SmallBlockSmallContainer</SubtypeId>
+        <SubtypeId>SmallBlockSmallContainer_supersize</SubtypeId>
       </Id>
       <DisplayName>Small Cargo Container</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container.dds</Icon>
@@ -4632,29 +4635,34 @@
       <EdgeType>Light</EdgeType>
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <InventorySize>
+        <X>0.5</X>
+        <Y>0.5</Y>
+        <Z>0.5</Z>
+      </InventorySize>
       <BlockVariants>
         <BlockVariant>
           <TypeId>CargoContainer</TypeId>
-          <SubtypeId>supersize_SmallBlockMediumContainer</SubtypeId>
+          <SubtypeId>SmallBlockMediumContainer_supersize</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>CargoContainer</TypeId>
-          <SubtypeId>supersize_SmallBlockLargeContainer</SubtypeId>
+          <SubtypeId>SmallBlockLargeContainer_supersize</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>CargoContainer</TypeId>
-          <SubtypeId>supersize_LargeBlockSmallContainer</SubtypeId>
+          <SubtypeId>LargeBlockSmallContainer_supersize</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>CargoContainer</TypeId>
-          <SubtypeId>supersize_LargeBlockLargeContainer</SubtypeId>
+          <SubtypeId>LargeBlockLargeContainer_supersize</SubtypeId>
         </BlockVariant>
       </BlockVariants>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+    <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition"> <!-- 3x3x3 Container -->
       <Id>
         <TypeId>CargoContainer</TypeId>
-        <SubtypeId>supersize_SmallBlockMediumContainer</SubtypeId>
+        <SubtypeId>SmallBlockMediumContainer_supersize</SubtypeId>
       </Id>
       <DisplayName>Medium Cargo Container</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container_medium.dds</Icon>
@@ -4691,11 +4699,16 @@
       <BuildTimeSeconds>14</BuildTimeSeconds>
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <InventorySize>
+        <X>1.5</X>
+        <Y>1.5</Y>
+        <Z>1.5</Z>
+      </InventorySize>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+    <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition"> <!-- 5x5x5 Container 1 -->
       <Id>
         <TypeId>CargoContainer</TypeId>
-        <SubtypeId>supersize_SmallBlockLargeContainer</SubtypeId>
+        <SubtypeId>SmallBlockLargeContainer_supersize</SubtypeId>
       </Id>
       <DisplayName>Medium Cargo Container 2</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container_large.dds</Icon>
@@ -4731,11 +4744,16 @@
       <BuildTimeSeconds>25</BuildTimeSeconds>
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <InventorySize>
+        <X>2.5</X>
+        <Y>2.5</Y>
+        <Z>2.5</Z>
+      </InventorySize>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+    <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition"> <!-- 5x5x5 Container 2 -->
       <Id>
         <TypeId>CargoContainer</TypeId>
-        <SubtypeId>supersize_LargeBlockSmallContainer</SubtypeId>
+        <SubtypeId>LargeBlockSmallContainer_supersize</SubtypeId>
       </Id>
       <DisplayName>Large Cargo Container</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container.dds</Icon>
@@ -4776,11 +4794,16 @@
       <BuildTimeSeconds>15</BuildTimeSeconds>
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <InventorySize>
+        <X>2.5</X>
+        <Y>2.5</Y>
+        <Z>2.5</Z>
+      </InventorySize>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition">
+    <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition"> <!-- 15x15x15 Container -->
       <Id>
         <TypeId>CargoContainer</TypeId>
-        <SubtypeId>supersize_LargeBlockLargeContainer</SubtypeId>
+        <SubtypeId>LargeBlockLargeContainer_supersize</SubtypeId>
       </Id>
       <DisplayName>Huge Cargo Container</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container_large.dds</Icon>
@@ -4821,10 +4844,15 @@
       <BuildTimeSeconds>45</BuildTimeSeconds>
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <InventorySize>
+        <X>7.5</X>
+        <Y>7.5</Y>
+        <Z>7.5</Z>
+      </InventorySize>
     </Definition>
 <!-- Cargo Containers End -->
 <!-- Refineries Start -->
-    <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+    <Definition xsi:type="MyObjectBuilder_RefineryDefinition"> <!-- 10x20x10 Refinery -->
       <Id>
         <TypeId>Refinery</TypeId>
         <SubtypeId>supersize_LargeRefinery</SubtypeId>
@@ -4894,7 +4922,7 @@
         </BlockVariant>
       </BlockVariants>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_RefineryDefinition">
+    <Definition xsi:type="MyObjectBuilder_RefineryDefinition"> <!-- 5x10x5 Blast Furnace -->
       <Id>
         <TypeId>Refinery</TypeId>
         <SubtypeId>supersize_LargeBlastFurnace</SubtypeId>
@@ -4950,7 +4978,7 @@
     </Definition>
 <!-- Refineries End -->
 <!-- Assembler Start -->
-    <Definition xsi:type="MyObjectBuilder_AssemblerDefinition">
+    <Definition xsi:type="MyObjectBuilder_AssemblerDefinition"> <!-- 5x5x10 Assembler -->
       <Id>
         <TypeId>Assembler</TypeId>
         <SubtypeId>supersize_LargeAssembler</SubtypeId>
@@ -5012,7 +5040,7 @@
     </Definition>
 <!-- Assembler End -->
 <!-- Programming Block Start -->
-    <Definition xsi:type="MyObjectBuilder_ProgrammableBlockDefinition">
+    <Definition xsi:type="MyObjectBuilder_ProgrammableBlockDefinition"> <!-- 5x5x5 Programming Block -->
       <Id>
         <TypeId>MyProgrammableBlock</TypeId>
         <SubtypeId>supersize_LargeProgrammableBlock</SubtypeId>
@@ -5053,7 +5081,7 @@
       <DamagedSound>ParticleElectrical</DamagedSound>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_ProgrammableBlockDefinition">
+    <Definition xsi:type="MyObjectBuilder_ProgrammableBlockDefinition"> <!-- 1x1x1 Programming Block -->
       <Id>
         <TypeId>MyProgrammableBlock</TypeId>
         <SubtypeId>supersize_SmallProgrammableBlock</SubtypeId>
@@ -5749,7 +5777,7 @@
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="5" z="10" />
-      <ModelOffset x="-1.45" y="0" z="0" /> <!-- -1.2 to center -->
+      <ModelOffset x="-1.4" y="0" z="0" /> <!-- -1.2 to center -->
       <Model>Models\Cubes\Large\Window1x2SideLeftInv.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="13" />
@@ -6015,11 +6043,15 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
+        <MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="1.0" EndY="10.0" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="10.0" />
+<!--
         <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="5.0" PropertiesMask="2" />
         <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="5.0" PropertiesMask="2" />
         <MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="10.0" EndY="1.0" PropertiesMask="2" />
         <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="10.0" EndY="1.0" PropertiesMask="2" />
         <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="10.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
+-->
       </MountPoints>
       <MirroringX>Z</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
@@ -6071,7 +6103,7 @@
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="5" z="5" />
-      <ModelOffset x="-1" y="0" z="0" /> <!-- -1.2 to center in block -->
+      <ModelOffset x="-1.4" y="0" z="0" /> <!-- -1.2 to center in block -->
       <Model>Models\Cubes\Large\Window1x1Flat.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="10" />
