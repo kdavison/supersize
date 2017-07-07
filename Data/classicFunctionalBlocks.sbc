@@ -2454,7 +2454,7 @@
     <Definition xsi:type="MyObjectBuilder_RadioAntennaDefinition"> <!-- 5x30x10 Antenna -->
       <Id>
         <TypeId>RadioAntenna</TypeId>
-        <SubtypeId>supersize_LargeBlockRadioAntenna</SubtypeId>
+        <SubtypeId>LargeBlockRadioAntenna</SubtypeId>
       </Id>
       <DisplayName>Large Antenna</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\antenna.dds</Icon>
@@ -2487,7 +2487,7 @@
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
       <BuildTimeSeconds>50</BuildTimeSeconds>
       <MirroringY>Z</MirroringY>
-	  <MirroringZ>Y</MirroringZ>
+      <MirroringZ>Y</MirroringZ>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
 	    <Effects>
@@ -2497,11 +2497,12 @@
           </ParticleEffects>
         </Effect>
       </Effects>
+      <BlockPairName>invalid_5x30x10_Antenna</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_RadioAntennaDefinition"> <!-- 1x1x2 Antenna -->
       <Id>
         <TypeId>RadioAntenna</TypeId>
-        <SubtypeId>supersize_SmallBlockRadioAntenna</SubtypeId>
+        <SubtypeId>SmallBlockRadioAntenna</SubtypeId>
       </Id>
       <DisplayName>Small Antenna</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\antenna.dds</Icon>
@@ -2545,13 +2546,14 @@
           <SubtypeId>supersize_LargeBlockRadioAntenna</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x2_Antenna</BlockPairName>
     </Definition>
 <!-- Antenna End -->
 <!-- Beacons Start -->
     <Definition xsi:type="MyObjectBuilder_BeaconDefinition"> <!-- 5x10x5 Beacon -->
       <Id>
         <TypeId>Beacon</TypeId>
-        <SubtypeId>supersize_5x10x5Beacon</SubtypeId>
+        <SubtypeId>LargeBlockBeacon</SubtypeId>
       </Id>
       <DisplayName>DisplayName_Block_Beacon</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\beacon.dds</Icon>
@@ -2597,11 +2599,12 @@
           <SubtypeId>SmallBlockBeacon</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_5x10x5_Beacon</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_BeaconDefinition"> <!-- 1x1x2 Beacon -->
       <Id>
         <TypeId>Beacon</TypeId>
-        <SubtypeId>supersize_1x1x2Beacon</SubtypeId>
+        <SubtypeId>SmallBlockBeacon</SubtypeId>
       </Id>
       <DisplayName>DisplayName_Block_Beacon</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\beacon.dds</Icon>
@@ -2631,13 +2634,14 @@
       <DamagedSound>ParticleElectrical</DamagedSound>
       <Flare>BeaconSmall</Flare>
       <EmissiveColorPreset>Beacon</EmissiveColorPreset>
+      <BlockPairName>invalid_1x1x2_Beacon</BlockPairName>
     </Definition>
 <!-- Beasons End -->
 <!-- Spotlight Start -->
     <Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition"> <!-- 5x5x5 Spotlight -->
       <Id>
         <TypeId>ReflectorLight</TypeId>
-        <SubtypeId>supersize_5x5x5Spotlight</SubtypeId>
+        <SubtypeId>LargeBlockFrontLight</SubtypeId>
       </Id>
       <DisplayName>Large Spotlight</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\light.dds</Icon>
@@ -2680,11 +2684,12 @@
       <ReflectorTexture>Textures\Lights\reflector_large.dds</ReflectorTexture>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
+      <BlockPairName>invalid_5x5x5_ReflectorLight</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_ReflectorBlockDefinition"> <!-- 1x1x1 Spotlight -->
       <Id>
         <TypeId>ReflectorLight</TypeId>
-        <SubtypeId>supersize_1x1x1Spotlight</SubtypeId>
+        <SubtypeId>SmallBlockFrontLight</SubtypeId>
       </Id>
       <DisplayName>Small Spotlight</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\light.dds</Icon>
@@ -2726,9 +2731,10 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>ReflectorLight</TypeId>
-          <SubtypeId>supersize_5x5x5Spotlight</SubtypeId>
+          <SubtypeId>LargeBlockFrontLight</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x1_ReflectorLight</BlockPairName>
     </Definition>
 <!-- Spotlight End -->
 <!-- Lights Start -->
@@ -3313,7 +3319,7 @@
     <Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
       <Id>
         <TypeId>LandingGear</TypeId>
-        <SubtypeId>supersize_SmallBlockLandingGear</SubtypeId>
+        <SubtypeId>SmallBlockLandingGear</SubtypeId>
       </Id>
       <DisplayName>Small Landing Gear</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\landing_gear.dds</Icon>
@@ -3351,14 +3357,15 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>LandingGear</TypeId>
-          <SubtypeId>supersize_LargeBlockLandingGear</SubtypeId>
+          <SubtypeId>LargeBlockLandingGear</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x1_LandingGear</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
       <Id>
         <TypeId>LandingGear</TypeId>
-        <SubtypeId>supersize_LargeBlockLandingGear</SubtypeId>
+        <SubtypeId>LargeBlockLandingGear</SubtypeId>
       </Id>
       <DisplayName>Large Landing Gear</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\landing_gear.dds</Icon>
@@ -3394,6 +3401,7 @@
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
       <EmissiveColorPreset>ConnectBlock</EmissiveColorPreset>
+      <BlockPairName>invalid_5x10x15_LandingGear</BlockPairName>
     </Definition>
 <!-- Landing Gear -->
 <!-- LCD Panel Start -->
@@ -4252,7 +4260,7 @@
     <Definition xsi:type="MyObjectBuilder_OxygenGeneratorDefinition">
       <Id>
         <TypeId>OxygenGenerator</TypeId>
-        <SubtypeId>supersize_OxygenGeneratorSmall</SubtypeId>
+        <SubtypeId>OxygenGeneratorSmall</SubtypeId>
       </Id>
       <DisplayName>Small Oxygen Generator</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\OxygenGeneratorSmall.dds</Icon>
@@ -4331,14 +4339,15 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>OxygenGenerator</TypeId>
-          <SubtypeId>supersize_OxygenGeneratorLarge</SubtypeId>
+          <SubtypeId/>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_3x3x2_OxygenGenerator</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_OxygenGeneratorDefinition">
       <Id>
         <TypeId>OxygenGenerator</TypeId>
-        <SubtypeId>supersize_OxygenGeneratorLarge</SubtypeId>
+        <SubtypeId/>
       </Id>
       <DisplayName>Large Oxygen Generator</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\OxygenGenerator.dds</Icon>
@@ -4419,7 +4428,7 @@
     <Definition xsi:type="MyObjectBuilder_ProjectorDefinition">
       <Id>
         <TypeId>MyObjectBuilder_Projector</TypeId>
-        <SubtypeId>supersize_LargeProjector</SubtypeId>
+        <SubtypeId>LargeProjector</SubtypeId>
       </Id>
       <DisplayName>Large Projector</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Projector.dds</Icon>
@@ -4461,11 +4470,12 @@
       <PrimarySound>BlockProjectorOn</PrimarySound>
       <IdleSound>BlockProjectorOff</IdleSound>
       <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x5_Projector</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_ProjectorDefinition">
       <Id>
         <TypeId>MyObjectBuilder_Projector</TypeId>
-        <SubtypeId>supersize_SmallProjector</SubtypeId>
+        <SubtypeId>SmallProjector</SubtypeId>
       </Id>
       <DisplayName>Small Projector</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Projector.dds</Icon>
@@ -4512,13 +4522,14 @@
           <SubtypeId>supersize_LargeProjector</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x1_Projector</BlockPairName>
     </Definition>
 <!-- Projectors End -->
 <!-- Upgrade Modules Start -->
     <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
       <Id>
         <TypeId>UpgradeModule</TypeId>
-        <SubtypeId>supersize_LargeProductivityModule</SubtypeId>
+        <SubtypeId>LargeProductivityModule</SubtypeId>
       </Id>
       <DisplayName>Large Productivity Module</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\UpgradeProductivity.dds</Icon>
@@ -4567,18 +4578,19 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>UpgradeModule</TypeId>
-          <SubtypeId>supersize_LargeEffectivenessModule</SubtypeId>
+          <SubtypeId>LargeEffectivenessModule</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>UpgradeModule</TypeId>
-          <SubtypeId>supersize_LargeEnergyModule</SubtypeId>
+          <SubtypeId>LargeEnergyModule</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_5x5x10ProductivityModule</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
       <Id>
         <TypeId>UpgradeModule</TypeId>
-        <SubtypeId>supersize_LargeEffectivenessModule</SubtypeId>
+        <SubtypeId>LargeEffectivenessModule</SubtypeId>
       </Id>
       <DisplayName>Large Efficiency Module</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\UpgradeEffectiveness.dds</Icon>
@@ -4624,11 +4636,12 @@
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x10_EffectivenessModule</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
       <Id>
         <TypeId>UpgradeModule</TypeId>
-        <SubtypeId>supersize_LargeEnergyModule</SubtypeId>
+        <SubtypeId>LargeEnergyModule</SubtypeId>
       </Id>
       <DisplayName>Large Energy Module</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\UpgradeEnergy.dds</Icon>
@@ -4674,13 +4687,14 @@
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x10_EnergyModule</BlockPairName>
     </Definition>
 <!-- Upgrade Modules End -->
 <!-- Cargo Containers Start -->
     <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition"> <!-- 1x1x1 Container -->
       <Id>
         <TypeId>CargoContainer</TypeId>
-        <SubtypeId>SmallBlockSmallContainer_supersize</SubtypeId>
+        <SubtypeId>SmallBlockSmallContainer</SubtypeId>
       </Id>
       <DisplayName>Small Cargo Container</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container.dds</Icon>
@@ -4725,26 +4739,27 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>CargoContainer</TypeId>
-          <SubtypeId>SmallBlockMediumContainer_supersize</SubtypeId>
+          <SubtypeId>SmallBlockMediumContainer</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>CargoContainer</TypeId>
-          <SubtypeId>SmallBlockLargeContainer_supersize</SubtypeId>
+          <SubtypeId>SmallBlockLargeContainer</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>CargoContainer</TypeId>
-          <SubtypeId>LargeBlockSmallContainer_supersize</SubtypeId>
+          <SubtypeId>LargeBlockSmallContainer</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>CargoContainer</TypeId>
-          <SubtypeId>LargeBlockLargeContainer_supersize</SubtypeId>
+          <SubtypeId>LargeBlockLargeContainer</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName/>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition"> <!-- 3x3x3 Container -->
       <Id>
         <TypeId>CargoContainer</TypeId>
-        <SubtypeId>SmallBlockMediumContainer_supersize</SubtypeId>
+        <SubtypeId>SmallBlockMediumContainer</SubtypeId>
       </Id>
       <DisplayName>Medium Cargo Container</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container_medium.dds</Icon>
@@ -4786,11 +4801,12 @@
         <Y>1.5</Y>
         <Z>1.5</Z>
       </InventorySize>
+      <BlockPairName>invalid_3x3x3_MediumCargoContainer</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition"> <!-- 5x5x5 Container 1 -->
       <Id>
         <TypeId>CargoContainer</TypeId>
-        <SubtypeId>SmallBlockLargeContainer_supersize</SubtypeId>
+        <SubtypeId>SmallBlockLargeContainer</SubtypeId>
       </Id>
       <DisplayName>Medium Cargo Container 2</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container_large.dds</Icon>
@@ -4831,11 +4847,12 @@
         <Y>2.5</Y>
         <Z>2.5</Z>
       </InventorySize>
+      <BlockPairName>invalid_5x5x5_LargeCargoContainer2</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition"> <!-- 5x5x5 Container 2 -->
       <Id>
         <TypeId>CargoContainer</TypeId>
-        <SubtypeId>LargeBlockSmallContainer_supersize</SubtypeId>
+        <SubtypeId>LargeBlockSmallContainer</SubtypeId>
       </Id>
       <DisplayName>Large Cargo Container</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container.dds</Icon>
@@ -4881,11 +4898,12 @@
         <Y>2.5</Y>
         <Z>2.5</Z>
       </InventorySize>
+      <BlockPairName>invalid_5x5x5_LargeCargoContainer1</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition"> <!-- 15x15x15 Container -->
       <Id>
         <TypeId>CargoContainer</TypeId>
-        <SubtypeId>LargeBlockLargeContainer_supersize</SubtypeId>
+        <SubtypeId>LargeBlockLargeContainer</SubtypeId>
       </Id>
       <DisplayName>Huge Cargo Container</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container_large.dds</Icon>
@@ -4931,13 +4949,14 @@
         <Y>7.5</Y>
         <Z>7.5</Z>
       </InventorySize>
+      <BlockPairName>invalid_15x15x15_LargeCargoContainer</BlockPairName>
     </Definition>
 <!-- Cargo Containers End -->
 <!-- Refineries Start -->
     <Definition xsi:type="MyObjectBuilder_RefineryDefinition"> <!-- 10x20x10 Refinery -->
       <Id>
         <TypeId>Refinery</TypeId>
-        <SubtypeId>supersize_LargeRefinery</SubtypeId>
+        <SubtypeId>LargeRefinery</SubtypeId>
       </Id>
       <DisplayName>Large Refinery</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\refinery.dds</Icon>
@@ -5000,14 +5019,15 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>Refinery</TypeId>
-          <SubtypeId>supersize_LargeBlastFurnace</SubtypeId>
+          <SubtypeId>Blast Furnace</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_10x20x10_Refinery</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_RefineryDefinition"> <!-- 5x10x5 Blast Furnace -->
       <Id>
         <TypeId>Refinery</TypeId>
-        <SubtypeId>supersize_LargeBlastFurnace</SubtypeId>
+        <SubtypeId>Blast Furnace</SubtypeId>
       </Id>
       <DisplayName>Large Blast Furnace</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Blastfurnace.dds</Icon>
@@ -5057,13 +5077,14 @@
       <DestroyEffect>Explosion_Missile</DestroyEffect>
       <DestroySound>WepSmallMissileExpl</DestroySound>
       <OreAmountPerPullRequest>2000</OreAmountPerPullRequest>
+      <BlockPairName>invalid_5x19x5_BlastFurnace</BlockPairName>
     </Definition>
 <!-- Refineries End -->
 <!-- Assembler Start -->
     <Definition xsi:type="MyObjectBuilder_AssemblerDefinition"> <!-- 5x5x10 Assembler -->
       <Id>
         <TypeId>Assembler</TypeId>
-        <SubtypeId>supersize_LargeAssembler</SubtypeId>
+        <SubtypeId>LargeAssembler</SubtypeId>
       </Id>
       <DisplayName>Large Assembler</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\assembler.dds</Icon>
@@ -5119,13 +5140,14 @@
       <ActionSound>BlockAssemblerProcess</ActionSound>
       <DestroyEffect>Explosion_Missile</DestroyEffect>
       <DestroySound>WepSmallMissileExpl</DestroySound>
+      <BlockPairName>invalid_5x5x10_Assembler</BlockPairName>
     </Definition>
 <!-- Assembler End -->
 <!-- Programming Block Start -->
     <Definition xsi:type="MyObjectBuilder_ProgrammableBlockDefinition"> <!-- 5x5x5 Programming Block -->
       <Id>
         <TypeId>MyProgrammableBlock</TypeId>
-        <SubtypeId>supersize_LargeProgrammableBlock</SubtypeId>
+        <SubtypeId>LargeProgrammableBlock</SubtypeId>
       </Id>
       <Public>true</Public>
       <DisplayName>Large Programmable Block</DisplayName>
@@ -5162,11 +5184,12 @@
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x5_ProgrammableBlock</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_ProgrammableBlockDefinition"> <!-- 1x1x1 Programming Block -->
       <Id>
         <TypeId>MyProgrammableBlock</TypeId>
-        <SubtypeId>supersize_SmallProgrammableBlock</SubtypeId>
+        <SubtypeId>SmallProgrammableBlock</SubtypeId>
       </Id>
       <Public>true</Public>
       <DisplayName>Small Programmable Block</DisplayName>
@@ -5204,9 +5227,10 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>MyProgrammableBlock</TypeId>
-          <SubtypeId>supersize_LargeProgrammableBlock</SubtypeId>
+          <SubtypeId>LargeProgrammableBlock</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x1_ProgrammableBlock</BlockPairName>
     </Definition>
 <!-- Programming Block End -->
 <!-- Tools Start -->
@@ -7115,7 +7139,7 @@
     <Definition xsi:type="MyObjectBuilder_MergeBlockDefinition"> <!-- Large Merge Block -->
       <Id>
         <TypeId>MergeBlock</TypeId>
-        <SubtypeId>supersize_LargeMergeBlock</SubtypeId>
+        <SubtypeId>LargeShipMergeBlock</SubtypeId>
       </Id>
       <DisplayName>Large Merge Block</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\MergeBlock.dds</Icon>
@@ -7149,11 +7173,12 @@
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
       <EmissiveColorPreset>ConnectBlock</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x5_MergeBlock</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_MergeBlockDefinition"> <!-- Small Merge Block -->
       <Id>
         <TypeId>MergeBlock</TypeId>
-        <SubtypeId>supersize_SmallMergeBlock</SubtypeId>
+        <SubtypeId>SmallShipMergeBlock</SubtypeId>
       </Id>
       <DisplayName>Small Merge Block</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\MergeBlock.dds</Icon>
@@ -7195,9 +7220,10 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>MergeBlock</TypeId>
-          <SubtypeId>supersize_LargeMergeBlock</SubtypeId>
+          <SubtypeId>LargeShipMergeBlock</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x3x3_MergeBlock</BlockPairName>
     </Definition>
 <!-- Merge Block End -->
 <!-- Timer Block start -->
@@ -7574,7 +7600,7 @@
     <Definition xsi:type="MyObjectBuilder_ButtonPanelDefinition"> <!-- Large 4 Button Panel -->
       <Id>
         <TypeId>ButtonPanel</TypeId>
-        <SubtypeId>supersize_LargeButtonPanel</SubtypeId>
+        <SubtypeId>ButtonPanelLarge</SubtypeId>
       </Id>
       <DisplayName>Large Button Panel</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ButtonPanel.dds</Icon>
@@ -7650,11 +7676,12 @@
       </ButtonColors>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
+      <BlockPairName>invalid_5x52x1_ButtonPanel</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_ButtonPanelDefinition"> <!-- Small 1 Button Panel -->
       <Id>
         <TypeId>ButtonPanel</TypeId>
-        <SubtypeId>supersize_SmallButtonPanel</SubtypeId>
+        <SubtypeId>ButtonPanelSmall</SubtypeId>
       </Id>
       <DisplayName>Small Button Panel</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Button.dds</Icon>
@@ -7707,16 +7734,17 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>ButtonPanel</TypeId>
-          <SubtypeId>supersize_LargeButtonPanel</SubtypeId>
+          <SubtypeId>ButtonPanelLarge</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x1_ButtonPanel</BlockPairName>
     </Definition>
 <!-- buttons end -->
 <!-- medical start -->
     <Definition xsi:type="MyObjectBuilder_MedicalRoomDefinition"> <!-- 10x5x10 Medical Room -->
       <Id>
         <TypeId>MedicalRoom</TypeId>
-        <SubtypeId>supersize_LargeMedicalRoom</SubtypeId>
+        <SubtypeId>LargeMedicalRoom</SubtypeId>
       </Id>
       <DisplayName>Large Medical Room</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\medical_room.dds</Icon>
@@ -7771,13 +7799,14 @@
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
+      <BlockPairName>invalid_10x5x10_MedicalRoom</BlockPairName>
     </Definition>
 <!-- medical end -->
 <!-- Air Vent start -->
     <Definition xsi:type="MyObjectBuilder_AirVentDefinition"> <!-- 5x5x3 Air Vent -->
       <Id>
         <TypeId>AirVent</TypeId>
-        <SubtypeId>supersize_LargeAirVent</SubtypeId>
+        <SubtypeId/>
       </Id>
       <DisplayName>Large Air Vent</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\AirVent.dds</Icon>
@@ -7822,11 +7851,12 @@
       <DepressurizeSound>BlockAirVentDepressurize</DepressurizeSound>
       <IdleSound>BlockAirVentIdle</IdleSound>
       <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x3_AirVent</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_AirVentDefinition"> <!-- 1x1 Air Vent -->
       <Id>
         <TypeId>AirVent</TypeId>
-        <SubtypeId>supersize_SmallAirVent</SubtypeId>
+        <SubtypeId>SmallAirVent</SubtypeId>
       </Id>
       <DisplayName>Small Air Vent</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\AirVent.dds</Icon>
@@ -7874,9 +7904,10 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>AirVent</TypeId>
-          <SubtypeId>supersize_LargeAirVent</SubtypeId>
+          <SubtypeId/>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x1_AirVent</BlockPairName>
     </Definition>
 <!-- Air Vent end -->
 <!-- Interior Pillar start -->
@@ -7884,7 +7915,7 @@
     <Definition> <!-- 1x1x5 Interior Pillar -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_1x1x5InteriorPillar</SubtypeId>
+        <SubtypeId>LargeInteriorPillar</SubtypeId>
       </Id>
       <DisplayName>Interior Pillar</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\interior_pillar.dds</Icon>
@@ -7909,13 +7940,14 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <AutorotateMode>OppositeDirections</AutorotateMode>
+      <BlockPairName>invalid_1x5x1_InteriorPillar</BlockPairName>
     </Definition>
 <!-- Interior Pillar end -->
 <!-- Remote Control start -->
     <Definition xsi:type="MyObjectBuilder_RemoteControlDefinition"> <!-- 5x5x5 Remote Control -->
       <Id>
         <TypeId>RemoteControl</TypeId>
-        <SubtypeId>supersize_5x5x5RemoteControl</SubtypeId>
+        <SubtypeId>LargeBlockRemoteControl</SubtypeId>
       </Id>
       <DisplayName>Large Remote Control</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\RemoteControl.dds</Icon>
@@ -7959,11 +7991,12 @@
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
       <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x5_RemoteControl</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_RemoteControlDefinition"> <!-- 1x1x1 Remote Control -->
       <Id>
         <TypeId>RemoteControl</TypeId>
-        <SubtypeId>supersize_1x1x1RemoteControl</SubtypeId>
+        <SubtypeId>SmallBlockRemoteControl</SubtypeId>
       </Id>
       <DisplayName>Small Remote Control</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\RemoteControl.dds</Icon>
@@ -8008,9 +8041,10 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>RemoteControl</TypeId>
-          <SubtypeId>supersize_5x5x5RemoteControl</SubtypeId>
+          <SubtypeId>LargeBlockRemoteControl</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_5x5x5_RemoteControl</BlockPairName>
     </Definition>
 <!-- Remote Control end -->
 <!-- artificial masses start -->
@@ -8191,7 +8225,7 @@
     <Definition> <!-- 5x2x1 Full Cover Wall -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_FullCoverWall</SubtypeId>
+        <SubtypeId>LargeCoverWall</SubtypeId>
       </Id>
       <DisplayName>DisplayName_Block_FullCoverWall</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\cover_wall_full.dds</Icon>
@@ -8217,18 +8251,19 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_HalfCoverWall</SubtypeId>
+          <SubtypeId>LargeCoverWallHalf</SubtypeId>
         </BlockVariant>
       </BlockVariants>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
+      <BlockPairName>invalid_5x2x1_FullCoverWall</BlockPairName>
     </Definition>
     <Definition> <!-- Half Cover Wall -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_HalfCoverWall</SubtypeId>
+        <SubtypeId>LargeCoverWallHalf</SubtypeId>
       </Id>
       <DisplayName>DisplayName_Block_HalfCoverWall</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\cover_wall.dds</Icon>
@@ -8253,13 +8288,14 @@
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>5</BuildTimeSeconds>
+      <BlockPairName>invalid_3x2x1_HalfCoverWall</BlockPairName>
     </Definition>
 <!-- cover wall end -->
 <!-- passage start -->
     <Definition> <!-- 5x5x5 Interior Passage -->
       <Id>
         <TypeId>Passage</TypeId>
-        <SubtypeId>supersize_5x5x5InteriorPassage</SubtypeId>
+        <SubtypeId/>
       </Id>
       <DisplayName>Interior Passage</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\passage.dds</Icon>
@@ -8298,6 +8334,7 @@
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>18</BuildTimeSeconds>
+      <BlockPairName>invalid_5x5x5_Passage</BlockPairName>
     </Definition>
 <!-- passage end -->
 <!-- catwalks start -->
@@ -8674,7 +8711,7 @@
     <Definition> <!-- 5x5x5 Decoy -->
       <Id>
         <TypeId>Decoy</TypeId>
-        <SubtypeId>supersize_5x5x5Decoy</SubtypeId>
+        <SubtypeId>LargeDecoy</SubtypeId>
       </Id>
       <DisplayName>Large Decoy</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\decoy.dds</Icon>
@@ -8712,11 +8749,12 @@
       <!--<UseModelIntersection>true</UseModelIntersection>-->
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
+      <BlockPairName>invalid_5x5x5_Decoy</BlockPairName>
     </Definition>
     <Definition> <!-- 1x1x1 Decoy -->
       <Id>
         <TypeId>Decoy</TypeId>
-        <SubtypeId>supersize_1x1x1Decoy</SubtypeId>
+        <SubtypeId>SmallDecoy</SubtypeId>
       </Id>
       <DisplayName>Small Decoy</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\decoy.dds</Icon>
@@ -8748,16 +8786,17 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>Decoy</TypeId>
-          <SubtypeId>supersize_5x5x5Decoy</SubtypeId>
+          <SubtypeId>LargeDecoy</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x1_Decoy</BlockPairName>
     </Definition>
 <!-- decoy end -->
 <!-- warhead start -->
     <Definition xsi:type="MyObjectBuilder_WarheadDefinition"> <!-- 5x5x5 Warhead -->
       <Id>
         <TypeId>Warhead</TypeId>
-        <SubtypeId>supersize_5x5x5Warhead</SubtypeId>
+        <SubtypeId>LargeWarhead</SubtypeId>
       </Id>
       <DisplayName>Large Warhead</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\warhead.dds</Icon>
@@ -8795,11 +8834,12 @@
       <ExplosionRadius>22.4415</ExplosionRadius>
       <WarheadExplosionDamage>15000</WarheadExplosionDamage>
       <EmissiveColorPreset>Timer</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x5_Warhead</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_WarheadDefinition"> <!-- 1x1x1 Warhead -->
       <Id>
         <TypeId>Warhead</TypeId>
-        <SubtypeId>supersize_1x1x1Warhead</SubtypeId>
+        <SubtypeId>SmallWarhead</SubtypeId>
       </Id>
       <DisplayName>Small Warhead</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\warhead.dds</Icon>
@@ -8831,16 +8871,17 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>Warhead</TypeId>
-          <SubtypeId>supersize_5x5x5Warhead</SubtypeId>
+          <SubtypeId>LargeWarhead</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x1_WarHead</BlockPairName>
     </Definition>
 <!-- warhead end -->
 <!-- ramp start -->
     <Definition> <!-- 5x5x10 Stairs -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_5x5x10Stairs</SubtypeId>
+        <SubtypeId>LargeStairs</SubtypeId>
       </Id>
       <DisplayName>5x5x10 Stairs</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\stairs.dds</Icon>
@@ -8873,18 +8914,19 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_5x5x10Ramp</SubtypeId>
+          <SubtypeId>LargeRamp</SubtypeId>
         </BlockVariant>
       </BlockVariants>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>25</BuildTimeSeconds>
+      <BlockPairName>invalid_5x5x10_Stairs</BlockPairName>
     </Definition>
     <Definition> <!-- 5x5x10 Ramp -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_5x5x10Ramp</SubtypeId>
+        <SubtypeId>LargeRamp</SubtypeId>
       </Id>
       <DisplayName>5x5x10 Ramp</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ramp.dds</Icon>
@@ -8919,6 +8961,7 @@
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>20</BuildTimeSeconds>
+      <BlockPairName>invalid_5x5x10_Ramp</BlockPairName>
     </Definition>
 <!-- ramp end -->
 <!-- blast doors 5x5x5 - start -->

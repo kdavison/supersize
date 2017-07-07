@@ -4825,7 +4825,7 @@
     <Definition> <!-- 5x5x5 Interior Wall -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_5x5x5InteriorWall</SubtypeId>
+        <SubtypeId>LargeBlockInteriorWall</SubtypeId>
       </Id>
       <DisplayName>Interior Wall 5x5x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\interior_wall.dds</Icon>
@@ -4849,6 +4849,7 @@
       <MirroringY>X</MirroringY>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>20</BuildTimeSeconds>
+      <BlockPairName>invalid_5x5x5_InteriorWall</BlockPairName>
     </Definition>
     <Definition> <!-- 5x5x5 Light Armor - Cube -->
       <Id>
