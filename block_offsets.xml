@@ -28,14 +28,12 @@ This file describes the block offsets to center a block in a
     <offset Forward="Right" Up="Down" x="0" y="2" z="0"/>
     <offset Forward="Forward" Up="Left" x="2" y="0" z="0"/>
     <offset Forward="Right" Up="Down" x="0" y="2" z="0"/>
+    <offset Forward="Right" Up="Forward" x="0" y="0" z="2"/>
+    <offset Forward="Down" Up="Left" x="2" y="0" z="0"/>
+    <offset Forward="Down" Up="Forward" x="0" y="0" z="2"/>
+    <offset Forward="Backward" Up="Down" x="0" y="2" z="0"/>
   </block>
   <block subtype="LargeBlockArmorCorner2Tip">
     <offset Forward="Forward" Up="Up" x="0" y="0" z="0"/>
-    <offset Forward="Down" Up="Forward" x="0" y="0" z="2"/>
-    <offset Forward="Right" Up="Down" x="0" y="2" z="2"/>
-    <offset Forward="Backward" Up="Left" x="2" y="2" z="0"/>
-    <offset Forward="Down" Up="Backward" x="2" y="0" z="0"/>
-    <offset Forward="Left" Up="Up" x="0" y="0" z="2"/>
-    <offset Forward="Forward" Up="Right" x="0" y="2" z="0"/>
   </block>
 </blocks>

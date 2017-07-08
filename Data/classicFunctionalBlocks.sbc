@@ -3062,7 +3062,7 @@
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="4" z="4" />
-      <ModelOffset x="0" y="0.5" z="0" />
+      <ModelOffset x="0" y="0.25" z="0" />
       <Model>Models\Cubes\Large\CockpitOpen.mwm</Model>
       <PrimarySound>BlockCockpitFlightSeat</PrimarySound>
       <CharacterAnimation>cockpit23</CharacterAnimation>
@@ -3805,7 +3805,7 @@
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
       <BlockPairName>invalid_4x1x1_CornerLCD</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 5x5x5 Corner LCD 2 -->
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 4x1x1 Corner LCD 2 -->
       <Id>
         <TypeId>TextPanel</TypeId>
         <SubtypeId>LargeBlockCorner_LCD_2</SubtypeId>
@@ -3815,8 +3815,8 @@
       <CubeSize>Small</CubeSize>
       <GuiVisible>false</GuiVisible>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="5" y="5" z="5" />
-      <ModelOffset x="0" y="0" z="0" />
+      <Size x="4" y="1" z="1" />
+      <ModelOffset x="0" y="1" z="-1" />
       <Model>Models\Cubes\large\Corner_LCD_2.mwm</Model>
       <Components>
         <Component Subtype="Construction" Count="5" />
@@ -3892,7 +3892,7 @@
       <GuiVisible>false</GuiVisible>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="4" y="1" z="1" />
-      <ModelOffset x="0" y="1" z="1" />
+      <ModelOffset x="0" y="1" z="-1" />
       <Model>Models\Cubes\large\Corner_LCD_Flat_2.mwm</Model>
       <Components>
         <Component Subtype="Construction" Count="5" />
