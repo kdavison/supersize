@@ -5915,7 +5915,7 @@
     <Definition> <!-- 5x10 Sloped Triangle Window -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window1x2Face</SubtypeId>
+        <SubtypeId>Window1x2Face</SubtypeId>
       </Id>
       <DisplayName>Sloped Triangle 5x10 Window</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2Face.dds</Icon>
@@ -5959,11 +5959,12 @@
       <MirroringY>HalfZ</MirroringY>
       <MirroringZ>YMinusHalfZ</MirroringZ>
       <PhysicalMaterial>Glass</PhysicalMaterial>
+      <BlockPairName>invalid_5x5x10_Window1x2Face</BlockPairName>
     </Definition>
     <Definition> <!-- 5x10 Triangle Window - Side Right-->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window1x2SideRight</SubtypeId>
+        <SubtypeId>Window1x2SideLeft</SubtypeId>
       </Id>
       <DisplayName>5x10 Triangle Window - Right</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2SideLeft.dds</Icon>
@@ -5998,6 +5999,7 @@
       <MirroringY>Z</MirroringY>
       <MirroringBlock>supersize_Window1x2SideLeft</MirroringBlock>
       <PhysicalMaterial>Glass</PhysicalMaterial>
+      <BlockPairName>invalid_1x5x10_Window1x2SideLeft</BlockPairName>
     </Definition>
     <Definition> <!-- 5x10 Triangle Window - Side Left -->
       <Id>
@@ -6038,10 +6040,90 @@
       <MirroringBlock>Window1x2SideRightInv</MirroringBlock>
       <PhysicalMaterial>Glass</PhysicalMaterial>
     </Definition>
+    <Definition> <!-- 1x5x10 Triangle Window - Side Left Inverted -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>Window1x2SideLeftInv</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_Window1x2SideLeftInv</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Window1x2SideLeftInv.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="5" z="10" />
+      <ModelOffset x="-1.4" y="0" z="0" /> <!-- -1.2 to center -->
+      <Model>Models\Cubes\Large\Window1x2SideLeftInv.mwm</Model>
+      <Components>
+        <Component Subtype="Girder" Count="13" />
+        <Component Subtype="BulletproofGlass" Count="20" />
+        <Component Subtype="BulletproofGlass" Count="6" />
+      </Components>
+      <CriticalComponent Subtype="BulletproofGlass" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x2SideLeftConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x2SideLeftConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Window1x2SideLeftInv</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.9" StartY="0.0" EndX="1.0" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.9" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="2.0" StartY="0.0" EndX="1.6" EndY="0.2" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="1.6" StartY="0.0" EndX="1.2" EndY="0.3" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="1.2" StartY="0.0" EndX="0.8" EndY="0.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="0.8" StartY="0.0" EndX="0.4" EndY="0.7" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="0.4" StartY="0.0" EndX="0.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+      </MountPoints>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <MirroringBlock>Window1x2SideRightInv</MirroringBlock>
+      <PhysicalMaterial>Glass</PhysicalMaterial>
+    </Definition>
+    <Definition> <!-- 1x5x10 Triangle Window - Side Right Inverted -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>Window1x2SideRightInv</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_Window1x2SideRightInv</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Window1x2SideRightInv.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="5" z="10" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\Window1x2SideRightInv.mwm</Model>
+      <Components>
+        <Component Subtype="Girder" Count="13" />
+        <Component Subtype="BulletproofGlass" Count="20" />
+        <Component Subtype="BulletproofGlass" Count="6" />
+      </Components>
+      <CriticalComponent Subtype="BulletproofGlass" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x2SideRightConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x2SideRightConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Window1x2SideRightInv</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="5.0" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="10.0" StartY="0.0" EndX="8.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="8.0" StartY="0.0" EndX="6.0" EndY="1.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="6.0" StartY="0.0" EndX="4.0" EndY="2.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="4.0" StartY="0.0" EndX="2.0" EndY="3.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="2.0" StartY="0.0" EndX="0.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
+      </MountPoints>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <MirroringBlock>invalid_1x5x10_Window1x2SideLeftInv</MirroringBlock>
+      <PhysicalMaterial>Glass</PhysicalMaterial>
+    </Definition>
     <Definition> <!-- 5x5 Sloped Window -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window1x1Slope</SubtypeId>
+        <SubtypeId>Window1x1Slope</SubtypeId>
       </Id>
       <DisplayName> 5x5 Sloped Window</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x1Slope.dds</Icon>
@@ -6080,11 +6162,12 @@
       <MirroringZ>Y</MirroringZ>
       <MirroringY>Z</MirroringY>
       <PhysicalMaterial>Glass</PhysicalMaterial>
+      <BlockPairName>invalid_5x5x5_Window1x1Slope</BlockPairName>
     </Definition>
     <Definition> <!-- 5x5 Sloped Triangle Window -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window1x1Face</SubtypeId>
+        <SubtypeId>Window1x1Face</SubtypeId>
       </Id>
       <DisplayName>5x5 Triangle Sloped Window</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x1Face.dds</Icon>
@@ -6128,11 +6211,12 @@
       <MirroringY>XHalfY</MirroringY>
       <MirroringZ>MinusHalfY</MirroringZ>
       <PhysicalMaterial>Glass</PhysicalMaterial>
+      <BlockPairName>invalid_5x5x5_Window1x1Face</BlockPairName>
     </Definition>
     <Definition> <!-- 5x5 Sloped Triangle Window - Inverted -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window1x1Inv</SubtypeId>
+        <SubtypeId>Window1x1Inv</SubtypeId>
       </Id>
       <DisplayName>5x5 Window - Inverted</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x1Inv.dds</Icon>
@@ -6176,6 +6260,7 @@
       <MirroringY>HalfZ</MirroringY>
       <MirroringZ>HalfY</MirroringZ>
       <PhysicalMaterial>Glass</PhysicalMaterial>
+      <BlockPairName>invalid_5x5x5_Window1x1Inv</BlockPairName>
     </Definition>
     <Definition> <!-- 5x5 Triangle Window -->
       <Id>
@@ -6254,7 +6339,7 @@
     <Definition> <!-- 5x10 Flat Window -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_5x10FlatWindow</SubtypeId>
+        <SubtypeId>Window1x2Flat</SubtypeId>
       </Id>
       <DisplayName>Flat Window - 5x10</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2Flat.dds</Icon>
@@ -6288,11 +6373,12 @@
       </MountPoints>
       <MirroringX>Z</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
+      <BlockPairName>invalid_1x5x10_Window1x2Flat</BlockPairName>
     </Definition>   
     <Definition> <!-- 5x10 Flat Window - Inverted -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_5x10FlatWindowInverted</SubtypeId>
+        <SubtypeId>Window1x2FlatInv</SubtypeId>
       </Id>
       <DisplayName>Flat Window - 5x10 Inverted</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2FlatInv.dds</Icon>
@@ -6324,11 +6410,12 @@
       </MountPoints>
       <MirroringX>Z</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
+      <BlockPairName>invalid_1x5x10_Window1x2FlatInv</BlockPairName>
     </Definition>
     <Definition> <!-- Flat 5x5 Window -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window1x1Flat</SubtypeId>
+        <SubtypeId>Window1x1Flat</SubtypeId>
       </Id>
       <DisplayName>Flat Window - 5x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x1Flat.dds</Icon>
@@ -6377,11 +6464,12 @@
           <SubtypeId>supersize_Window3x3Flat</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_5x5x5_Window1x1Flat</BlockPairName>
     </Definition>
     <Definition> <!-- Flat 15x15 Window -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window3x3Flat</SubtypeId>
+        <SubtypeId>Window3x3Flat</SubtypeId>
       </Id>
       <DisplayName>Flat Window - 15x15</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window3x3Flat.dds</Icon>
@@ -6411,11 +6499,12 @@
       </MountPoints>
       <MirroringX>Y</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
+      <BlockPairName>invalid_1x15x15_Window3x3Flat</BlockPairName>
     </Definition>
     <Definition> <!-- Flat 10x15 Window -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window2x3Flat</SubtypeId>
+        <SubtypeId>Window2x3Flat</SubtypeId>
       </Id>
       <DisplayName>Flat Window - 10x15</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window2x3Flat.dds</Icon>
@@ -6447,6 +6536,7 @@
       <MirroringX>Y</MirroringX>
       <MirroringY>X</MirroringY>
       <PhysicalMaterial>Glass</PhysicalMaterial>
+      <BlockPairName>invalid_1x10x15_Window2x3Flat</BlockPairName>
     </Definition>
 <!-- Windows End -->
 <!-- Collector Start -->
