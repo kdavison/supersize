@@ -4,7 +4,7 @@
     <Definition xsi:type="MyObjectBuilder_CockpitDefinition"> <!-- 2x3x2 Control Seat -->
       <Id>
         <TypeId>Cockpit</TypeId>
-        <SubtypeId>supersize_2x3x2ControlSeat</SubtypeId>
+        <SubtypeId>PassengerSeatLarge</SubtypeId>
       </Id>
       <DisplayName>Small Flight Seat</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\PassengerSeat.dds</Icon>
@@ -50,6 +50,7 @@
       <IsPressurized>false</IsPressurized>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
+      <BlockPairName>invalid_2x3x2_PassengerSeatControl</BlockPairName>
     </Definition>
   </CubeBlocks>
 </Definitions>

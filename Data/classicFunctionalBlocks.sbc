@@ -162,18 +162,15 @@
       <MirroringZ>Y</MirroringZ>
       <BuildTimeSeconds>12</BuildTimeSeconds>
       <EdgeType>Light</EdgeType>
-
       <ResourceSinkGroup>Thrust</ResourceSinkGroup>
       <ForceMagnitude>12000</ForceMagnitude>
       <MaxPowerConsumption>0.201</MaxPowerConsumption>
       <MinPowerConsumption>0.000002</MinPowerConsumption>
       <SlowdownFactor>1</SlowdownFactor>
-
       <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
       <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
       <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
       <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
-      
       <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
       <FlameDamage>0.1</FlameDamage>
       <FlameLengthScale>1.15</FlameLengthScale>
@@ -1055,7 +1052,7 @@
       <Public>true</Public>
       <BlockPairName>invalid_5x5x15_SmallAtmoThrust</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_ThrustDefinition"> <!-- 3z3x5 Atmospheric Thruster -->
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition"> <!-- 3x3x5 Atmospheric Thruster -->
       <Id>
         <TypeId>Thrust</TypeId>
         <SubtypeId>SmallBlockLargeAtmosphericThrust</SubtypeId>
@@ -1108,21 +1105,6 @@
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>25</BuildTimeSeconds>
-      <BlockPairName>invalid_3x3x5_LargeAtmoThrust</BlockPairName>
-      <BlockVariants>
-        <BlockVariant>
-          <TypeId>Thrust</TypeId>
-          <SubtypeId>supersize_SmallAtomosphericThruster</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>Thrust</TypeId>
-          <SubtypeId>supersize_LargeAtomosphericThruster</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>Thrust</TypeId>
-          <SubtypeId>supersize_HugeAtomosphericThruster</SubtypeId>
-        </BlockVariant>
-      </BlockVariants>
       <ResourceSinkGroup>Thrust</ResourceSinkGroup>
       <ForceMagnitude>408000</ForceMagnitude>
       <MaxPowerConsumption>2.4</MaxPowerConsumption>
@@ -1164,6 +1146,7 @@
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleWeapExpl</DamagedSound>
       <Public>true</Public>
+      <BlockPairName>invalid_3x3x5_LargeAtmoThrust</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_ThrustDefinition"> <!-- 1x1x3 Atmospheric Thruster -->
       <Id>
@@ -1259,6 +1242,20 @@
       <DamagedSound>ParticleWeapExpl</DamagedSound>
       <Public>true</Public>
       <BlockPairName>invalid_1x1x3_SmallAtmoThrust</BlockPairName>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>SmallBlockLargeAtmosphericThrust</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>LargeBlockSmallAtmosphericThrust</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>LargeBlockLargeAtmosphericThrust</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
     </Definition>
 <!--Atmospheric Thrusters End -->
 <!--Gyroscope Start-->
@@ -1299,13 +1296,7 @@
       <PrimarySound>BlockGyroscope</PrimarySound>
       <ResourceSinkGroup>Gyro</ResourceSinkGroup>
       <ForceMagnitude>3.36E+07</ForceMagnitude>
-      <RequiredPowerInput>0.00003</RequiredPowerInput>
-      <BlockVariants>
-        <BlockVariant>
-          <TypeId>Gyro</TypeId>
-          <SubtypeId>supersize_SmallGyroscope</SubtypeId>
-        </BlockVariant>
-      </BlockVariants>      
+      <RequiredPowerInput>0.00003</RequiredPowerInput>   
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
       <EmissiveColorPreset>Extended</EmissiveColorPreset>
@@ -1352,6 +1343,12 @@
       <DamagedSound>ParticleHeavyMech</DamagedSound>
       <EmissiveColorPreset>Extended</EmissiveColorPreset>
       <BlockPairName>invalid_1x1x1_Gyroscope</BlockPairName>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>Gyro</TypeId>
+          <SubtypeId>LargeBlockGyro</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>   
     </Definition>
 <!--Gryoscope End-->
 <!--Reactor Start-->
@@ -1883,7 +1880,7 @@
     <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition"> <!-- 9x9x9 Missile Turret -->
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
-        <SubtypeId>supersize_9x9x9MissileTurret</SubtypeId>
+        <SubtypeId/>
       </Id>
       <DisplayName>Large Missle Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\missile_turret.dds</Icon>
@@ -1947,11 +1944,12 @@
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <MinFov>0.1</MinFov>
       <MaxFov>1.04719755</MaxFov>
+      <BlockPairName>invalid_9x9x9_MissileTurret</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition"> <!-- 5x5x5 Missile Turret -->
       <Id>
         <TypeId>LargeMissileTurret</TypeId>
-        <SubtypeId>supersize_5x5x5MissileTurret</SubtypeId>
+        <SubtypeId>SmallMissileTurret</SubtypeId>
       </Id>
       <DisplayName>Medium Missle Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\missile_turret.dds</Icon>
@@ -2018,11 +2016,12 @@
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <MinFov>0.1</MinFov>
       <MaxFov>1.04719755</MaxFov>
+      <BlockPairName>invalid_5x5x5_MissileTurret</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition"> <!-- 1x1x4 Missile Launcher -->
       <Id>
         <TypeId>SmallMissileLauncher</TypeId>
-        <SubtypeId>supersize_1x1x4MissileLauncher</SubtypeId>
+        <SubtypeId/>
       </Id>
       <DisplayName>Missile Launcher - Manual Reload</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\missile_launcher_small.dds</Icon>
@@ -2063,26 +2062,27 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>SmallMissileLauncherReload</TypeId>
-          <SubtypeId>supersize_1x3x3MissileLauncher</SubtypeId>
+          <SubtypeId>SmallRocketLauncherReload</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>SmallMissileLauncher</TypeId>
-          <SubtypeId>supersize_5x5x10MissileLauncher</SubtypeId>
+          <SubtypeId>LargeMissileLauncher</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>LargeMissileTurret</TypeId>
-          <SubtypeId>supersize_5x5x5MissileTurret</SubtypeId>
+          <SubtypeId>SmallMissileTurret</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>LargeMissileTurret</TypeId>
-          <SubtypeId>supersize_9x9x9MissileTurret</SubtypeId>
+          <SubtypeId/>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x4_RocketLauncher</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition"> <!-- 5x5x10 Missile Launcher -->
       <Id>
         <TypeId>SmallMissileLauncher</TypeId>
-        <SubtypeId>supersize_5x5x10MissileLauncher</SubtypeId>
+        <SubtypeId>LargeMissileLauncher</SubtypeId>
       </Id>
       <DisplayName>Large Missile Launcher - Reloadable</DisplayName>
       <public>false</public>
@@ -2123,11 +2123,12 @@
       <InventoryMaxVolume>1.14</InventoryMaxVolume>
       <DamageEffectId>213</DamageEffectId>
       <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <BlockPairName>invalid_5x5x10_RocketLauncher</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition"> <!-- 1x3x3 Reloadable Missile Launcher -->
       <Id>
         <TypeId>SmallMissileLauncherReload</TypeId>
-        <SubtypeId>supersize_1x3x3MissileLauncher</SubtypeId>
+        <SubtypeId>SmallRocketLauncherReload</SubtypeId>
       </Id>
       <DisplayName>DisplayName_Block_SmallRocketLauncherReload</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\RocketLauncherReload.dds</Icon>
@@ -2168,6 +2169,7 @@
       <WeaponDefinitionId Subtype="SmallMissileLauncher" />
       <DamageEffectId>213</DamageEffectId>
       <DamagedSound>ParticleWeapExpl</DamagedSound>
+      <BlockPairName>invalid_1x3x3_SmallRocketLauncherReload</BlockPairName>
     </Definition>
 <!-- Missile Turret Stop -->
 <!-- Sensor Start -->
@@ -2227,9 +2229,9 @@
     <Definition xsi:type="MyObjectBuilder_DoorDefinition"> <!-- 5x5x3 Door -->
       <Id>
         <TypeId>Door</TypeId>
-        <SubtypeId>supersize_LargeBlockDoor</SubtypeId>
+        <SubtypeId/>
       </Id>
-      <DisplayName>Large Door</DisplayName>
+      <DisplayName>DisplayName_Block_Door</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\door.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2277,14 +2279,15 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>AirtightSlideDoor</TypeId>
-          <SubtypeId>supersize_LargeBlockSlideDoor</SubtypeId>
+          <SubtypeId>LargeBlockSlideDoor</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_5x5x3_Door</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_AirtightSlideDoorDefinition"> <!-- 5x5x5 Airlock Door -->
       <Id>
         <TypeId>AirtightSlideDoor</TypeId>
-        <SubtypeId>supersize_LargeBlockSlideDoor</SubtypeId>
+        <SubtypeId>LargeBlockSlideDoor</SubtypeId>
       </Id>
       <DisplayName>Large Airtight Slider Door</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SlideDoor.dds</Icon>
@@ -2340,15 +2343,16 @@
       <OpeningSpeed>0.8</OpeningSpeed>
       <SubpartMovementDistance>2.5</SubpartMovementDistance>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x5_AirtightSlide Door</BlockPairName>
     </Definition>
 <!-- Door End -->
 <!-- Airtight Hangar Doors Start -->
     <Definition xsi:type="MyObjectBuilder_AirtightHangarDoorDefinition"> <!-- 5x15x5 Hangar Door -->
       <Id>
         <TypeId>AirtightHangarDoor</TypeId>
-        <SubtypeId>supersize_LargeAirtightHangarDoor</SubtypeId>
+        <SubtypeId/>
       </Id>
-      <DisplayName>Large Airtight Door</DisplayName>
+      <DisplayName>DisplayName_Block_AirtightHangarDoor</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HangarDoor.dds</Icon>
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
@@ -2392,6 +2396,7 @@
       <OpeningSpeed>0.1</OpeningSpeed>
       <SubpartMovementDistance>2.5</SubpartMovementDistance>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_5x15x5_AirtightHangarDoor</BlockPairName>
     </Definition>
 <!-- Airtight Hangar Doors End -->
 <!-- Jump Drive Start -->
@@ -2543,7 +2548,7 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>RadioAntenna</TypeId>
-          <SubtypeId>supersize_LargeBlockRadioAntenna</SubtypeId>
+          <SubtypeId>LargeBlockRadioAntenna</SubtypeId>
         </BlockVariant>
       </BlockVariants>
       <BlockPairName>invalid_1x1x2_Antenna</BlockPairName>
@@ -2738,13 +2743,14 @@
     </Definition>
 <!-- Spotlight End -->
 <!-- Lights Start -->
-    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition"> <!-- 1x1x1 Interior Light -->
+    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition"> <!-- 1x1x1 Interior Light [LARGE]-->
       <Id>
         <TypeId>InteriorLight</TypeId>
-        <SubtypeId>supersize_InteriorLight</SubtypeId>
+        <SubtypeId>SmallLight</SubtypeId>
       </Id>
       <DisplayName>DisplayName_Block_InteriorLight</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\interior_light.dds</Icon>
+      <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -2772,8 +2778,9 @@
       <Flare>InteriorLightSmall</Flare>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
+      <BlockPairName>invalid_1x1x1_InteriorLight1</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition">
+    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition"> <!-- 1x1x1 Interior Light [SMALL] -->
       <Id>
         <TypeId>InteriorLight</TypeId>
         <SubtypeId>SmallBlockSmallLight</SubtypeId>
@@ -2808,13 +2815,14 @@
       <LightGlare>GlareLsInteriorLight</LightGlare>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
+      <BlockPairName>invalid_1x1x1_InteriorLight2</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition">
+    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition"> <!-- 4x1x1 Corner(1) Light [LARGE] -->
       <Id>
         <TypeId>InteriorLight</TypeId>
         <SubtypeId>LargeBlockLight_1corner</SubtypeId>
       </Id>
-      <DisplayName>DisplayName_Block_CornerLight</DisplayName>
+      <DisplayName>Large Light - Corner 4x1x1</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Light_1corner.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2843,16 +2851,17 @@
       <RequiredPowerInput>0.00008</RequiredPowerInput>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
-	  <MirroringZ>Y</MirroringZ>
-	  <MirroringY>Z</MirroringY>
-	  <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <BlockPairName>invalid_4x1x1_CornerLight2</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition">
+    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition"> <!-- 1x1x1 Corner(1) Light [SMALL] -->
       <Id>
         <TypeId>InteriorLight</TypeId>
         <SubtypeId>SmallBlockLight_1corner</SubtypeId>
       </Id>
-      <DisplayName>DisplayName_Block_CornerLight</DisplayName>
+      <DisplayName>Small Light - Corner 1x1x1</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Light_1corner.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -2860,7 +2869,7 @@
       <ModelOffset x="0" y="0" z="0" />
       <Model>Models\Cubes\small\Light_1corner.mwm</Model>
       <Components>
-        <Component Subtype="Construction" Count="2" />
+      <Component Subtype="Construction" Count="2" />
       </Components>
       <CriticalComponent Subtype="Construction" Index="0" />
       <MountPoints>
@@ -2879,11 +2888,50 @@
       <RequiredPowerInput>0.00008</RequiredPowerInput>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
-	  <MirroringZ>Y</MirroringZ>
-	  <MirroringY>Z</MirroringY>
-	  <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <BlockPairName>invalid_1x1x1_CornerLight1</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition">
+    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition"> <!-- 5x5x5 Corner(2) Light [LARGE] -->
+      <Id>
+        <TypeId>InteriorLight</TypeId>
+        <SubtypeId>LargeBlockLight_2corner</SubtypeId>
+      </Id>
+      <DisplayName>Large Light - 2 Corner 5x5x5</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Light_2corner.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\large\Light_2corner.mwm</Model>
+      <Components>
+        <Component Subtype="Construction" Count="6" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.24" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.76" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <EdgeType>Light</EdgeType>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\Light_2corner_Construction_1.mwm" />
+      </BuildProgressModels>
+      <BuildTimeSeconds>4</BuildTimeSeconds>
+      <Flare>NoFlare</Flare>
+      <LightRadius Min="0.1" Max="10" Default="2.0" />
+      <LightFalloff Min="0.5" Max="2" Default="1.5" />
+      <LightIntensity Min="0.0" Max="5" Default="2.0" />
+      <RequiredPowerInput>0.00008</RequiredPowerInput>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <BlockPairName>invalid_5x5x5_CornerLight2</BlockPairName>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition"> <!-- 1x1x1 Corner(2) Light [SMALL] -->
       <Id>
         <TypeId>InteriorLight</TypeId>
         <SubtypeId>SmallBlockLight_2corner</SubtypeId>
@@ -2920,13 +2968,14 @@
       <MirroringZ>Y</MirroringZ>
       <MirroringY>Z</MirroringY>
       <ResourceSourceGroup>Battery</ResourceSourceGroup>
+      <BlockPairName>invalid_1x1x1_Corner2Light</BlockPairName>
     </Definition>
 <!-- Lights End -->
 <!-- Cockpits Start -->
     <Definition xsi:type="MyObjectBuilder_CockpitDefinition"> <!-- 3x4x4 Station Control  Seat -->
       <Id>
         <TypeId>Cockpit</TypeId>
-        <SubtypeId>supersize_3x4x4StationControlSeat</SubtypeId>
+        <SubtypeId>LargeBlockCockpit</SubtypeId>
       </Id>
       <DisplayName>Station Control Seat</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Cockpit.dds</Icon>
@@ -2981,30 +3030,31 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>Cockpit</TypeId>
-          <SubtypeId>supersize_3x4x4FlightSeat</SubtypeId>
+          <SubtypeId>CockpitOpen</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>Cockpit</TypeId>
-          <SubtypeId>supersize_2x3x2ControlSeat</SubtypeId>
+          <SubtypeId>PassengerSeatLarge</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>Cockpit</TypeId>
-          <SubtypeId>supersize_2x3x2PassengerSeat</SubtypeId>
+          <SubtypeId>PassengerSeatSmall</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>Cockpit</TypeId>
-          <SubtypeId>supersize_3x3x3Cockpit</SubtypeId>
+          <SubtypeId>SmallBlockCockpit</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>Cockpit</TypeId>
-          <SubtypeId>supersize_3x4x6FighterCockpit</SubtypeId>
+          <SubtypeId>DBSmallBlockFighterCockpit</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_3x4x4_CockpitLarge</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_CockpitDefinition"> <!-- 3x4x4 Flight Seat -->
       <Id>
         <TypeId>Cockpit</TypeId>
-        <SubtypeId>supersize_3x4x4FlightSeat</SubtypeId>
+        <SubtypeId>CockpitOpen</SubtypeId>
       </Id>
       <DisplayName>Flight Seat</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\CockpitOpen.dds</Icon>
@@ -3012,8 +3062,8 @@
       <public>false</public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="1" z="4" />
-      <ModelOffset x="0" y="1.0" z="0" />
+      <Size x="3" y="4" z="4" />
+      <ModelOffset x="0" y="0.5" z="0" />
       <Model>Models\Cubes\Large\CockpitOpen.mwm</Model>
       <PrimarySound>BlockCockpitFlightSeat</PrimarySound>
       <CharacterAnimation>cockpit23</CharacterAnimation>
@@ -3057,11 +3107,12 @@
       <IsPressurized>false</IsPressurized>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
+      <BlockPairName>invalid_3x1x4_CockpitOpen</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_CockpitDefinition"> <!-- 2x3x2 Passenger Seat -->
       <Id>
         <TypeId>Cockpit</TypeId>
-        <SubtypeId>supersize_2x3x2PassengerSeat</SubtypeId>
+        <SubtypeId>PassengerSeatSmall</SubtypeId>
       </Id>
       <DisplayName>Passenger Seat</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\PassengerSeat.dds</Icon>
@@ -3107,11 +3158,12 @@
       <IsPressurized>false</IsPressurized>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
+      <BlockPairName>invalid_2x3x2_PassengerSeat</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_CockpitDefinition"> <!-- 3x3x3 Standard Cockpit -->
       <Id>
         <TypeId>Cockpit</TypeId>
-        <SubtypeId>supersize_3x3x3Cockpit</SubtypeId><!-- Small block cockpit -->
+        <SubtypeId>SmallBlockCockpit</SubtypeId><!-- Small block cockpit -->
       </Id>
       <DisplayName>Cockpit</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\CockpitSmall.dds</Icon>
@@ -3171,13 +3223,13 @@
       <IsPressurized>true</IsPressurized>
       <GetInSound>ShipSmCockpitIn</GetInSound>
       <GetOutSound>ShipSmCockpitOut</GetOutSound>
+      <BlockPairName>invalid_3x3x3_Cockpit</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_CockpitDefinition"> <!-- 3x4x6 Fighter Cockpit -->
       <Id>
         <TypeId>Cockpit</TypeId>
-        <SubtypeId>supersize_3x4x6FighterCockpit</SubtypeId><!-- Fighter cockpit -->
+        <SubtypeId>DBSmallBlockFighterCockpit</SubtypeId>
       </Id>
-      <!-- DBLargeBlockFighterCockpit : Original Name w/ auto initials -->
       <DisplayName>Fighter Cockpit</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\FighterCockpit.dds</Icon>
       <CubeSize>Small</CubeSize>
@@ -3245,6 +3297,7 @@
       <IsPressurized>true</IsPressurized>
       <GetInSound>ShipSmCockpitIn</GetInSound>
       <GetOutSound>ShipSmCockpitOut</GetOutSound>
+      <BlockPairName>invalid_2x4x6_DBLargeBlockFighterCockpit</BlockPairName>
     </Definition>
 <!-- Cockpits End -->
 <!-- Cryo Chamber Start -->
@@ -3316,7 +3369,7 @@
     </Definition>
 <!-- Cryo Chamber End -->
 <!-- Landing Gear -->
-    <Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
+    <Definition xsi:type="MyObjectBuilder_LandingGearDefinition"> <!-- 1x2x3 Landing Gear -->
       <Id>
         <TypeId>LandingGear</TypeId>
         <SubtypeId>SmallBlockLandingGear</SubtypeId>
@@ -3362,7 +3415,7 @@
       </BlockVariants>
       <BlockPairName>invalid_1x1x1_LandingGear</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_LandingGearDefinition">
+    <Definition xsi:type="MyObjectBuilder_LandingGearDefinition"> <!-- 5x10x15 Landing Gear -->
       <Id>
         <TypeId>LandingGear</TypeId>
         <SubtypeId>LargeBlockLandingGear</SubtypeId>
@@ -3405,10 +3458,10 @@
     </Definition>
 <!-- Landing Gear -->
 <!-- LCD Panel Start -->
-    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition">
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 1x1x1 Text Panel -->
       <Id>
         <TypeId>TextPanel</TypeId>
-        <SubtypeId>supersize_SmallBlockTextPanel</SubtypeId>
+        <SubtypeId>SmallTextPanel</SubtypeId>
       </Id>
       <DisplayName>Small LCD Panel</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\TextPanel.dds</Icon>
@@ -3458,30 +3511,30 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>TextPanel</TypeId>
-          <SubtypeId>supersize_SmallBlockLCDPanel</SubtypeId>
+          <SubtypeId>SmallLCDPanel</SubtypeId>
         </BlockVariant>
          <BlockVariant>
           <TypeId>TextPanel</TypeId>
-          <SubtypeId>supersize_LargeLCDPanel</SubtypeId>
+          <SubtypeId>LargeLCDPanel</SubtypeId>
         </BlockVariant>          
         <BlockVariant>
           <TypeId>TextPanel</TypeId>
-          <SubtypeId>supersize_LargeTextPanel</SubtypeId>
+          <SubtypeId>LargeTextPanel</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>TextPanel</TypeId>
-          <SubtypeId>supersize_SmallBlockWideLCD</SubtypeId>
+          <SubtypeId>SmallLCDPanelWide</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>TextPanel</TypeId>
-          <SubtypeId>supersize_LargeLCDPanelWide</SubtypeId>
+          <SubtypeId>LargeLCDPanelWide</SubtypeId>
         </BlockVariant>
       </BlockVariants>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition">
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 3x3x1 LCD -->
       <Id>
         <TypeId>TextPanel</TypeId>
-        <SubtypeId>supersize_SmallBlockLCDPanel</SubtypeId>
+        <SubtypeId>SmallLCDPanel</SubtypeId>
       </Id>
       <DisplayName>Medium LCD Panel</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LCDPanel.dds</Icon>
@@ -3528,11 +3581,12 @@
       <TextureResolution>512</TextureResolution>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
+      <BlockPairName>invalid_3x3x1_LCDPanel</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition">     
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 5x3x1 Text Panel -->
       <Id>
         <TypeId>TextPanel</TypeId>
-        <SubtypeId>supersize_LargeTextPanel</SubtypeId>
+        <SubtypeId>LargeTextPanel</SubtypeId>
       </Id>
       <DisplayName>Large Text Panel</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\TextPanel.dds</Icon>
@@ -3567,11 +3621,12 @@
       <GuiVisible>false</GuiVisible>
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
       <RequiredPowerInput>0.00006</RequiredPowerInput>
+      <BlockPairName>inavlid_5x3x1_TextPanel</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition">
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 6x3x1 LCD -->
       <Id>
         <TypeId>TextPanel</TypeId>
-        <SubtypeId>supersize_SmallBlockWideLCD</SubtypeId>
+        <SubtypeId>SmallLCDPanelWide</SubtypeId>
       </Id>
       <DisplayName>Small Wide LCD Panel</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LCDPanelWide.dds</Icon>
@@ -3621,11 +3676,12 @@
       <TextureAspectRadio>2</TextureAspectRadio>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
+      <BlockPairName>invalid_6x3x1_LCDPanelWide</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition">
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 5x5x1 LCD -->
       <Id>
         <TypeId>TextPanel</TypeId>
-        <SubtypeId>supersize_LargeLCDPanel</SubtypeId>
+        <SubtypeId>LargeLCDPanel</SubtypeId>
       </Id>
       <DisplayName>Large LCD Panel</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LCDPanel.dds</Icon>
@@ -3662,11 +3718,12 @@
       <TextureResolution>512</TextureResolution>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
+      <BlockPairName>invalid_5x5x1_LCDPanel</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition">
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 10x5x1 LCD -->
       <Id>
         <TypeId>TextPanel</TypeId>
-        <SubtypeId>supersize_LargeLCDPanelWide</SubtypeId>
+        <SubtypeId>LargeLCDPanelWide</SubtypeId>
       </Id>
       <DisplayName>Large Wide LCD Panel</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LCDPanelWide.dds</Icon>
@@ -3705,13 +3762,14 @@
       <GuiVisible>false</GuiVisible>
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
+      <BlockPairName>invalid_10x5x1_LCDPanelWide</BlockPairName>
     </Definition>
 <!-- LCD Panel End -->
 <!-- LCD Strip Start -->
-    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition">
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 4x1x1 Corner LCD 1 -->
       <Id>
         <TypeId>TextPanel</TypeId>
-        <SubtypeId>supersize_LargeBlockCornerLCD</SubtypeId>
+        <SubtypeId>LargeBlockCorner_LCD_1</SubtypeId>
       </Id>
       <DisplayName>Large Corner LCD</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Corner_LCD_1.dds</Icon>
@@ -3746,17 +3804,54 @@
       <TextureResolution>1024</TextureResolution>
       <TextureAspectRadio>1</TextureAspectRadio>
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <BlockPairName>invalid_4x1x1_CornerLCD</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition">
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 5x5x5 Corner LCD 2 -->
       <Id>
         <TypeId>TextPanel</TypeId>
-        <SubtypeId>supersize_LargeBlockCorner_LCD_Flat_1</SubtypeId>
+        <SubtypeId>LargeBlockCorner_LCD_2</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_CornerLCD2</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Corner_LCD_2.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\large\Corner_LCD_2.mwm</Model>
+      <Components>
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="Computer" Count="3" />
+        <Component Subtype="Display" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.00" StartY="3.8" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="0.5" />
+      </MountPoints>
+      <EdgeType>Light</EdgeType>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\Corner_LCD_2_Construction_1.mwm" />
+      </BuildProgressModels>
+      <BuildTimeSeconds>4</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <RequiredPowerInput>0.00006</RequiredPowerInput>
+      <TextureResolution>1024</TextureResolution>
+      <TextureAspectRadio>1</TextureAspectRadio>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 4x1x1 Flat LCD 1 -->
+      <Id>
+        <TypeId>TextPanel</TypeId>
+        <SubtypeId>LargeBlockCorner_LCD_Flat_1</SubtypeId>
       </Id>
       <DisplayName>Large LCD Strip</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Corner_LCD_Flat_1.dds</Icon>
       <CubeSize>Small</CubeSize>
       <GuiVisible>false</GuiVisible>
-
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="4" y="1" z="1" />
       <ModelOffset x="0" y="1" z="1" />
@@ -3787,10 +3882,47 @@
       <TextureAspectRadio>1</TextureAspectRadio>
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition">
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 5x5x5 Flat LCD 2 -->
       <Id>
         <TypeId>TextPanel</TypeId>
-        <SubtypeId>supersize_SmallBlockCorner_LCD_1</SubtypeId>
+        <SubtypeId>LargeBlockCorner_LCD_Flat_2</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_CornerLCDFlatBottom</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Corner_LCD_Flat_2.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="4" y="1" z="1" />
+      <ModelOffset x="0" y="1" z="1" />
+      <Model>Models\Cubes\large\Corner_LCD_Flat_2.mwm</Model>
+      <Components>
+        <Component Subtype="Construction" Count="5" />
+        <Component Subtype="Computer" Count="3" />
+        <Component Subtype="Display" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="0.24" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.76" EndX="1.00" EndY="1.00" />
+      </MountPoints>
+      <EdgeType>Light</EdgeType>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\large\Corner_LCD_Flat_2_Construction_1.mwm" />
+      </BuildProgressModels>
+      <BuildTimeSeconds>4</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <RequiredPowerInput>0.00006</RequiredPowerInput>
+      <TextureResolution>1024</TextureResolution>
+      <TextureAspectRadio>1</TextureAspectRadio>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 1x1x1 Corner LCD 1 -->
+      <Id>
+        <TypeId>TextPanel</TypeId>
+        <SubtypeId>SmallBlockCorner_LCD_1</SubtypeId>
       </Id>
       <DisplayName>Small Corner LCD</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Corner_LCD_1.dds</Icon>
@@ -3823,11 +3955,12 @@
       <TextureResolution>1024</TextureResolution>
       <TextureAspectRadio>1</TextureAspectRadio>
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <BlockPairName>invalid_1x1x1_CornerLCD</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition">
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 1x1x1 Corner LCD 2 -->
       <Id>
         <TypeId>TextPanel</TypeId>
-        <SubtypeId>supersize_SmallBlockCorner_LCD_2</SubtypeId>
+        <SubtypeId>SmallBlockCorner_LCD_2</SubtypeId>
       </Id>
       <DisplayName>Small Corner LCD 2</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Corner_LCD_2.dds</Icon>
@@ -3860,10 +3993,10 @@
       <TextureAspectRadio>1</TextureAspectRadio>
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition">
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 1x1x1 Corner LCD Flat 1 -->
       <Id>
         <TypeId>TextPanel</TypeId>
-        <SubtypeId>supersize_SmallBlockCorner_LCD_Flat_1</SubtypeId>
+        <SubtypeId>SmallBlockCorner_LCD_Flat_1</SubtypeId>
       </Id>
       <DisplayName>Small LCD Strip Top</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Corner_LCD_Flat_1.dds</Icon>
@@ -3897,7 +4030,7 @@
       <TextureAspectRadio>1</TextureAspectRadio>
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition">
+    <Definition xsi:type="MyObjectBuilder_TextPanelDefinition"> <!-- 1x1x1 Corner LCD Flat 2 -->
       <Id>
         <TypeId>TextPanel</TypeId>
         <SubtypeId>SmallBlockCorner_LCD_Flat_2</SubtypeId>
@@ -3933,31 +4066,13 @@
       <TextureResolution>512</TextureResolution>
       <TextureAspectRadio>1</TextureAspectRadio>
       <ResourceSinkGroup>Utility</ResourceSinkGroup>
-      <BlockVariants>
-        <BlockVariant>
-          <TypeId>TextPanel</TypeId>
-          <SubtypeId>supersize_SmallBlockCorner_LCD_Flat_1</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>TextPanel</TypeId>
-          <SubtypeId>supersize_SmallBlockCorner_LCD_2</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>TextPanel</TypeId>
-          <SubtypeId>supersize_LargeBlockCorner_LCD_Flat_1</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>TextPanel</TypeId>
-          <SubtypeId>supersize_LargeBlockCornerLCD</SubtypeId>
-        </BlockVariant>
-      </BlockVariants>
     </Definition>
 <!-- LCD Strip End -->
 <!-- Gas Tanks Start -->
     <Definition xsi:type="MyObjectBuilder_GasTankDefinition"> <!-- 3x3x3 Oxygen Tank -->
       <Id>
         <TypeId>OxygenTank</TypeId>
-        <SubtypeId>supersize_OxygenTankSmall</SubtypeId>
+        <SubtypeId>OxygenTankSmall</SubtypeId>
       </Id>
       <DisplayName>Small Oxygen Tank</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\OxygenTankSmall.dds</Icon>
@@ -4023,14 +4138,15 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>OxygenTank</TypeId>
-          <SubtypeId>supersize_LargeOxygenTank</SubtypeId>
+          <SubtypeId/>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_3x3x3_OxygenTank</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_GasTankDefinition"> <!-- 5x10x5 Oxygen Tank -->
       <Id>
         <TypeId>OxygenTank</TypeId>
-        <SubtypeId>supersize_LargeOxygenTank</SubtypeId>
+        <SubtypeId/>
       </Id>
       <DisplayName>Large Oxygen Tank</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\OxygenTank.dds</Icon>
@@ -4097,11 +4213,12 @@
       <DestroyEffect>Explosion_Missile</DestroyEffect>
       <DestroySound>WepSmallMissileExpl</DestroySound>
       <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <BlockPairName>invalid_5x10x5_OxygenTank</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_GasTankDefinition"> <!-- 15x15x15 Hydrogen Tank -->
       <Id>
         <TypeId>OxygenTank</TypeId>
-        <SubtypeId>supersize_LargeHydrogenTank</SubtypeId>
+        <SubtypeId>LargeHydrogenTank</SubtypeId>
       </Id>
       <DisplayName>Large Hydrogen Tank</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HydrogenTank.dds</Icon>
@@ -4166,11 +4283,12 @@
       <DestroySound>WepLrgWarheadExpl</DestroySound>
       <DamagedSound>ParticleWeapExpl</DamagedSound>
       <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <BlockPairName>invalid_15x15x15_HydrogenTank</BlockPairName>
     </Definition>  
     <Definition xsi:type="MyObjectBuilder_GasTankDefinition"> <!-- 5x5x5 Hydrogren Tank -->
       <Id>
         <TypeId>OxygenTank</TypeId>
-        <SubtypeId>supersize_SmallHydrogenTank</SubtypeId>
+        <SubtypeId>SmallHydrogenTank</SubtypeId>
       </Id>
       <DisplayName>Small Hydrogen Tank</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HydrogenTank.dds</Icon>
@@ -4251,13 +4369,14 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>OxygenTank</TypeId>
-          <SubtypeId>supersize_LargeHydrogenTank</SubtypeId>
+          <SubtypeId>LargeHydrogenTank</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_5x5x5_HydrogenTank</BlockPairName>
     </Definition>
 <!-- Gas Tanks End -->
 <!-- Gas Generators Start -->
-    <Definition xsi:type="MyObjectBuilder_OxygenGeneratorDefinition">
+    <Definition xsi:type="MyObjectBuilder_OxygenGeneratorDefinition"> <!-- 3x3x2 Oxygen Generator -->
       <Id>
         <TypeId>OxygenGenerator</TypeId>
         <SubtypeId>OxygenGeneratorSmall</SubtypeId>
@@ -4344,7 +4463,7 @@
       </BlockVariants>
       <BlockPairName>invalid_3x3x2_OxygenGenerator</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_OxygenGeneratorDefinition">
+    <Definition xsi:type="MyObjectBuilder_OxygenGeneratorDefinition"> <!-- 5x10x5 Oxygen Generator -->
       <Id>
         <TypeId>OxygenGenerator</TypeId>
         <SubtypeId/>
@@ -4425,7 +4544,7 @@
     </Definition>
 <!-- Gas Generators End -->
 <!-- Projectors Start -->
-    <Definition xsi:type="MyObjectBuilder_ProjectorDefinition">
+    <Definition xsi:type="MyObjectBuilder_ProjectorDefinition"> <!-- 5x5x5 Projector -->
       <Id>
         <TypeId>MyObjectBuilder_Projector</TypeId>
         <SubtypeId>LargeProjector</SubtypeId>
@@ -4472,7 +4591,7 @@
       <EmissiveColorPreset>Extended</EmissiveColorPreset>
       <BlockPairName>invalid_5x5x5_Projector</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_ProjectorDefinition">
+    <Definition xsi:type="MyObjectBuilder_ProjectorDefinition"> <!-- 1x1x1 Projector -->
       <Id>
         <TypeId>MyObjectBuilder_Projector</TypeId>
         <SubtypeId>SmallProjector</SubtypeId>
@@ -4519,14 +4638,14 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>MyObjectBuilder_Projector</TypeId>
-          <SubtypeId>supersize_LargeProjector</SubtypeId>
+          <SubtypeId>LargeProjector</SubtypeId>
         </BlockVariant>
       </BlockVariants>
       <BlockPairName>invalid_1x1x1_Projector</BlockPairName>
     </Definition>
 <!-- Projectors End -->
 <!-- Upgrade Modules Start -->
-    <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+    <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition"> <!-- 5x5x10 Productivity Module -->
       <Id>
         <TypeId>UpgradeModule</TypeId>
         <SubtypeId>LargeProductivityModule</SubtypeId>
@@ -4587,7 +4706,7 @@
       </BlockVariants>
       <BlockPairName>invalid_5x5x10ProductivityModule</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+    <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition"> <!-- 5x510 Efficiency Module -->
       <Id>
         <TypeId>UpgradeModule</TypeId>
         <SubtypeId>LargeEffectivenessModule</SubtypeId>
@@ -4638,7 +4757,7 @@
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <BlockPairName>invalid_5x5x10_EffectivenessModule</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition">
+    <Definition xsi:type="MyObjectBuilder_UpgradeModuleDefinition"> <!-- 5x5x10 Energy Module -->
       <Id>
         <TypeId>UpgradeModule</TypeId>
         <SubtypeId>LargeEnergyModule</SubtypeId>
@@ -5234,10 +5353,10 @@
     </Definition>
 <!-- Programming Block End -->
 <!-- Tools Start -->
-    <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition"> <!-- Small Drill -->
+    <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition"> <!-- 3x3x6 Drill -->
       <Id>
         <TypeId>Drill</TypeId>
-        <SubtypeId>supersize_SmallBlockDrill</SubtypeId>
+        <SubtypeId>SmallBlockDrill</SubtypeId>
       </Id>
       <DisplayName>Small Drill</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\drill.dds</Icon>
@@ -5284,43 +5403,42 @@
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>20</BuildTimeSeconds>
-      
       <ResourceSinkGroup>Defense</ResourceSinkGroup>
       <SensorRadius>1.3</SensorRadius>
       <SensorOffset>0.8</SensorOffset>
       <CutOutRadius>1.3</CutOutRadius>
       <CutOutOffset>0.6</CutOutOffset>
-      
       <DeformationRatio>0.2</DeformationRatio>
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
       <BlockVariants>
         <BlockVariant>
           <TypeId>ShipGrinder</TypeId>
-          <SubtypeId>supersize_SmallShipGrinder</SubtypeId>
+          <SubtypeId>SmallShipGrinder</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>ShipWelder</TypeId>
-          <SubtypeId>supersize_SmallShipWelder</SubtypeId>
+          <SubtypeId>SmallShipWelder</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>Drill</TypeId>
-          <SubtypeId>supersize_LargeBlockDrill</SubtypeId>
+          <SubtypeId>LargeBlockDrill</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>ShipGrinder</TypeId>
-          <SubtypeId>supersize_LargeShipGrinder</SubtypeId>
+          <SubtypeId>LargeShipGrinder</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>ShipWelder</TypeId>
-          <SubtypeId>supersize_LargeShipWelder</SubtypeId>
+          <SubtypeId>LargeShipWelder</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_3x3x6_Drill</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition"> <!-- Large Drill -->
+    <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition"> <!-- 5x5x15 Drill -->
       <Id>
         <TypeId>Drill</TypeId>
-        <SubtypeId>supersize_LargeBlockDrill</SubtypeId>
+        <SubtypeId>LargeBlockDrill</SubtypeId>
       </Id>
       <DisplayName>Large Drill</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\drill.dds</Icon>
@@ -5381,11 +5499,12 @@
       <DeformationRatio>0.2</DeformationRatio>
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <BlockPairName>invalid_1x1x3_Drill</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_ShipGrinderDefinition"> <!-- Large Grinder -->
+    <Definition xsi:type="MyObjectBuilder_ShipGrinderDefinition"> <!-- 5x5x10 Grinder -->
       <Id>
         <TypeId>ShipGrinder</TypeId>
-        <SubtypeId>supersize_LargeShipGrinder</SubtypeId>
+        <SubtypeId>LargeShipGrinder</SubtypeId>
       </Id>
       <DisplayName>Large Ship Grinder</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Grinder.dds</Icon>
@@ -5438,12 +5557,13 @@
       <BuildTimeSeconds>25</BuildTimeSeconds>
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <BlockPairName>invalid_5x5x10_ShipGrinder</BlockPairName>
       <Flare>ShipGrinder</Flare>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_ShipGrinderDefinition"> <!-- Small Grinder -->
+    <Definition xsi:type="MyObjectBuilder_ShipGrinderDefinition"> <!-- 3x3x6 Grinder -->
       <Id>
         <TypeId>ShipGrinder</TypeId>
-        <SubtypeId>supersize_SmallShipGrinder</SubtypeId>
+        <SubtypeId>SmallShipGrinder</SubtypeId>
       </Id>
       <DisplayName>Small Grinder</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Grinder.dds</Icon>
@@ -5500,11 +5620,12 @@
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
       <Flare>ShipGrinder</Flare>
+      <BlockPairName>invalid_3x3x6_ShipGrinder</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_ShipWelderDefinition"> <!-- Large Welder -->
+    <Definition xsi:type="MyObjectBuilder_ShipWelderDefinition"> <!-- 5x5x10 Welder -->
       <Id>
         <TypeId>ShipWelder</TypeId>
-        <SubtypeId>supersize_LargeShipWelder</SubtypeId>
+        <SubtypeId>LargeShipWelder</SubtypeId>
       </Id>
       <DisplayName>Large Welder</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Welder.dds</Icon>
@@ -5559,11 +5680,12 @@
       <DamagedSound>ParticleElectrical</DamagedSound>
       <Flare>ShipWelderLarge</Flare>
       <EmissiveColorPreset>Welder</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x10_ShipWelder</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_ShipWelderDefinition"> <!-- Small Welder -->
+    <Definition xsi:type="MyObjectBuilder_ShipWelderDefinition"> <!-- 3x3x6 Welder -->
       <Id>
         <TypeId>ShipWelder</TypeId>
-        <SubtypeId>supersize_SmallShipWelder</SubtypeId>
+        <SubtypeId>SmallShipWelder</SubtypeId>
       </Id>
       <DisplayName>Small Welder</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Welder.dds</Icon>
@@ -5608,13 +5730,14 @@
       <DamagedSound>ParticleElectrical</DamagedSound>
       <Flare>ShipWelder</Flare>
       <EmissiveColorPreset>Welder</EmissiveColorPreset>
+      <BlockPairName>invalid_3x3x6_ShipWelder</BlockPairName>
     </Definition>
 <!-- Tools End -->
 <!-- Windows Start -->
     <Definition> <!-- Flat Vent -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_LargeVentSquare</SubtypeId>
+        <SubtypeId>LargeWindowSquare</SubtypeId>
       </Id>
       <DisplayName>Large Vent</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\window.dds</Icon>
@@ -5649,14 +5772,15 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_LargeVentEdge</SubtypeId>
+          <SubtypeId>LargeWindowEdge</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_5x5x1_VerticalWindow</BlockPairName>
     </Definition>
     <Definition> <!-- Sloped Vent -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_LargeVentEdge</SubtypeId>
+        <SubtypeId>LargeWindowEdge</SubtypeId>
       </Id>
       <DisplayName>Large Diagonal Vent</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\window2.dds</Icon>
@@ -5692,11 +5816,12 @@
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>12</BuildTimeSeconds>
+      <BlockPairName>invalid_5x5x5_DiagonalWindow</BlockPairName>
     </Definition>
     <Definition> <!-- 5x10 Sloped Window -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window1x2Slope</SubtypeId>
+        <SubtypeId>Window1x2Slope</SubtypeId>
       </Id>
       <DisplayName>5x10 Sloped Window</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2Slope.dds</Icon>
@@ -5736,11 +5861,12 @@
       <MirroringZ>Y</MirroringZ>
       <MirroringY>Z</MirroringY>
       <PhysicalMaterial>Glass</PhysicalMaterial>
+      <BlockPairName/>
     </Definition>
     <Definition> <!-- 5x10 Sloped Triangle Window - Inverted -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window1x2Inv</SubtypeId>
+        <SubtypeId>Window1x2Inv</SubtypeId>
       </Id>
       <DisplayName>5x10 Sloped Triangle Window - Inverted</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2Inv.dds</Icon>
@@ -5784,6 +5910,7 @@
       <MirroringY>HalfZ</MirroringY>
       <MirroringZ>YMinusHalfZ</MirroringZ>
       <PhysicalMaterial>Glass</PhysicalMaterial>
+      <BlockPairName/>
     </Definition>
     <Definition> <!-- 5x10 Sloped Triangle Window -->
       <Id>
@@ -6323,10 +6450,10 @@
     </Definition>
 <!-- Windows End -->
 <!-- Collector Start -->
-    <Definition xsi:type="MyObjectBuilder_PoweredCargoContainerDefinition">
+    <Definition xsi:type="MyObjectBuilder_PoweredCargoContainerDefinition"> <!-- 5x5x5 Collector -->
       <Id>
         <TypeId>Collector</TypeId>
-        <SubtypeId>supersize_LargeCollector</SubtypeId>
+        <SubtypeId>Collector</SubtypeId>
       </Id>
       <DisplayName>Large Collector</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\collector.dds</Icon>
@@ -6372,11 +6499,12 @@
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
       <ActionSound>BlockCollect</ActionSound>
+      <BlockPairName>invalid_5x5x5_Collector</BlockPairName>
     </Definition>
-    <Definition  xsi:type="MyObjectBuilder_PoweredCargoContainerDefinition">
+    <Definition  xsi:type="MyObjectBuilder_PoweredCargoContainerDefinition"> <!-- 3x3x3 Collector -->
       <Id>
         <TypeId>Collector</TypeId>
-        <SubtypeId>supersize_SmallCollector</SubtypeId>
+        <SubtypeId>CollectorSmall</SubtypeId>
       </Id>
       <DisplayName>Small Collector</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\collector.dds</Icon>
@@ -6424,16 +6552,17 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>Collector</TypeId>
-          <SubtypeId>supersize_LargeCollector</SubtypeId>
+          <SubtypeId>Collector</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_3x3x3_Collector</BlockPairName>
     </Definition>
 <!-- Collector End -->
 <!-- Conveyor Start -->
-    <Definition> <!-- Medium Conveyor Block -->
+    <Definition> <!-- 3x3x3 Conveyor Block -->
       <Id>
         <TypeId>Conveyor</TypeId>
-        <SubtypeId>supersize_MediumConveyor</SubtypeId>
+        <SubtypeId>SmallShipConveyorHub</SubtypeId>
       </Id>
       <DisplayName>Medium Conveyor</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Conveyor.dds</Icon>
@@ -6482,11 +6611,12 @@
       <BuildTimeSeconds>25</BuildTimeSeconds>
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
+      <BlockPairName>invalid_3x3x3_Conveyor</BlockPairName>
     </Definition>
-    <Definition> <!-- Small Conveyor Block -->
+    <Definition> <!-- 1x1x1 Conveyor Block -->
       <Id>
         <TypeId>Conveyor</TypeId>
-        <SubtypeId>supersize_SmallConveyor</SubtypeId>
+        <SubtypeId>SmallBlockConveyor</SubtypeId>
       </Id>
       <DisplayName>Small Conveyor</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ConveyorSmall.dds</Icon>
@@ -6525,18 +6655,19 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>Conveyor</TypeId>
-          <SubtypeId>supersize_MediumConveyor</SubtypeId>
+          <SubtypeId>SmallShipConveyorHub</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>Conveyor</TypeId>
-          <SubtypeId>supersize_LargeConveyor</SubtypeId>
+          <SubtypeId>LargeBlockConveyor</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x1_ConveyorSmall</BlockPairName>
     </Definition>
-    <Definition> <!-- Large Conveyor Block -->
+    <Definition> <!-- 5x5x5 Conveyor Block -->
       <Id>
         <TypeId>Conveyor</TypeId>
-        <SubtypeId>supersize_LargeConveyor</SubtypeId>
+        <SubtypeId>LargeBlockConveyor</SubtypeId>
       </Id>
       <DisplayName>Large Conveyor</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\conveyor.dds</Icon>
@@ -6567,13 +6698,14 @@
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x5_Conveyor</BlockPairName>
     </Definition>
 <!-- Conveyor End -->
 <!-- Connectors Start -->
-    <Definition> <!-- Large Connector -->
+    <Definition> <!-- 5x5x5 Connector -->
       <Id>
         <TypeId>ShipConnector</TypeId>
-        <SubtypeId>supersize_LargeConnector</SubtypeId>
+        <SubtypeId>Connector</SubtypeId>
       </Id>
       <DisplayName>Large Connector</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Connector.dds</Icon>
@@ -6612,11 +6744,12 @@
       <DamagedSound>ParticleHeavyMech</DamagedSound>
       <ActionSound>BlockEject</ActionSound>
       <EmissiveColorPreset>ConnectBlock</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x5_Connector</BlockPairName>
     </Definition>
-    <Definition> <!-- Medium 3x3 Connector -->
+    <Definition> <!-- 3x3x2 Connector -->
       <Id>
         <TypeId>ShipConnector</TypeId>
-        <SubtypeId>supersize_MediumConnector</SubtypeId>
+        <SubtypeId>ConnectorMedium</SubtypeId>
       </Id>
       <DisplayName>Medium Connector</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Connector.dds</Icon>
@@ -6654,11 +6787,12 @@
       <DamagedSound>ParticleHeavyMech</DamagedSound>
       <ActionSound>BlockEject</ActionSound>
       <EmissiveColorPreset>ConnectBlock</EmissiveColorPreset>
+      <BlockPairName>invalid_3x3x2_Connector</BlockPairName>
     </Definition>
-    <Definition> <!-- Small 1x1 Connector -->
+    <Definition> <!-- 1x1x1 Connector -->
       <Id>
         <TypeId>ShipConnector</TypeId>
-        <SubtypeId>supersize_ConnectorSmall</SubtypeId>
+        <SubtypeId>ConnectorSmall</SubtypeId>
       </Id>
       <DisplayName>Small Connector</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ConnectorSmall.dds</Icon>
@@ -6699,20 +6833,21 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>ShipConnector</TypeId>
-          <SubtypeId>supersize_LargeConnector</SubtypeId>
+          <SubtypeId>ConnectorMedium</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>ShipConnector</TypeId>
-          <SubtypeId>supersize_MediumConnector</SubtypeId>
+          <SubtypeId>Connector</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x1_Connector</BlockPairName>
     </Definition>
 <!-- Connectors End -->
 <!-- Conveyor Tubes Start -->
-    <Definition> <!-- Large Conveyor Tube -->
+    <Definition> <!-- 3x5x3 Conveyor Tube -->
       <Id>
         <TypeId>ConveyorConnector</TypeId>
-        <SubtypeId>supersize_LargeConveyorTube</SubtypeId>
+        <SubtypeId>ConveyorTube</SubtypeId>
       </Id>
       <DisplayName>Large Conveyor Tube</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ConveyorTube.dds</Icon>
@@ -6742,6 +6877,7 @@
       </MountPoints>
       <AutorotateMode>OppositeDirections</AutorotateMode>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_3x5x3_ConveyorTube</BlockPairName>
     </Definition>
     <Definition> <!-- Small Conveyor Tube -->
       <Id>
@@ -6781,34 +6917,34 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>ConveyorConnector</TypeId>
-          <SubtypeId>supersize_MediumConveyorFrame</SubtypeId>
+          <SubtypeId>ConveyorFrameMedium</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>ConveyorConnector</TypeId>
-          <SubtypeId>supersize_MediumConveyorTube</SubtypeId>
+          <SubtypeId>ConveyorTubeMedium</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>ConveyorConnector</TypeId>
-          <SubtypeId>supersize_LargeConveyorTube</SubtypeId>
+          <SubtypeId>ConveyorTube</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>ConveyorConnector</TypeId>
-          <SubtypeId>supersize_SmallCurvedConveyorTube</SubtypeId>
+          <SubtypeId>ConveyorTubeSmallCurved</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>ConveyorConnector</TypeId>
-          <SubtypeId>supersize_MediumCurvedConveyorTube</SubtypeId>
+          <SubtypeId>ConveyorTubeCurvedMedium</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>ConveyorConnector</TypeId>
-          <SubtypeId>supersize_LargeCurvedConveyorTube</SubtypeId>
+          <SubtypeId>ConveyorTubeCurved</SubtypeId>
         </BlockVariant>
       </BlockVariants>
     </Definition>
-    <Definition> <!-- Medium Conveyor Tube -->
+    <Definition> <!-- 3x3x3 Conveyor Tube -->
       <Id>
         <TypeId>ConveyorConnector</TypeId>
-        <SubtypeId>supersize_MediumConveyorTube</SubtypeId>
+        <SubtypeId>ConveyorTubeMedium</SubtypeId>
       </Id>
       <DisplayName>Medium Conveyor Tube</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ConveyorTube.dds</Icon>
@@ -6845,11 +6981,12 @@
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_3x3x3_ConveyorTube</BlockPairName>
     </Definition>
     <Definition> <!-- Conveyor Frame -->
       <Id>
         <TypeId>ConveyorConnector</TypeId>
-        <SubtypeId>supersize_MediumConveyorFrame</SubtypeId>
+        <SubtypeId>ConveyorFrameMedium</SubtypeId>
       </Id>
       <DisplayName>Medium Conveyor Frame</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ConveyorFrameMedium.dds</Icon>
@@ -6882,14 +7019,15 @@
         <MountPoint Side="Right" StartX="2.6" StartY="0.3" EndX="2.7" EndY="2.7" />
       </MountPoints>
       <AutorotateMode>OppositeDirections</AutorotateMode>
-	  <MirroringY>Z</MirroringY>
-	  <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_1x3x3_ConveyorFrame</BlockPairName>
     </Definition>
-    <Definition> <!-- Small Curved Conveyor Tube -->
+    <Definition> <!-- 1x1x1 Curved Conveyor Tube -->
       <Id>
         <TypeId>ConveyorConnector</TypeId>
-        <SubtypeId>supersize_SmallCurvedConveyorTube</SubtypeId>
+        <SubtypeId>ConveyorTubeSmallCurved</SubtypeId>
       </Id>
       <DisplayName>Small Curved Conveyor Tube</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ConveyorCurveSmall.dds</Icon>
@@ -6917,11 +7055,12 @@
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_1x1x1_ConveyorTubeCurvedSmall</BlockPairName>
     </Definition>
-    <Definition> <!-- Medium Curved Conveyor Tube -->
+    <Definition> <!-- 3x3x3 Curved Conveyor Tube -->
       <Id>
         <TypeId>ConveyorConnector</TypeId>
-        <SubtypeId>supersize_MediumCurvedConveyorTube</SubtypeId>
+        <SubtypeId>ConveyorTubeCurvedMedium</SubtypeId>
       </Id>
       <DisplayName>Medium Curved Conveyor Tube</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ConveyorTubeCurved.dds</Icon>
@@ -6959,11 +7098,12 @@
       <MirroringX>Y</MirroringX>
       <MirroringY>X</MirroringY>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_3x3x3_ConveyorTubeCurved</BlockPairName>
     </Definition>
     <Definition> <!-- Large Curved Conveyor Tube -->
       <Id>
         <TypeId>ConveyorConnector</TypeId>
-        <SubtypeId>supersize_LargeCurvedConveyorTube</SubtypeId>
+        <SubtypeId>ConveyorTubeCurved</SubtypeId>
       </Id>
       <DisplayName>Large Curved Conveyor Tube</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ConveyorTubeCurved.dds</Icon>
@@ -6995,6 +7135,7 @@
       <MirroringX>Y</MirroringX>
       <MirroringY>X</MirroringY>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_4x4x3_ConveyorTubeCurved</BlockPairName>
     </Definition>
 <!-- Conveyor Tubes End -->
 <!-- Conveyor Sorters Start -->
@@ -7230,7 +7371,7 @@
     <Definition xsi:type="MyObjectBuilder_TimerBlockDefinition"> <!-- Large Timer Block -->
       <Id>
         <TypeId>TimerBlock</TypeId>
-        <SubtypeId>supersize_LargeTimerBlock</SubtypeId>
+        <SubtypeId>TimerBlockLarge</SubtypeId>
       </Id>
       <DisplayName>DisplayName_Block_TimerBlock</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\TimerBlock.dds</Icon>
@@ -7262,11 +7403,12 @@
       <TimerSoundMid>ArcBlockTimerSignalB</TimerSoundMid>
       <TimerSoundEnd>ArcBlockTimerSignalC</TimerSoundEnd>
       <EmissiveColorPreset>Timer</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x5_TimerBlock</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_TimerBlockDefinition"> <!-- Small Timer Block -->
       <Id>
         <TypeId>TimerBlock</TypeId>
-        <SubtypeId>supersize_SmallTimerBlock</SubtypeId>
+        <SubtypeId>TimerBlockSmall</SubtypeId>
       </Id>
       <DisplayName>Timer Block</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\TimerBlock.dds</Icon>
@@ -7309,16 +7451,17 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>TimerBlock</TypeId>
-          <SubtypeId>supersize_LargeTimerBlock</SubtypeId>
+          <SubtypeId>TimerBlockLarge</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x1_TimerBlock</BlockPairName>
     </Definition>
 <!-- Timer Block end -->
 <!-- solar panel start -->
     <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition"> <!-- Large Solar Panel -->
       <Id>
         <TypeId>SolarPanel</TypeId>
-        <SubtypeId>supersize_LargeSolarPanel</SubtypeId>
+        <SubtypeId>LargeBlockSolarPanel</SubtypeId>
       </Id>
       <DisplayName>Large Solar Panel</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SolarPanel.dds</Icon>
@@ -7370,11 +7513,12 @@
       <DamagedSound>ParticleElectrical</DamagedSound>
       <PhysicalMaterial>Glass</PhysicalMaterial>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_20x10x1_SolarPanel</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_SolarPanelDefinition"> <!-- Small Solar Panel -->
       <Id>
         <TypeId>SolarPanel</TypeId>
-        <SubtypeId>supersize_SmallSolarPanel</SubtypeId>
+        <SubtypeId>SmallBlockSolarPanel</SubtypeId>
       </Id>
       <DisplayName>Small Solar Panel</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SolarPanel.dds</Icon>
@@ -7429,9 +7573,10 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>SolarPanel</TypeId>
-          <SubtypeId>supersize_LargeSolarPanel</SubtypeId>
+          <SubtypeId>LargeBlockSolarPanel</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_10x5x1_SolarPanel</BlockPairName>
     </Definition>
 <!-- solar panel end -->
 <!-- oxygen farm start -->
@@ -7501,7 +7646,7 @@
     <Definition xsi:type="MyObjectBuilder_OreDetectorDefinition"> <!-- Small Ore Detector -->
       <Id>
         <TypeId>OreDetector</TypeId>
-        <SubtypeId>supersize_SmallOreDetector</SubtypeId>
+        <SubtypeId>SmallBlockOreDetector</SubtypeId>
       </Id>
       <DisplayName>Small Ore Detector</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\detector.dds</Icon>
@@ -7544,14 +7689,15 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>OreDetector</TypeId>
-          <SubtypeId>supersize_LargeOreDetector</SubtypeId>
+          <SubtypeId>LargeOreDetector</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x1_OreDetector</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_OreDetectorDefinition"> <!-- Large Ore Detector -->
       <Id>
         <TypeId>OreDetector</TypeId>
-        <SubtypeId>supersize_LargeOreDetector</SubtypeId>
+        <SubtypeId>LargeOreDetector</SubtypeId>
       </Id>
       <DisplayName>DisplayName_Block_OreDetector</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\detector.dds</Icon>
@@ -7594,6 +7740,7 @@
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x10_OreDetector</BlockPairName>
     </Definition>
 <!-- ore detector end -->
 <!-- buttons start -->
@@ -8051,7 +8198,7 @@
     <Definition xsi:type="MyObjectBuilder_VirtualMassDefinition"> <!-- 5x5x5 Artificial Mass -->
       <Id>
         <TypeId>VirtualMass</TypeId>
-        <SubtypeId>supersize_5x5x5ArtificialMass</SubtypeId>
+        <SubtypeId>VirtualMassLarge</SubtypeId>
       </Id>
       <DisplayName>Large Artificial Mass</DisplayName>
       <Public>true</Public>
@@ -8092,11 +8239,12 @@
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
       <EmissiveColorPreset>GravityBlock</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x5_VirtualMass</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_VirtualMassDefinition"> <!-- 1x1x1 Artificial Mass -->
       <Id>
         <TypeId>VirtualMass</TypeId>
-        <SubtypeId>supersize_1x1x1ArtificialMass</SubtypeId>
+        <SubtypeId>VirtualMassSmall</SubtypeId>
       </Id>
       <DisplayName>Small Artificial Mass</DisplayName>
       <Public>true</Public>
@@ -8130,14 +8278,15 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>VirtualMass</TypeId>
-          <SubtypeId>supersize_5x5x5ArtificialMass</SubtypeId>
+          <SubtypeId>VirtualMassLarge</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x1_VirtualMass</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_SpaceBallDefinition"> <!-- 5x5x5 Spaceball -->
       <Id>
         <TypeId>SpaceBall</TypeId>
-        <SubtypeId>supersize_5x5x5Spaceball</SubtypeId>
+        <SubtypeId>SpaceBallLarge</SubtypeId>
       </Id>
       <DisplayName>Large Spaceball</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SpaceBall.dds</Icon>
@@ -8173,11 +8322,12 @@
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
       <EmissiveColorPreset>GravityBlock</EmissiveColorPreset>
+      <BlockPairName>invalid_5x5x5_SpaceBall</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_SpaceBallDefinition"> <!-- 1x1x1 Spaceball -->
       <Id>
         <TypeId>SpaceBall</TypeId>
-        <SubtypeId>supersize_1x1x1Spaceball</SubtypeId>
+        <SubtypeId>SpaceBallSmall</SubtypeId>
       </Id>
       <DisplayName>DisplayName_Block_SpaceBall</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SpaceBall.dds</Icon>
@@ -8215,9 +8365,10 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>SpaceBall</TypeId>
-          <SubtypeId>supersize_5x5x5Spaceball</SubtypeId>
+          <SubtypeId>SpaceBallLarge</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_1x1x1_SpaceBall</BlockPairName>
     </Definition>
 <!-- artificial masses end -->
 <!-- cover wall start -->
@@ -8341,7 +8492,7 @@
     <Definition> <!-- 5x3x5 Catwalk with wall -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_5x3x5WalledCatwalk</SubtypeId>
+        <SubtypeId>LargeSteelCatwalk</SubtypeId>
       </Id>
       <DisplayName>5x3x5 Catwalk - Single Wall</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\steel_catwalk.dds</Icon>
@@ -8375,24 +8526,25 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_5x3x5DoubleWalledCatwalk</SubtypeId>
+          <SubtypeId>LargeSteelCatwalk2Sides</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_5x3x5CornerCatwalk</SubtypeId>
+          <SubtypeId>LargeSteelCatwalkCorner</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_5x1x5Catwalk</SubtypeId>
+          <SubtypeId>LargeSteelCatwalkPlate</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_5x3x5_SteelCatwalk</BlockPairName>
     </Definition>
     <Definition> <!-- 5x3x5 Catwalk with 2 Walls -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_5x3x5DoubleWalledCatwalk</SubtypeId>
+        <SubtypeId>LargeSteelCatwalk2Sides</SubtypeId>
       </Id>
-      <DisplayName>5x3x5 Catwalk - Double Wall</DisplayName>
+      <DisplayName>Catwalk - Double Wall 5x3x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SteelCatwalk_2Sides.dds</Icon>
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
@@ -8420,13 +8572,14 @@
       <MirroringY>X</MirroringY>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>10</BuildTimeSeconds>
+      <BlockPairName>invalid_5x3x5_LargeSteelCatwalk2Sides</BlockPairName>
     </Definition>
     <Definition> <!-- 5x3x5 Catwalk Corner -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_5x3x5CornerCatwalk</SubtypeId>
+        <SubtypeId>LargeSteelCatwalkCorner</SubtypeId>
       </Id>
-      <DisplayName>5x3x5 Catwalk - Corner</DisplayName>
+      <DisplayName>Catwalk - Corner 5x3x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SteelCatwalk_Corner.dds</Icon>
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
@@ -8456,11 +8609,12 @@
       <MirroringX>MinusHalfY</MirroringX>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>10</BuildTimeSeconds>
+      <BlockPairName>invalid_5x3x5_LargeSteelCatwalkCorner</BlockPairName>
     </Definition>
     <Definition> <!-- 5x1x5 Catwalk -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_5x1x5Catwalk</SubtypeId>
+        <SubtypeId>LargeSteelCatwalkPlate</SubtypeId>
       </Id>
       <DisplayName>5x1x5 Catwalk - Flat</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\SteelCatwalk_Plate.dds</Icon>
@@ -8491,13 +8645,14 @@
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>10</BuildTimeSeconds>
+      <BlockPairName>invalid_51x15_LargeSteelCatwalkPlate</BlockPairName>
     </Definition>
 <!-- catwalks end -->
 <!-- laser antenna start -->
     <Definition xsi:type="MyObjectBuilder_LaserAntennaDefinition"> <!-- 5x10x5 Laser Antenna -->
       <Id>
         <TypeId>LaserAntenna</TypeId>
-        <SubtypeId>supersize_5x10x5LaserAntenna</SubtypeId>
+        <SubtypeId>LargeBlockLaserAntenna</SubtypeId>
       </Id>
       <DisplayName>Large Laser Antenna</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LaserAntenna.dds</Icon>
@@ -8548,11 +8703,12 @@
       <MaxRange>40000</MaxRange>
       <RequireLineOfSight>true</RequireLineOfSight>
       <EmissiveColorPreset>Extended</EmissiveColorPreset>
+      <BlockPairName>invalid_5x10x5_LaserAntenna</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_LaserAntennaDefinition"> <!-- 3x3x3 Laser Antenna -->
       <Id>
         <TypeId>LaserAntenna</TypeId>
-        <SubtypeId>supersize_3x3x3LaserAntenna</SubtypeId>
+        <SubtypeId>SmallBlockLaserAntenna</SubtypeId>
       </Id>
       <DisplayName>Small Laser Antenna</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\LaserAntennaSmall.dds</Icon>
@@ -8606,16 +8762,17 @@
       <BlockVariants>
         <BlockVariant>
           <TypeId>LaserAntenna</TypeId>
-          <SubtypeId>supersize_5x10x5LaserAntenna</SubtypeId>
+          <SubtypeId>LargeBlockLaserAntenna</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+      <BlockPairName>invalid_3x3x3_LaserAntenna</BlockPairName>
     </Definition>
 <!-- laser antenna end -->
 <!-- Gravity generators start -->
     <Definition xsi:type="MyObjectBuilder_GravityGeneratorDefinition"> <!-- 5x5x5 Linear Gravity Generator -->
       <Id>
         <TypeId>GravityGenerator</TypeId>
-        <SubtypeId>supersize_5x5x5LinearGravityGenerator</SubtypeId>
+        <SubtypeId/>
       </Id>
       <DisplayName>Gravity Generator</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\gravity_generator.dds</Icon>
@@ -8658,11 +8815,12 @@
       <DamageEffectId>211</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_5x4x5_GravityGenerator</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_GravityGeneratorSphereDefinition">
       <Id>
         <TypeId>GravityGeneratorSphere</TypeId>
-        <SubtypeId>supersize_5x5x5SphericalGravityGenerator</SubtypeId>
+        <SubtypeId/>
       </Id>
       <DisplayName>Spherical Gravity Generator</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\gravity_generator_spherical.dds</Icon>
@@ -8705,6 +8863,7 @@
       <DamageEffectId>211</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockPairName>invalid_5x4x5_GravityGeneratorSphere</BlockPairName>
     </Definition>
 <!-- gravity generators end -->
 <!-- decoy start -->
@@ -8968,7 +9127,7 @@
     <Definition> <!-- 5x5x5 Blast Door - Center -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_5x5x5BlastDoorCenter</SubtypeId>
+        <SubtypeId>ArmorCenter</SubtypeId>
       </Id>
       <DisplayName>Blast Door 5x5x5 - Center</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ArmorCenter.dds</Icon>
@@ -8999,11 +9158,12 @@
       <BuildTimeSeconds>24</BuildTimeSeconds>
       <DisassembleRatio>3</DisassembleRatio>
       <Public>true</Public>
+      <BlockPairName>invalid_5x5x5_ArmorCenter</BlockPairName>
     </Definition>
     <Definition> <!-- 5x5x5 Blast Door - Corner -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_5x5x5BlastDoorCorner</SubtypeId>
+        <SubtypeId>ArmorCorner</SubtypeId>
       </Id>
       <DisplayName>Blast Door 5x5x5 - Corner</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ArmorCorner.dds</Icon>
@@ -9039,11 +9199,12 @@
       <BuildTimeSeconds>24</BuildTimeSeconds>
       <DisassembleRatio>3</DisassembleRatio>
       <Public>true</Public>
+      <BlockPairName>invalid_5x5x5_ArmorCorner</BlockPairName>
     </Definition>
     <Definition> <!-- 5x5x5 Blast Door - Inverted Corner -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_5x5x5BlastDoorInvertedCorner</SubtypeId>
+        <SubtypeId>ArmorInvCorner</SubtypeId>
       </Id>
       <DisplayName>Blast Door 5x5x5 - Inverted Corner</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\BlastDoorCornerInverted.dds</Icon>
@@ -9079,11 +9240,12 @@
       <BuildTimeSeconds>24</BuildTimeSeconds>
       <DisassembleRatio>3</DisassembleRatio>
       <Public>true</Public>
+      <BlockPairName>invalid_5x5x5_ArmorInvCorner</BlockPairName>
     </Definition>
     <Definition> <!-- 5x5x5 Blast Door - Side -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_5x5x5BlastDoorSide</SubtypeId>
+        <SubtypeId>ArmorSide</SubtypeId>
       </Id>
       <DisplayName>Blast Door 5x5x5 - Side</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ArmorSide.dds</Icon>
@@ -9118,13 +9280,14 @@
       <BuildTimeSeconds>24</BuildTimeSeconds>
       <DisassembleRatio>3</DisassembleRatio>
       <Public>true</Public>
+      <BlockPairName>invalid_5x5x5_ArmorSide</BlockPairName>
     </Definition>
 <!-- blast doors 5x5x5 - end -->
 <!-- blast doors 1x1x1 - start -->
     <Definition> <!-- 1x1x1 Blast Door Center -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_1x1x1BlastDoorCenter</SubtypeId>
+        <SubtypeId>SmallArmorCenter</SubtypeId>
       </Id>
       <DisplayName>Blast Door 1x1x1 - Center</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ArmorCenter.dds</Icon>
@@ -9154,11 +9317,12 @@
       <BuildTimeSeconds>3</BuildTimeSeconds>
       <DisassembleRatio>3</DisassembleRatio>
       <Public>true</Public>
+      <BlockPairName>invalid_1x1x1_ArmorCenter</BlockPairName>
     </Definition>
     <Definition> <!-- 1x1x1 Blast Door - Corner -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_1x1x1BlastDoorCorner</SubtypeId>
+        <SubtypeId>SmallArmorCorner</SubtypeId>
       </Id>
       <DisplayName>Blast Door 1x1x1 - Corner</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ArmorCorner.dds</Icon>
@@ -9193,11 +9357,12 @@
       <BuildTimeSeconds>3</BuildTimeSeconds>
       <DisassembleRatio>3</DisassembleRatio>
       <Public>true</Public>
+      <BlockPairName>invalid_1x1x1_ArmorCorner</BlockPairName>
     </Definition>
     <Definition> <!-- 1x1x1 Blast Door - Inverted Corner -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_1x1x1BlastDoorInvertedCorner</SubtypeId>
+        <SubtypeId>SmallArmorInvCorner</SubtypeId>
       </Id>
       <DisplayName>Blast Door 1x1x1 - Inverted Corner</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\BlastDoorCornerInverted.dds</Icon>
@@ -9232,11 +9397,12 @@
       <BuildTimeSeconds>3</BuildTimeSeconds>
       <DisassembleRatio>3</DisassembleRatio>
       <Public>true</Public>
+      <BlockPairName>invalid_1x1x1_ArmorInvCorner</BlockPairName>
     </Definition>
     <Definition> <!-- 1x1x1 Blast Door - Side -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_1x1x1BlastDoorSide</SubtypeId>
+        <SubtypeId>SmallArmorSide</SubtypeId>
       </Id>
       <DisplayName>Blast Door 1x1x1 - Side</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\ArmorSide.dds</Icon>
@@ -9270,6 +9436,7 @@
       <BuildTimeSeconds>3</BuildTimeSeconds>
       <DisassembleRatio>3</DisassembleRatio>
       <Public>true</Public>
+      <BlockPairName>invalid_1x1x1_ArmorSide</BlockPairName>
     </Definition>
 <!-- blast doors end -->
   </CubeBlocks>
