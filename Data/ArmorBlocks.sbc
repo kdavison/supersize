@@ -4224,9 +4224,9 @@
       <CriticalComponent Subtype="SteelPlate" Index="0" />
       <PhysicsOption>Convex</PhysicsOption>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2TipConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2TipConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2TipConstruction_3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Slope2TipConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Slope2TipConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Slope2TipConstruction_3.mwm" />
       </BuildProgressModels>
       <MountPoints>
         <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.50" EndY="1.50" />
@@ -5873,9 +5873,9 @@
       <CriticalComponent Subtype="SteelPlate" Index="0" />
       <PhysicsOption>Convex</PhysicsOption>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2TipConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2TipConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2TipConstruction_3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Slope2TipConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Slope2TipConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Slope2TipConstruction_3.mwm" />
       </BuildProgressModels>
       <MirroringX>None</MirroringX>
       <MirroringY>Z</MirroringY>
