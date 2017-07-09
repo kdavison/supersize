@@ -4176,7 +4176,7 @@
       <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\LightArmor_Corner2x1x1Base_3_3_3_supersize.mwm</Model>
+      <Model>Models\LightArmorCorner2x1x1Base_3_3_3_supersize.mwm</Model>
       <Size x="3" y="3" z="3" />
       <ModelOffset x="0" y="0" z="0" />
       <Components>
@@ -4216,7 +4216,7 @@
       <BlockTopology>TriangleMesh</BlockTopology>
       <Model>Models\LightArmorCorner2x1x1Tip_3_3_3_supersize.mwm</Model>
       <Size x="2" y="2" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
+      <ModelOffset x="0.25" y="0.25" z="0" />
       <Components>
         <Component Subtype="SteelPlate" Count="3" />
         <Component Subtype="SteelPlate" Count="1" />
@@ -4567,6 +4567,10 @@
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
           <SubtypeId>supersize_3x3x3HeavyArmorRoundedCorner</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>supersize_3x3x3_HeavyBlockArmorCorner2Base</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
@@ -5218,6 +5222,126 @@
       <BuildTimeSeconds>24</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
     </Definition>
+    <Definition> <!-- 3x3x3 Heavy Armor - Corner 2x1x1 Base -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>supersize_3x3x3_HeavyBlockArmorCorner2Base</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_HeavyArmorCorner2Base</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\HeavyCorner2x1x1Base.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Model>Models\HeavyArmorCorner2x1x1Base_3_3_3_supersize.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="30" />
+        <Component Subtype="MetalGrid" Count="9" />
+        <Component Subtype="SteelPlate" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="1.50" StartY="0.00" EndX="3.00" EndY="1.50" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_3.mwm" />
+      </BuildProgressModels>
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>invalid_3x3x3_LargeHeavyBlockArmorCorner2Base</BlockPairName>
+      <MirroringX>YHalfX</MirroringX>
+      <MirroringY>MinusHalfX</MirroringY>
+      <MirroringZ>HalfX</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
     <Definition> <!-- 5x5x5 Heavy Armor - Corner 2x1x1 Tip -->
       <Id>
         <TypeId>CubeBlock</TypeId>
@@ -5230,7 +5354,7 @@
       <BlockTopology>TriangleMesh</BlockTopology>
       <Model>Models\LightArmorCorner2x1x1Tip_3_3_3_supersize.mwm</Model>
       <Size x="2" y="2" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
+      <ModelOffset x="0.25" y="0.25" z="0" />
       <Components>
         <Component Subtype="SteelPlate" Count="17" />
         <Component Subtype="MetalGrid" Count="6" />
@@ -6135,7 +6259,7 @@
       <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Model>Models\LightArmor_Corner2x1x1Base_5_5_5_supersize.mwm</Model>
+      <Model>Models\LightArmorCorner2x1x1Base_5_5_5_supersize.mwm</Model>
       <Size x="5" y="5" z="5" />
       <ModelOffset x="0" y="0" z="0" />
       <Components>
@@ -6150,14 +6274,14 @@
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_3.mwm" />
       </BuildProgressModels>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
-        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
-        <MountPoint Side="Right" StartX="2.50" StartY="0.00" EndX="5.00" EndY="2.50" />
+        <MountPoint Side="Front" StartX="2.50" StartY="0.00" EndX="5.00" EndY="2.50" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
         <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
       </MountPoints>
-      <MirroringX>YHalfX</MirroringX>
-      <MirroringY>MinusHalfX</MirroringY>
-      <MirroringZ>HalfX</MirroringZ>
+      <MirroringX>None</MirroringX>
+      <MirroringY>None</MirroringY>
+      <MirroringZ>None</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>5</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -6534,6 +6658,10 @@
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
           <SubtypeId>LargeHeavyBlockArmorRoundedCorner</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>LargeHeavyBlockArmorCorner2Base</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
@@ -7181,6 +7309,126 @@
       <DeformationRatio>0.4</DeformationRatio>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>24</BuildTimeSeconds>
+      <DisassembleRatio>2.5</DisassembleRatio>
+    </Definition>
+    <Definition> <!-- 5x5x5 Heavy Armor - Corner 2x1x1 Base -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeHeavyBlockArmorCorner2Base</SubtypeId>
+      </Id>
+      <DisplayName>Heavy Armor Corner 2x1x1 Base 5x5x5</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\HeavyCorner2x1x1Base.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Model>Models\HeavyArmorCorner2x1x1Base_5_5_5_supersize.mwm</Model>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Components>
+        <Component Subtype="SteelPlate" Count="50" />
+        <Component Subtype="MetalGrid" Count="15" />
+        <Component Subtype="SteelPlate" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="SteelPlate" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Front" StartX="2.50" StartY="0.00" EndX="5.00" EndY="2.50" />
+        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+      </MountPoints>
+      <Variants>
+        <Variant Color="Red" Suffix="_red" />
+        <Variant Color="Yellow" Suffix="_yellow" />
+        <Variant Color="Blue" Suffix="_blue" />
+        <Variant Color="Green" Suffix="_green" />
+        <Variant Color="Black" Suffix="_black" />
+        <Variant Color="White" Suffix="_white" />
+      </Variants>
+      <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_3.mwm" />
+      </BuildProgressModels>
+      <Skeleton>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="1" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="2" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="0" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="2" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="2" y="0" z="1" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+        <BoneInfo>
+          <BonePosition x="1" y="0" z="0" />
+          <BoneOffset x="127" y="127" z="127" />
+        </BoneInfo>
+      </Skeleton>
+      <BlockPairName>invalid_5x5x5_LargeHeavyBlockArmorCorner2Base</BlockPairName>
+      <MirroringX>YHalfX</MirroringX>
+      <MirroringY>MinusHalfX</MirroringY>
+      <MirroringZ>HalfX</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>5</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
     </Definition>
     <Definition> <!-- 5x5x5 Heavy Armor - Corner 2x1x1 Tip -->
