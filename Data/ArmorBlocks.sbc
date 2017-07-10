@@ -4274,9 +4274,8 @@
         <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="1.50" />
         <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
       </MountPoints>
-      <MirroringX>Y</MirroringX>
-      <MirroringY>X</MirroringY>
-      <MirroringZ>None</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>6</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -5342,7 +5341,7 @@
       <BuildTimeSeconds>5</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
     </Definition>
-    <Definition> <!-- 5x5x5 Heavy Armor - Corner 2x1x1 Tip -->
+    <Definition> <!-- 3x3x5 Heavy Armor - Corner 2x1x1 Tip -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>supersize_3x3x3HeavyBlockArmorCorner2Tip</SubtypeId>
@@ -5353,8 +5352,8 @@
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Model>Models\LightArmorCorner2x1x1Tip_3_3_3_supersize.mwm</Model>
-      <Size x="2" y="2" z="3" />
-      <ModelOffset x="0.25" y="0.25" z="0" />
+      <Size x="3" y="3" z="3" />
+      <ModelOffset x="0" y="0" z="0" />
       <Components>
         <Component Subtype="SteelPlate" Count="17" />
         <Component Subtype="MetalGrid" Count="6" />
@@ -5585,9 +5584,8 @@
       </MountPoints>
       <PhysicsOption>Convex</PhysicsOption>
       <BlockPairName>invalid_3x3x3_LargeHeavyBlockArmorSlope2Base</BlockPairName>
-      <MirroringX>Y</MirroringX>
-      <MirroringY>X</MirroringY>
-      <MirroringZ>None</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -6299,14 +6297,15 @@
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Model>Models\LightArmorCorner2x1x1Tip_5_5_5_supersize.mwm</Model>
-      <Size x="3" y="3" z="5" />
-      <ModelOffset x="0.5" y="0.5" z="0" />
+      <!--<Size x="3" y="3" z="5" />-->
+      <!--<ModelOffset x="0.5" y="0.5" z="0" />-->
+      <Size x="5" y="5" z="5"/>
+      <ModelOffset x="0" y="0" z="0"/>
       <Components>
         <Component Subtype="SteelPlate" Count="3" />
         <Component Subtype="SteelPlate" Count="1" />
       </Components>
       <CriticalComponent Subtype="SteelPlate" Index="0" />
-      <PhysicsOption>Convex</PhysicsOption>
       <BuildProgressModels>
         <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2TipConstruction_1.mwm" />
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2TipConstruction_2.mwm" />
@@ -6360,9 +6359,8 @@
         <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
       </MountPoints>
       <PhysicsOption>Convex</PhysicsOption>
-      <MirroringX>Y</MirroringX>
-      <MirroringY>X</MirroringY>
-      <MirroringZ>None</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -7436,14 +7434,14 @@
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>LargeHeavyBlockArmorCorner2Tip</SubtypeId>
       </Id>
-      <DisplayName>DisplayName_Block_HeavyArmorCorner2Tip</DisplayName>
+      <DisplayName>Heavy Armor Corner 2x1x1 Tip 5x5x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HeavyCorner2x1x1Tip.dds</Icon>
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Model>Models\LightArmorCorner2x1x1Tip_5_5_5_supersize.mwm</Model>
-      <Size x="3" y="3" z="5" />
-      <ModelOffset x="0.5" y="0.5" z="0" />
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
       <Components>
         <Component Subtype="SteelPlate" Count="17" />
         <Component Subtype="MetalGrid" Count="6" />
@@ -7515,9 +7513,9 @@
         </BoneInfo>
       </Skeleton>
       <BlockPairName>invalid_5x5x5_LargeHeavyBlockArmorCorner2Tip</BlockPairName>
-      <MirroringX>HalfY</MirroringX>
-      <MirroringY>None</MirroringY>
-      <MirroringZ>XHalfZ</MirroringZ>
+      <MirroringX>HalfZ</MirroringX>
+      <MirroringY>MinusHalfZ</MirroringY>
+      <MirroringZ>XMinusHalfZ</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>3</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
@@ -7674,9 +7672,8 @@
       </MountPoints>
       <PhysicsOption>Convex</PhysicsOption>
       <BlockPairName>invalid_5x5x5_LargeHeavyBlockArmorSlope2Base</BlockPairName>
-      <MirroringX>Y</MirroringX>
-      <MirroringY>X</MirroringY>
-      <MirroringZ>None</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
