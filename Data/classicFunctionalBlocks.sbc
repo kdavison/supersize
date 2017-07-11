@@ -8049,8 +8049,8 @@
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="5" y="5" z="3" />
-      <ModelOffset x="0" y="0" z="-0.5" />
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
       <Model>Models\Cubes\Large\OxygenPressurizer.mwm</Model>
       <Components>
         <Component Subtype="SteelPlate" Count="50" />
