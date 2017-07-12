@@ -3764,13 +3764,14 @@
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\SlopePlateConstruction_3.mwm" />
       </BuildProgressModels>
       <MountPoints>
-        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
-        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
-        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
-        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="3" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="1.5" EndY="3" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="1.5" StartY="0" EndX="3" EndY="1.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="1.5" EndY="1.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="1.5" StartY="0" EndX="3" EndY="3" />
       </MountPoints>
-      <MirroringX>None</MirroringX>
-      <MirroringY>HalfX</MirroringY>
+      <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>5</BuildTimeSeconds>
@@ -4853,10 +4854,12 @@
       </Components>
       <CriticalComponent Subtype="SteelPlate" Index="0" />
       <MountPoints>
-        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
-        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
-        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
-        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="3" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="1.5" EndY="3" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="1.5" StartY="0" EndX="3" EndY="1.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="1.5" EndY="1.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="1.5" StartY="0" EndX="3" EndY="3" />
       </MountPoints>
       <Variants>
         <Variant Color="Red" Suffix="_red" />
@@ -5855,14 +5858,15 @@
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\SlopePlateConstruction_3.mwm" />
       </BuildProgressModels>
       <MountPoints>
-        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
-        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
-        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
-        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="5" EndY="5" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="2.5" EndY="5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="2.5" StartY="0" EndX="5" EndY="2.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="2.5" EndY="2.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="2.5" StartY="0" EndX="5" EndY="5" />
       </MountPoints>
       <BlockPairName>invalid_5x5x5_LightArmorSlope</BlockPairName>
-      <MirroringX>None</MirroringX>
-      <MirroringY>HalfX</MirroringY>
+      <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
@@ -6708,10 +6712,12 @@
       </Components>
       <CriticalComponent Subtype="SteelPlate" Index="0" />
       <MountPoints>
-        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
-        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
-        <MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
-        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="5" EndY="5" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="2.5" EndY="5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="2.5" StartY="0" EndX="5" EndY="2.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="2.5" EndY="2.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="2.5" StartY="0" EndX="5" EndY="5" />
       </MountPoints>
       <Variants>
         <Variant Color="Red" Suffix="_red" />
