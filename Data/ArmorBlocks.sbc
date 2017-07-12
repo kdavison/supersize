@@ -779,7 +779,7 @@
       <DeformationRatio>0.32</DeformationRatio>
       <BuildTimeSeconds>2</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
-      <BlockPairName>invalid_1x1x1_ArmorRoundCorner</BlockPairName>
+      <BlockPairName>invalid_1x1x1_LargeBlockArmorRoundedCorner</BlockPairName>
     </Definition>
     <Definition> <!-- 1x1x1 Armor - Round Inverted Corner -->
       <Id>
@@ -5802,7 +5802,7 @@
         </BlockVariant>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
-          <SubtypeId>LargeBlockArmorRoundedCorner</SubtypeId>
+          <SubtypeId>LargeBlockArmorRoundCorner</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
@@ -6111,7 +6111,7 @@
     <Definition> <!-- 5x5x5 Light Armor - Rounded Corner -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorRoundedCorner</SubtypeId>
+        <SubtypeId>LargeBlockArmorRoundCorner</SubtypeId>
       </Id>
       <DisplayName>Light Armor Rounded Corner 5x5x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\RoundedArmorCorner.dds</Icon>
@@ -6256,7 +6256,7 @@
           <BoneOffset x="127" y="90" z="90" />
         </BoneInfo>
       </Skeleton>
-      <BlockPairName>invalid_5x5x5_ArmorRoundedCorner</BlockPairName>
+      <BlockPairName>invalid_5x5x5_LargeBlockArmorRoundCorner</BlockPairName>
       <MirroringX>YHalfX</MirroringX>
       <MirroringY>ZHalfY</MirroringY>
       <MirroringZ>YHalfY</MirroringZ>
