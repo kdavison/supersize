@@ -6284,20 +6284,15 @@
       </Components>
       <CriticalComponent Subtype="SteelPlate" Index="0" />
       <PhysicsOption>Convex</PhysicsOption>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_3.mwm" />
-      </BuildProgressModels>
       <MountPoints>
-        <MountPoint Side="Front" StartX="2.50" StartY="0.00" EndX="5.00" EndY="2.50" />
-        <MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
-        <MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
-        <MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="5.00" EndY="5.00" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="5.0" EndY="5" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="5.0" EndY="5.0" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5.0" EndY="5.0" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="5.0" EndY="5.0" />
       </MountPoints>
-      <MirroringX>None</MirroringX>
-      <MirroringY>None</MirroringY>
-      <MirroringZ>None</MirroringZ>
+      <MirroringX>YHalfX</MirroringX>
+      <MirroringY>MinusHalfX</MirroringY>
+      <MirroringZ>HalfX</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>5</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
