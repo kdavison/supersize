@@ -36,4 +36,9 @@ This file describes the block offsets to center a block in a
   <block subtype="LargeBlockArmorCorner2Tip">
     <offset Forward="Forward" Up="Up" x="0" y="0" z="0"/>
   </block>
+  <block subtype="LargeBlockArmorSlope2Tip">
+    <offset Forward="Up" Up="Forward" x="0" y="0" z="2"/>
+    <offset Forward="Forward" Up="Down" x="0" y="2" z="0"/>
+    <offset Forward="Up" Up="Left" x="2" y="0" z="0"/>
+  </block>
 </blocks>
