@@ -4223,7 +4223,7 @@
       <BlockTopology>TriangleMesh</BlockTopology>
       <Model>Models\LightArmorCorner2x1x1Tip_3_3_3_supersize.mwm</Model>
       <Size x="2" y="2" z="3" />
-      <ModelOffset x="0.25" y="0.25" z="0" />
+      <ModelOffset x="-0.25" y="0.25" z="0" />
       <Components>
         <Component Subtype="SteelPlate" Count="3" />
         <Component Subtype="SteelPlate" Count="1" />
@@ -5377,8 +5377,8 @@
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Model>Models\LightArmorCorner2x1x1Tip_3_3_3_supersize.mwm</Model>
-      <Size x="3" y="3" z="3" />
-      <ModelOffset x="0" y="0" z="0" />
+      <Size x="2" y="2" z="3" />
+      <ModelOffset x="-0.25" y="0.25" z="0" />
       <Components>
         <Component Subtype="SteelPlate" Count="17" />
         <Component Subtype="MetalGrid" Count="6" />
@@ -6493,6 +6493,11 @@
       </Components>
       <CriticalComponent Subtype="SteelPlate" Index="0" />
       <PhysicsOption>Convex</PhysicsOption>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_3.mwm" />
+      </BuildProgressModels>
       <MountPoints>
         <MountPoint Side="Front" StartX="0" StartY="0" EndX="5.0" EndY="5" />
         <MountPoint Side="Right" StartX="0" StartY="0" EndX="5.0" EndY="5.0" />
@@ -6519,10 +6524,8 @@
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Model>Models\LightArmorCorner2x1x1Tip_5_5_5_supersize.mwm</Model>
-      <!--<Size x="3" y="3" z="5" />-->
-      <!--<ModelOffset x="0.5" y="0.5" z="0" />-->
-      <Size x="5" y="5" z="5"/>
-      <ModelOffset x="0" y="0" z="0"/>
+      <Size x="3" y="3" z="5" />
+      <ModelOffset x="-0.5" y="0.5" z="0" />
       <Components>
         <Component Subtype="SteelPlate" Count="3" />
         <Component Subtype="SteelPlate" Count="1" />
@@ -7684,8 +7687,8 @@
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Model>Models\LightArmorCorner2x1x1Tip_5_5_5_supersize.mwm</Model>
-      <Size x="5" y="5" z="5" />
-      <ModelOffset x="0" y="0" z="0" />
+      <Size x="3" y="3" z="5" />
+      <ModelOffset x="-0.5" y="0.5" z="0" />
       <Components>
         <Component Subtype="SteelPlate" Count="17" />
         <Component Subtype="MetalGrid" Count="6" />
