@@ -156,4 +156,22 @@ This file describes the block offsets to center a block in a
     <offset Forward="Right" Up="Backward" x="2" y="2" z="2"/>
     <offset Forward="Right" Up="Forward" x="2" y="2" z="2"/>
   </block>
+  <block subtype="Window1x1Flat">
+    <offset Forward="Forward" Up="Up" x="4" y="0" z="0"/>
+    <offset Forward="Forward" Up="Left" x="0" y="4" z="0"/>
+    <offset Forward="Backward" Up="Up" x="0" y="0" z="0"/>
+  </block>
+  <block subtype="Window1x2SideLeft">
+    <offset Forward="Backward" Up="Right" x="0" y="4" z="0"/>
+  </block>
+  <block subtype="CockpitOpen">
+    <offset Forward="Forward" Up="Up" x="1" y="0" z="0"/>
+  </block>
+  <block subtype="Window1x1Side">
+    <offset Forward="Down" Up="Forward" x="2" y="2" z="2"/>
+    <offset Forward="Forward" Up="Down" x="2" y="2" z="2"/>
+  </block>
+  <block subtype="Window1x2Flat">
+    <offset Forward="Forward" Up="Up" x="4" y="0" z="0"/>
+  </block>
 </blocks>

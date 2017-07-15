@@ -6422,7 +6422,7 @@
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="5" z="5" />
-      <ModelOffset x="-1.4" y="0" z="0" /> <!-- -1.2 to center in block -->
+      <ModelOffset x="-1" y="0" z="0" /> <!-- -1.2 to center in block -->
       <Model>Models\Cubes\Large\Window1x1Flat.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="10" />
