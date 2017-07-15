@@ -29,16 +29,21 @@ This file describes the block offsets to center a block in a
     <offset Forward="Forward" Up="Up" x="2" y="0" z="0"/>
     <offset Forward="Forward" Up="Down" x="0" y="2" z="0"/>
     <offset Forward="Forward" Up="Left" x="2" y="2" z="0"/>
-    <offset Forward="Right" Up="Up" x="0" y="0" z="2" />
-    <offset Forward="Up" Up="Backward" x="2" y="0" z="0"/>
-    <offset Forward="Left" Up="Backward" x="0" y="2" z="0"/>
-    <offset Forward="Left" Up="Down" x="0" y="2" z="2"/>
-    <offset Forward="Right" Up="Forward" x="0" y="2" z="2"/>
-    <offset Forward="Right" Up="Down" x="0" y="2" z="0"/>
     <offset Forward="Backward" Up="Left" x="2" y="0" z="0"/>
     <offset Forward="Backward" Up="Right" x="0" y="2" z="0"/>
     <offset Forward="Backward" Up="Down" x="2" y="2" z="0"/>
+    <offset Forward="Up" Up="Forward" x="0" y="0" z="2"/>
+    <offset Forward="Up" Up="Backward" x="2" y="0" z="0"/>
+    <offset Forward="Up" Up="Left" x="2" y="0" z="2"/>
+    <offset Forward="Down" Up="Forward" x="2" y="0" z="2"/>
     <offset Forward="Down" Up="Left" x="2" y="0" z="0"/>
+    <offset Forward="Down" Up="Right" x="0" y="0" z="2"/>
+    <offset Forward="Left" Up="Forward" x="0" y="0" z="2"/>
+    <offset Forward="Left" Up="Backward" x="0" y="2" z="0"/>
+    <offset Forward="Left" Up="Down" x="0" y="2" z="2"/>
+    <offset Forward="Right" Up="Up" x="0" y="0" z="2" />
+    <offset Forward="Right" Up="Forward" x="0" y="2" z="2"/>
+    <offset Forward="Right" Up="Down" x="0" y="2" z="0"/>
   </block>
   <block subtype="LargeBlockArmorSlope2Tip">
     <offset Forward="Up" Up="Forward" x="0" y="0" z="2"/>
@@ -72,16 +77,21 @@ This file describes the block offsets to center a block in a
     <offset Forward="Forward" Up="Up" x="2" y="0" z="0"/>
     <offset Forward="Forward" Up="Down" x="0" y="2" z="0"/>
     <offset Forward="Forward" Up="Left" x="2" y="2" z="0"/>
-    <offset Forward="Right" Up="Up" x="0" y="0" z="2" />
-    <offset Forward="Up" Up="Backward" x="2" y="0" z="0"/>
-    <offset Forward="Left" Up="Backward" x="0" y="2" z="0"/>
-    <offset Forward="Left" Up="Down" x="0" y="2" z="2"/>
-    <offset Forward="Right" Up="Forward" x="0" y="2" z="2"/>
-    <offset Forward="Right" Up="Down" x="0" y="2" z="0"/>
     <offset Forward="Backward" Up="Left" x="2" y="0" z="0"/>
     <offset Forward="Backward" Up="Right" x="0" y="2" z="0"/>
     <offset Forward="Backward" Up="Down" x="2" y="2" z="0"/>
+    <offset Forward="Up" Up="Forward" x="0" y="0" z="2"/>
+    <offset Forward="Up" Up="Backward" x="2" y="0" z="0"/>
+    <offset Forward="Up" Up="Left" x="2" y="0" z="2"/>
+    <offset Forward="Down" Up="Forward" x="2" y="0" z="2"/>
     <offset Forward="Down" Up="Left" x="2" y="0" z="0"/>
+    <offset Forward="Down" Up="Right" x="0" y="0" z="2"/>
+    <offset Forward="Left" Up="Forward" x="0" y="0" z="2"/>
+    <offset Forward="Left" Up="Backward" x="0" y="2" z="0"/>
+    <offset Forward="Left" Up="Down" x="0" y="2" z="2"/>
+    <offset Forward="Right" Up="Up" x="0" y="0" z="2" />
+    <offset Forward="Right" Up="Forward" x="0" y="2" z="2"/>
+    <offset Forward="Right" Up="Down" x="0" y="2" z="0"/>
   </block>
 <!-- Functional Block Offsets -->
   <block subtype="SmallLight">
@@ -113,6 +123,8 @@ This file describes the block offsets to center a block in a
   <block subtype="LargeInteriorPillar">
     <offset Forward="Forward" Up="Up" x="2" y="0" z="2"/>
     <offset Forward="Forward" Up="Down" x="2" y="0" z="2"/>
+    <offset Forward="Forward" Up="Left" x="0" y="2" z="2"/>
+    <offset Forward="Forward" Up="Right" x="0" y="2" z="2"/>
     <offset Forward="Down" Up="Left" x="0" y="2" z="2"/>
     <offset Forward="Down" Up="Right" x="0" y="2" z="2"/>
     <offset Forward="Left" Up="Backward" x="2" y="2" z="0"/>
