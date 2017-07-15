@@ -1792,7 +1792,7 @@
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>SmallHeavyBlockArmorBlock</SubtypeId>
       </Id>
-      <DisplayName>DisplayName_Block_HeavyArmorBlock</DisplayName>
+      <DisplayName>Heavy Armor Block 1x1x1</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\heavy_armor_cube.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>Cube</BlockTopology>
@@ -6474,7 +6474,7 @@
     <Definition> <!-- 5x5x5 Light Armor - Rounded Slope -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeBlockArmorRoundedSlope</SubtypeId>
+        <SubtypeId>LargeBlockArmorRoundSlope</SubtypeId>
       </Id>
       <DisplayName>Light Armor Rounded Slope 5x5x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\RoundedArmorSlope.dds</Icon>
@@ -7057,7 +7057,6 @@
       <DisplayName>Light Armor Slope 2x1x1 Tip 5x5x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Slope2x1x1Tip.dds</Icon>
       <GuiVisible>false</GuiVisible>
-      <Public>false</Public>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Model>Models\LightArmorSlope2x1x1Tip_5_5_5_supersize.mwm</Model>
       <CubeSize>Small</CubeSize>
@@ -7863,7 +7862,7 @@
     <Definition> <!-- 5x5x5 Heavy Armor - Round Corner -->
       <Id>
         <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeHeavyBlockArmorRoundedCorner</SubtypeId>
+        <SubtypeId>LargeHeavyBlockArmorRoundCorner</SubtypeId>
       </Id>
       <DisplayName>Heavy Armor Round Corner 5x5x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\RoundedHeavyArmorCorner.dds</Icon>
@@ -8176,6 +8175,7 @@
       <DisplayName>Heavy Armor Corner 2x1x1 Base 5x5x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HeavyCorner2x1x1Base.dds</Icon>
       <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Model>Models\HeavyArmorCorner2x1x1Base_5_5_5_supersize.mwm</Model>
       <Size x="5" y="5" z="5" />
@@ -8308,12 +8308,9 @@
       </Components>
       <CriticalComponent Subtype="SteelPlate" Index="0" />
       <MountPoints>
-        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="1.0" EndY="2.5" />
-        <MountPoint Side="Front" ExclusionMask="1" PropertiesMask="2" StartX="1.0" StartY="0" EndX="2.5" EndY="2.0" />
-        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="1.0" EndY="0.5" />
-        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="1.0" StartY="0" EndX="4.0" EndY="2.0" />
-        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="4.0" StartY="0" EndX="5" EndY="2.5" />
-        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="4.0" StartY="0" EndX="5" EndY="2.5" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="3" EndY="3" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="5" EndY="3" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="3" />
       </MountPoints>
       <Variants>
         <Variant Color="Red" Suffix="_red" />
@@ -8387,6 +8384,7 @@
       <DisplayName>Heavy Armor Slope 2x1x1 Base 5x5x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\HeavySlope2x1x1Base.dds</Icon>
       <CubeSize>Small</CubeSize>
+      <GuiVisible>false</GuiVisible>
       <Size x="5" y="5" z="5" />
       <ModelOffset x="0" y="0" z="0" />
       <BlockTopology>TriangleMesh</BlockTopology>

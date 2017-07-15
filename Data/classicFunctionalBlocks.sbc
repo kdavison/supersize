@@ -1409,6 +1409,20 @@
       <DamageEffectId>210</DamageEffectId>
       <DamagedSound>ParticleReactor</DamagedSound>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>Reactor</TypeId>
+          <SubtypeId>SmallBlockLargeGenerator</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>Reactor</TypeId>
+          <SubtypeId>LargeBlockSmallGenerator</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>Reactor</TypeId>
+          <SubtypeId>LargeBlockLargeGenerator</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_ReactorDefinition"> <!-- 3x3x3 Reactor -->
       <Id>
@@ -1456,20 +1470,6 @@
       <MirroringZ>Y</MirroringZ>
       <BuildTimeSeconds>35</BuildTimeSeconds>
       <EdgeType>Light</EdgeType>
-      <BlockVariants>
-        <BlockVariant>
-          <TypeId>Reactor</TypeId>
-          <SubtypeId>SmallBlockSmallGenerator</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>Reactor</TypeId>
-          <SubtypeId>LargeBlockSmallGenerator</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>Reactor</TypeId>
-          <SubtypeId>LargeBlockLargeGenerator</SubtypeId>
-        </BlockVariant>
-      </BlockVariants>
       <ResourceSourceGroup>Reactors</ResourceSourceGroup>
       <MaxPowerOutput>14.75</MaxPowerOutput>  
       <InventorySize>
