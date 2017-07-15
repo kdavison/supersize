@@ -2779,7 +2779,7 @@
       <DamageEffectId>214</DamageEffectId>
       <DamagedSound>ParticleElectrical</DamagedSound>
     </Definition>
-	<Definition xsi:type="MyObjectBuilder_LightingBlockDefinition"> <!-- 1x1x1 Interior Light [SMALL] -->
+    <Definition xsi:type="MyObjectBuilder_LightingBlockDefinition"> <!-- 1x1x1 Interior Light [SMALL] -->
       <Id>
         <TypeId>InteriorLight</TypeId>
         <SubtypeId>SmallBlockSmallLight</SubtypeId>
@@ -5352,7 +5352,7 @@
     </Definition>
 <!-- Programming Block End -->
 <!-- Tools Start -->
-    <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition"> <!-- 3x3x6 Drill -->
+    <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition">   <!-- 3x3x6 Drill -->
       <Id>
         <TypeId>Drill</TypeId>
         <SubtypeId>SmallBlockDrill</SubtypeId>
@@ -5434,7 +5434,7 @@
       </BlockVariants>
       <BlockPairName>invalid_3x3x6_Drill</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition"> <!-- 5x5x15 Drill -->
+    <Definition xsi:type="MyObjectBuilder_ShipDrillDefinition">   <!-- 5x5x15 Drill -->
       <Id>
         <TypeId>Drill</TypeId>
         <SubtypeId>LargeBlockDrill</SubtypeId>
@@ -5621,7 +5621,7 @@
       <Flare>ShipGrinder</Flare>
       <BlockPairName>invalid_3x3x6_ShipGrinder</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_ShipWelderDefinition"> <!-- 5x5x10 Welder -->
+    <Definition xsi:type="MyObjectBuilder_ShipWelderDefinition">  <!-- 5x5x10 Welder -->
       <Id>
         <TypeId>ShipWelder</TypeId>
         <SubtypeId>LargeShipWelder</SubtypeId>
@@ -5681,7 +5681,7 @@
       <EmissiveColorPreset>Welder</EmissiveColorPreset>
       <BlockPairName>invalid_5x5x10_ShipWelder</BlockPairName>
     </Definition>
-    <Definition xsi:type="MyObjectBuilder_ShipWelderDefinition"> <!-- 3x3x6 Welder -->
+    <Definition xsi:type="MyObjectBuilder_ShipWelderDefinition">  <!-- 3x3x6 Welder -->
       <Id>
         <TypeId>ShipWelder</TypeId>
         <SubtypeId>SmallShipWelder</SubtypeId>
@@ -6124,7 +6124,7 @@
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x1Slope</SubtypeId>
       </Id>
-      <DisplayName> 5x5 Sloped Window</DisplayName>
+      <DisplayName>5x5 Sloped Window</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x1Slope.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
