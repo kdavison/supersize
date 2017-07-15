@@ -4809,14 +4809,15 @@
     </Definition>
 <!-- Upgrade Modules End -->
 <!-- Cargo Containers Start -->
-    <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition"> <!-- 1x1x1 Container -->
+    <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition"> <!-- 1x1x1 Cargo Container -->
       <Id>
         <TypeId>CargoContainer</TypeId>
         <SubtypeId>SmallBlockSmallContainer</SubtypeId>
       </Id>
       <DisplayName>Small Cargo Container</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container.dds</Icon>
-      <GuiVisible>false</GuiVisible>
+      <Public>true</Public>
+      <GuiVisible>true</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
@@ -4843,17 +4844,13 @@
         <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\CargoContainerSmallConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\CargoContainerSmallConstruction_2.mwm" />
       </BuildProgressModels>
+      <BlockPairName>invalid_1x1x1_CargoContainer</BlockPairName>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <BuildTimeSeconds>6</BuildTimeSeconds>
       <EdgeType>Light</EdgeType>
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
-      <InventorySize>
-        <X>0.5</X>
-        <Y>0.5</Y>
-        <Z>0.5</Z>
-      </InventorySize>
       <BlockVariants>
         <BlockVariant>
           <TypeId>CargoContainer</TypeId>
@@ -4872,7 +4869,6 @@
           <SubtypeId>LargeBlockLargeContainer</SubtypeId>
         </BlockVariant>
       </BlockVariants>
-      <BlockPairName/>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition"> <!-- 3x3x3 Container -->
       <Id>
@@ -4882,6 +4878,7 @@
       <DisplayName>Medium Cargo Container</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container_medium.dds</Icon>
       <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="3" y="3" z="3" />
@@ -4929,6 +4926,7 @@
       <DisplayName>Medium Cargo Container 2</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container_large.dds</Icon>
       <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="5" y="5" z="5" />
@@ -4975,6 +4973,7 @@
       <DisplayName>Large Cargo Container</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container.dds</Icon>
       <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="5" y="5" z="5" />
@@ -5005,6 +5004,7 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\CargoContainerSmallConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\CargoContainerSmallConstruction_3.mwm" />
       </BuildProgressModels>
+      <BlockPairName>invalid_5x5x5_SmallCargoContainer</BlockPairName>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
@@ -5016,7 +5016,6 @@
         <Y>2.5</Y>
         <Z>2.5</Z>
       </InventorySize>
-      <BlockPairName>invalid_5x5x5_LargeCargoContainer1</BlockPairName>
     </Definition>
     <Definition xsi:type="MyObjectBuilder_CargoContainerDefinition"> <!-- 15x15x15 Container -->
       <Id>
@@ -5026,6 +5025,7 @@
       <DisplayName>Huge Cargo Container</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\container_large.dds</Icon>
       <GuiVisible>false</GuiVisible>
+      <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="15" y="15" z="15" />
@@ -6933,7 +6933,7 @@
     </Definition>
 <!-- Connectors End -->
 <!-- Conveyor Tubes Start -->
-    <Definition> <!-- 3x5x3 Conveyor Tube -->
+    <Definition> <!-- 5x5x5 Conveyor Tube -->
       <Id>
         <TypeId>ConveyorConnector</TypeId>
         <SubtypeId>ConveyorTube</SubtypeId>
@@ -6943,7 +6943,7 @@
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="3" y="5" z="3" />
+      <Size x="5" y="5" z="5" />
       <ModelOffset x="0" y="0" z="0" />
       <Model>Models\Cubes\Large\ConveyorTube.mwm</Model>
       <Components>
@@ -6961,8 +6961,14 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>7</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0" Default="true"/>
-        <MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0"/>
+        <MountPoint Side="Bottom" StartX="1.0" StartY="1.0" EndX="4.0" EndY="1.5" Default="true"/>
+        <MountPoint Side="Bottom" StartX="1.0" StartY="3.5" EndX="4.0" EndY="4.0" />
+        <MountPoint Side="Bottom" StartX="1.0" StartY="1.5" EndX="1.5" EndY="3.5" />
+        <MountPoint Side="Bottom" StartX="3.5" StartY="1.5" EndX="4.0" EndY="3.5" />
+        <MountPoint Side="Top" StartX="1.0" StartY="1.0" EndX="4.0" EndY="1.5" />
+        <MountPoint Side="Top" StartX="1.0" StartY="3.5" EndX="4.0" EndY="4.0" />
+        <MountPoint Side="Top" StartX="1.0" StartY="1.5" EndX="1.5" EndY="3.5" />
+        <MountPoint Side="Top" StartX="3.5" StartY="1.5" EndX="4.0" EndY="3.5" />
       </MountPoints>
       <AutorotateMode>OppositeDirections</AutorotateMode>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
@@ -7189,7 +7195,7 @@
       <EmissiveColorPreset>Default</EmissiveColorPreset>
       <BlockPairName>invalid_3x3x3_ConveyorTubeCurved</BlockPairName>
     </Definition>
-    <Definition> <!-- 4x4x3 Curved Conveyor Tube -->
+    <Definition> <!-- 5x5x5 Curved Conveyor Tube -->
       <Id>
         <TypeId>ConveyorConnector</TypeId>
         <SubtypeId>ConveyorTubeCurved</SubtypeId>
@@ -7199,8 +7205,10 @@
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="4" y="4" z="3" />
-      <ModelOffset x="-0.3" y="0.3" z="0" />
+      <!--<Size x="4" y="4" z="3" />-->
+      <!--<ModelOffset x="-0.3" y="0.3" z="0" />-->
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0"/>
       <Model>Models\Cubes\Large\ConveyorTubeCurved.mwm</Model>
       <Components>
         <Component Subtype="InteriorPlate" Count="10" />
@@ -7217,8 +7225,14 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>7</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
-        <MountPoint Side="Right" StartX="1" StartY="1" EndX="4" EndY="4" />
+        <MountPoint Side="Bottom" StartX="1.0" StartY="1.0" EndX="4.0" EndY="1.5" />
+        <MountPoint Side="Bottom" StartX="1.0" StartY="3.5" EndX="4.0" EndY="4.0" />
+        <MountPoint Side="Bottom" StartX="1.0" StartY="1.5" EndX="1.5" EndY="3.5" />
+        <MountPoint Side="Bottom" StartX="3.5" StartY="1.5" EndX="4.0" EndY="3.5" />
+        <MountPoint Side="Right" StartX="1.0" StartY="1.0" EndX="4.0" EndY="1.5" />
+        <MountPoint Side="Right" StartX="1.0" StartY="3.5" EndX="4.0" EndY="4.0" />
+        <MountPoint Side="Right" StartX="1.0" StartY="1.5" EndX="1.5" EndY="3.5" />
+        <MountPoint Side="Right" StartX="3.5" StartY="1.5" EndX="4.0" EndY="3.5" />
       </MountPoints>
       <AutorotateMode>FirstDirection</AutorotateMode>
       <MirroringX>Y</MirroringX>
