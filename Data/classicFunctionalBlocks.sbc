@@ -1616,7 +1616,7 @@
     <Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition"> <!-- 5x8x9 Gatling Turret -->
       <Id>
         <TypeId>LargeGatlingTurret</TypeId>
-        <SubtypeId>supersize_5x8x9GatlingTurret</SubtypeId>
+        <SubtypeId/>
       </Id>
       <DisplayName>Large Gatling Turret</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\gatling_turret.dds</Icon>
@@ -1754,7 +1754,7 @@
     <Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">     <!-- 1x1x4 Gatling Gun -->
       <Id>
         <TypeId>SmallGatlingGun</TypeId>
-        <SubtypeId>supersize_1x1x4GatlingGun</SubtypeId>
+        <SubtypeId/>
       </Id>
       <DisplayName>Gatling Gun</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\gatling_gun.dds</Icon>
@@ -1801,7 +1801,7 @@
         </BlockVariant>
          <BlockVariant>
           <TypeId>LargeGatlingTurret</TypeId>
-          <SubtypeId>supersize_5x8x9GatlingTurret</SubtypeId>
+          <SubtypeId/>
         </BlockVariant>
       </BlockVariants>
       <BlockPairName>invalid_1x1x4_GatlingGun</BlockPairName>
