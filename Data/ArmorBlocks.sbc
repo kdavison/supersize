@@ -6270,7 +6270,7 @@
       <BuildTimeSeconds>20</BuildTimeSeconds>
       <BlockPairName>invalid_5x5x5_InteriorWall</BlockPairName>
     </Definition>
-    <Definition> <!-- 5x5x5 Light Armor - Cube -->
+    <Definition> <!-- 5x5x5 Light Armor - Block -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>LargeBlockArmorBlock</SubtypeId>
@@ -6312,7 +6312,7 @@
         </BlockVariant>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
-          <SubtypeId>LargeBlockArmorRoundedSlope</SubtypeId>
+          <SubtypeId>LargeBlockArmorRoundSlope</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
@@ -6471,7 +6471,7 @@
       <DisassembleRatio>2.5</DisassembleRatio>
       <BlockPairName>invalid_5x5x5LightArmorInvCorner</BlockPairName>
     </Definition>
-    <Definition> <!-- 5x5x5 Light Armor - Rounded Slope -->
+    <Definition> <!-- 5x5x5 Light Armor - Round Slope -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>LargeBlockArmorRoundSlope</SubtypeId>
@@ -6627,7 +6627,7 @@
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
     </Definition>
-    <Definition> <!-- 5x5x5 Light Armor - Rounded Corner -->
+    <Definition> <!-- 5x5x5 Light Armor - Round Corner -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>LargeBlockArmorRoundCorner</SubtypeId>
@@ -6783,7 +6783,7 @@
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <DisassembleRatio>2.5</DisassembleRatio>
     </Definition>
-    <Definition> <!-- 5x5x5 Light Armor - Rounded Inverted Corner -->
+    <Definition> <!-- 5x5x5 Light Armor - Round Inverted Corner -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>LargeBlockArmorRoundCornerInv</SubtypeId>
@@ -7343,7 +7343,7 @@
         </BlockVariant>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
-          <SubtypeId>LargeHeavyBlockArmorRoundedCorner</SubtypeId>
+          <SubtypeId>LargeHeavyBlockArmorRoundCorner</SubtypeId>
         </BlockVariant>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
