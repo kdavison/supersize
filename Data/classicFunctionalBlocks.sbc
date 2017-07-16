@@ -5733,96 +5733,12 @@
     </Definition>
 <!-- Tools End -->
 <!-- Windows Start -->
-    <Definition> <!-- Flat Vent -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeWindowSquare</SubtypeId>
-      </Id>
-      <DisplayName>Large Vent</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\window.dds</Icon>
-      <GuiVisible>false</GuiVisible>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="5" y="5" z="1" />
-      <ModelOffset x="0" y="0" z="1" />
-      <Model>Models\Cubes\Large\WindowSquare.mwm</Model>
-      <Components>
-        <Component Subtype="InteriorPlate" Count="12" />
-        <Component Subtype="Construction" Count="8" />
-        <Component Subtype="SmallTube" Count="4" />
-      </Components>
-      <CriticalComponent Subtype="Construction" Index="0" />
-      <MountPoints>
-        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="5" />
-        <MountPoint Side="Back" StartX="4" StartY="0" EndX="5" EndY="5" />
-        <MountPoint Side="Front" StartX="0" StartY="0" EndX="5" EndY="5" />
-        <MountPoint Side="Top" StartX="0" StartY="2.0" EndX="5" EndY="5" />
-        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="1.0" />
-        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1.0" EndY="5" />
-        <MountPoint Side="Right" StartX="4.0" StartY="0" EndX="5" EndY="5" />
-      </MountPoints>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\WindowSquareConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\WindowSquareConstruction_2.mwm" />
-      </BuildProgressModels>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>10</BuildTimeSeconds>
-      <BlockVariants>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>LargeWindowEdge</SubtypeId>
-        </BlockVariant>
-      </BlockVariants>
-      <BlockPairName>invalid_5x5x1_VerticalWindow</BlockPairName>
-    </Definition>
-    <Definition> <!-- Sloped Vent -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>LargeWindowEdge</SubtypeId>
-      </Id>
-      <DisplayName>Large Diagonal Vent</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\window2.dds</Icon>
-      <GuiVisible>false</GuiVisible>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="5" y="5" z="5" />
-      <ModelOffset x="0" y="0" z="0" />
-      <Model>Models\Cubes\Large\WindowEdge.mwm</Model>
-      <Components>
-        <Component Subtype="InteriorPlate" Count="16" />
-        <Component Subtype="Construction" Count="12" />
-        <Component Subtype="SmallTube" Count="6" />
-      </Components>
-      <CriticalComponent Subtype="Construction" Index="0" />
-      <MountPoints>
-        <MountPoint Side="Back" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0.85" EndX="1" EndY="1" />
-        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="1" EndY="0.15" />
-        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="0.25" EndY="0.25" />
-        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.25" StartY="0.1" EndX="0.5" EndY="0.5" />
-        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0.35" EndX="0.75" EndY="0.75" />
-        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0.75" StartY="0.6" EndX="1" EndY="1" />
-        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0.6" EndX="0.25" EndY="1" />
-        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.25" StartY="0.35" EndX="0.5" EndY="0.75" />
-        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.5" StartY="0.1" EndX="0.75" EndY="0.5" />
-        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0.75" StartY="0" EndX="1" EndY="0.25" />
-      </MountPoints>
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\WindowEdgeConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\WindowEdgeConstruction_2.mwm" />
-      </BuildProgressModels>
-      <MirroringY>Z</MirroringY>
-      <MirroringZ>Y</MirroringZ>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>12</BuildTimeSeconds>
-      <BlockPairName>invalid_5x5x5_DiagonalWindow</BlockPairName>
-    </Definition>
-    <Definition> <!-- 5x10 Sloped Window -->
+    <Definition> <!-- 5x5x10 Window - Slope -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x2Slope</SubtypeId>
       </Id>
-      <DisplayName>5x10 Sloped Window</DisplayName>
+      <DisplayName>Window Slope 5x10</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2Slope.dds</Icon>
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
@@ -5840,34 +5756,34 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x2SlopeConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x2SlopeConstruction_2.mwm" />
       </BuildProgressModels>
+      <BlockPairName>invalid_5x5x10_Window1x2Slope</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
         <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="5.0" EndY="0.5" PropertiesMask="2" />
         <MountPoint Side="Back" StartX="0.0" StartY="4.5" EndX="5.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="2.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="2.0" StartY="1.0" EndX="4.0" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="4.0" StartY="2.0" EndX="6.0" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="6.0" StartY="3.0" EndX="8.0" EndY="4.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="8.0" StartY="4.0" EndX="10.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="5.0" EndX="2.0" EndY="4.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="2.0" StartY="4.0" EndX="4.0" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="4.0" StartY="3.0" EndX="6.0" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="6.0" StartY="2.0" EndX="8.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="8.0" StartY="1.0" EndX="10.0" EndY="0.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="0.4" EndY="0.2" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.4" StartY="0.2" EndX="0.8" EndY="0.4" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.8" StartY="0.4" EndX="1.2" EndY="0.6" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="1.2" StartY="0.6" EndX="1.6" EndY="0.8" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="1.6" StartY="0.8" EndX="2.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="1.0" EndX="0.4" EndY="0.8" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.4" StartY="0.8" EndX="0.8" EndY="0.6" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.8" StartY="0.6" EndX="1.2" EndY="0.4" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="1.2" StartY="0.4" EndX="1.6" EndY="0.2" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="1.6" StartY="0.2" EndX="2.0" EndY="0.0" PropertiesMask="2" />
       </MountPoints>
       <IsAirTight>true</IsAirTight>
       <MirroringZ>Y</MirroringZ>
       <MirroringY>Z</MirroringY>
       <PhysicalMaterial>Glass</PhysicalMaterial>
-      <BlockPairName/>
     </Definition>
-    <Definition> <!-- 5x10 Sloped Triangle Window - Inverted -->
+    <Definition> <!-- 5x5x10 Window - Face Inverted -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x2Inv</SubtypeId>
       </Id>
-      <DisplayName>5x10 Sloped Triangle Window - Inverted</DisplayName>
+      <DisplayName>Window Face 5x10 - Inverted</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2Inv.dds</Icon>
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
@@ -5885,40 +5801,39 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x2InvConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x2InvConstruction_2.mwm" />
       </BuildProgressModels>
+      <BlockPairName>invalid_5x5x10_Window1x2Inv</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="1.0" StartY="1.0" EndX="2.0" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="3.0" StartY="3.0" EndX="4.0" EndY="4.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="4.0" StartY="4.0" EndX="5.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.0" StartY="10.0" EndX="1.0" EndY="8.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="1.0" StartY="8.0" EndX="2.0" EndY="6.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="2.0" StartY="6.0" EndX="3.0" EndY="4.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="3.0" StartY="4.0" EndX="4.0" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="5.0" StartY="2.0" EndX="5.0" EndY="0.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="0.0" StartX="10.0" EndY="1.0" EndX="8.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="1.0" StartX="8.0" EndY="2.0" EndX="6.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="2.0" StartX="6.0" EndY="3.0" EndX="4.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="3.0" StartX="4.0" EndY="4.0" EndX="2.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="4.0" StartX="2.0" EndY="5.0" EndX="0.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.2" EndY="0.2" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.4" EndY="0.4" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.4" StartY="0.4" EndX="0.6" EndY="0.6" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.6" StartY="0.6" EndX="0.8" EndY="0.8" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.8" StartY="0.8" EndX="1.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="0.0" StartY="2.0" EndX="0.2" EndY="1.6" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="0.2" StartY="1.6" EndX="0.4" EndY="1.2" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="0.4" StartY="1.2" EndX="0.6" EndY="0.8" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="0.6" StartY="0.8" EndX="0.8" EndY="0.4" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="0.8" StartY="0.4" EndX="1.0" EndY="0.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="0.0" StartX="2.0" EndY="0.2" EndX="1.6" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="0.2" StartX="1.6" EndY="0.4" EndX="1.2" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="0.4" StartX="1.2" EndY="0.6" EndX="0.8" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="0.6" StartX="0.8" EndY="0.8" EndX="0.4" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="0.8" StartX="0.4" EndY="1.0" EndX="0.0" PropertiesMask="2" />
       </MountPoints>
       <IsAirTight>true</IsAirTight>
       <MirroringX>MinusHalfZ</MirroringX>
       <MirroringY>HalfZ</MirroringY>
       <MirroringZ>YMinusHalfZ</MirroringZ>
       <PhysicalMaterial>Glass</PhysicalMaterial>
-      <BlockPairName/>
     </Definition>
-    <Definition> <!-- 5x10 Sloped Triangle Window -->
+    <Definition> <!-- 5x5x10 Window - Face -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x2Face</SubtypeId>
       </Id>
-      <DisplayName>Sloped Triangle 5x10 Window</DisplayName>
+      <DisplayName>Window Face 5x10</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2Face.dds</Icon>
-      <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="5" y="5" z="10" />
@@ -5934,44 +5849,51 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x2FaceConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x2FaceConstruction_2.mwm" />
       </BuildProgressModels>
+      <BlockPairName>invalid_5x5x10_Window1x2Face</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>6</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="1.0" StartY="1.0" EndX="2.0" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="3.0" StartY="3.0" EndX="4.0" EndY="4.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="4.0" StartY="4.0" EndX="5.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.0" StartY="10.0" EndX="10.0" EndY="8.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="1.0" StartY="8.0" EndX="2.0" EndY="6.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="2.0" StartY="6.0" EndX="3.0" EndY="4.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="3.0" StartY="4.0" EndX="4.0" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="4.0" StartY="2.0" EndX="5.0" EndY="0.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="0.0" StartX="10.0" EndY="1.0" EndX="8.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="1.0" StartX="8.0" EndY="2.0" EndX="6.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="2.0" StartX="6.0" EndY="3.0" EndX="4.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="3.0" StartX="4.0" EndY="4.0" EndX="2.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="4.0" StartX="2.0" EndY="5.0" EndX="0.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.2" EndY="0.2" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.4" EndY="0.4" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.4" StartY="0.4" EndX="0.6" EndY="0.6" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.6" StartY="0.6" EndX="0.8" EndY="0.8" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.8" StartY="0.8" EndX="1.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="2.0" EndX="0.2" EndY="1.6" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.2" StartY="1.6" EndX="0.4" EndY="1.2" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.4" StartY="1.2" EndX="0.6" EndY="0.8" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.6" StartY="0.8" EndX="0.8" EndY="0.4" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.8" StartY="0.4" EndX="1.0" EndY="0.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="0.0" StartX="2.0" EndY="0.2" EndX="1.6" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="0.2" StartX="1.6" EndY="0.4" EndX="1.2" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="0.4" StartX="1.2" EndY="0.6" EndX="0.8" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="0.6" StartX="0.8" EndY="0.8" EndX="0.4" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="0.8" StartX="0.4" EndY="1.0" EndX="0.0" PropertiesMask="2" />
       </MountPoints>
+<!--
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>Window1x2Inv</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+-->
       <IsAirTight>true</IsAirTight>
       <MirroringX>MinusHalfZ</MirroringX>
       <MirroringY>HalfZ</MirroringY>
       <MirroringZ>YMinusHalfZ</MirroringZ>
       <PhysicalMaterial>Glass</PhysicalMaterial>
-      <BlockPairName>invalid_5x5x10_Window1x2Face</BlockPairName>
     </Definition>
-    <Definition> <!-- 5x10 Triangle Window - Side Right-->
+    <Definition> <!-- 5x5x10 Window - Side Left -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x2SideLeft</SubtypeId>
       </Id>
-      <DisplayName>5x10 Triangle Window - Right</DisplayName>
+      <DisplayName>Window Side Left 5x10</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2SideLeft.dds</Icon>
-      <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="5" z="10" />
-      <ModelOffset x="-1.0" y="0" z="0" /> <!-- -1.2 to center -->
+      <Size x="5" y="5" z="10" />
+      <ModelOffset x="0" y="0" z="0" />
       <Model>Models\Cubes\Large\Window1x2SideLeft.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="13" />
@@ -5983,74 +5905,51 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x2SideLeftConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x2SideLeftConstruction_2.mwm" />
       </BuildProgressModels>
+      <BlockPairName>invalid_5x5x10_Window1x2SideLeft</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="10.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="5.0" EndY="10.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="10.0" StartY="0.0" EndX="8.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="8.0" StartY="0.0" EndX="6.0" EndY="1.5" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="6.0" StartY="0.0" EndX="4.0" EndY="2.5" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="4.0" StartY="0.0" EndX="2.0" EndY="3.5" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="2.0" StartY="0.0" EndX="0.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Bottom" StartX="0.9" StartY="0.0" EndX="1.0" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.9" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="2.0" StartY="0.0" EndX="1.6" EndY="0.2" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="1.6" StartY="0.0" EndX="1.2" EndY="0.3" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="1.2" StartY="0.0" EndX="0.8" EndY="0.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="0.8" StartY="0.0" EndX="0.4" EndY="0.7" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="0.4" StartY="0.0" EndX="0.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
+<!--
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>Window1x2SideLeftInv</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>Window1x2SideRight</SubtypeId>
+        </BlockVariant>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>Window1x2SideRightInv</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+-->
       <MirroringZ>Y</MirroringZ>
       <MirroringY>Z</MirroringY>
-      <MirroringBlock>supersize_Window1x2SideLeft</MirroringBlock>
-      <PhysicalMaterial>Glass</PhysicalMaterial>
-      <BlockPairName>invalid_1x5x10_Window1x2SideLeft</BlockPairName>
-    </Definition>
-    <Definition> <!-- 5x10 Triangle Window - Side Left -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window1x2SideLeft</SubtypeId>
-      </Id>
-      <DisplayName>5x10 Triangle Window - Left</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\Window1x2SideLeftInv.dds</Icon>
-      <GuiVisible>false</GuiVisible>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="5" z="10" />
-      <ModelOffset x="-1.4" y="0" z="0" /> <!-- -1.2 to center -->
-      <Model>Models\Cubes\Large\Window1x2SideLeftInv.mwm</Model>
-      <Components>
-        <Component Subtype="Girder" Count="13" />
-        <Component Subtype="BulletproofGlass" Count="20" />
-        <Component Subtype="BulletproofGlass" Count="6" />
-      </Components>
-      <CriticalComponent Subtype="BulletproofGlass" Index="0" />
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x2SideLeftConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x2SideLeftConstruction_2.mwm" />
-      </BuildProgressModels>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>8</BuildTimeSeconds>
-      <MountPoints>
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="10.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="5.0" EndY="10.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="10.0" StartY="0.0" EndX="8.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="8.0" StartY="0.0" EndX="6.0" EndY="1.5" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="6.0" StartY="0.0" EndX="4.0" EndY="2.5" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="4.0" StartY="0.0" EndX="2.0" EndY="3.5" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="2.0" StartY="0.0" EndX="0.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
-      </MountPoints>
-      <MirroringZ>Y</MirroringZ>
-      <MirroringY>Z</MirroringY>
-      <MirroringBlock>Window1x2SideRightInv</MirroringBlock>
+      <MirroringBlock>Window1x2SideRight</MirroringBlock>
       <PhysicalMaterial>Glass</PhysicalMaterial>
     </Definition>
-    <Definition> <!-- 1x5x10 Triangle Window - Side Left Inverted -->
+    <Definition> <!-- 5x5x10 Window - Side Left Inverted -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x2SideLeftInv</SubtypeId>
       </Id>
-      <DisplayName>DisplayName_Block_Window1x2SideLeftInv</DisplayName>
+      <DisplayName>Window Side Left Inverted 5x5x10</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2SideLeftInv.dds</Icon>
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="5" z="10" />
-      <ModelOffset x="-1.4" y="0" z="0" /> <!-- -1.2 to center -->
+      <Size x="5" y="5" z="10" />
+      <ModelOffset x="0" y="0" z="0" />
       <Model>Models\Cubes\Large\Window1x2SideLeftInv.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="13" />
@@ -6062,7 +5961,7 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x2SideLeftConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x2SideLeftConstruction_2.mwm" />
       </BuildProgressModels>
-      <BlockPairName>Window1x2SideLeftInv</BlockPairName>
+      <BlockPairName>invalid_5x5x10_Window1x2SideLeftInv</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
@@ -6079,17 +5978,57 @@
       <MirroringBlock>Window1x2SideRightInv</MirroringBlock>
       <PhysicalMaterial>Glass</PhysicalMaterial>
     </Definition>
-    <Definition> <!-- 1x5x10 Triangle Window - Side Right Inverted -->
+    <Definition> <!-- 5x5x10 Window - Side Right -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>Window1x2SideRight</SubtypeId>
+      </Id>
+      <DisplayName>Window Side Right 5x5x10</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Window1x2SideRight.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="10" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\Window1x2SideRight.mwm</Model>
+      <Components>
+        <Component Subtype="Girder" Count="13" />
+        <Component Subtype="BulletproofGlass" Count="20" />
+        <Component Subtype="BulletproofGlass" Count="6" />
+      </Components>
+      <CriticalComponent Subtype="BulletproofGlass" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x2SideRightConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x2SideRightConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>invalid_5x5x10_Window1x2SideRight</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>8</BuildTimeSeconds>
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="0.1" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="0.4" EndY="0.2" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="0.4" StartY="0.0" EndX="0.8" EndY="0.3" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="0.8" StartY="0.0" EndX="1.2" EndY="0.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="1.2" StartY="0.0" EndX="1.6" EndY="0.7" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="1.6" StartY="0.0" EndX="2.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+      </MountPoints>
+      <MirroringZ>Y</MirroringZ>
+      <MirroringY>Z</MirroringY>
+      <MirroringBlock>Window1x2SideLeft</MirroringBlock>
+      <PhysicalMaterial>Glass</PhysicalMaterial>
+    </Definition>
+    <Definition> <!-- 5x5x10 Window - Side Right Inverted -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x2SideRightInv</SubtypeId>
       </Id>
-      <DisplayName>DisplayName_Block_Window1x2SideRightInv</DisplayName>
+      <DisplayName>Window Side Right Inverted 5x5x10</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2SideRightInv.dds</Icon>
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="5" z="10" />
+      <Size x="5" y="5" z="10" />
       <ModelOffset x="0" y="0" z="0" />
       <Model>Models\Cubes\Large\Window1x2SideRightInv.mwm</Model>
       <Components>
@@ -6102,29 +6041,29 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x2SideRightConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x2SideRightConstruction_2.mwm" />
       </BuildProgressModels>
-      <BlockPairName>Window1x2SideRightInv</BlockPairName>
+      <BlockPairName>invalid_5x5x10_Window1x2SideRightInv</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="10.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="5.0" EndY="10.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="10.0" StartY="0.0" EndX="8.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="8.0" StartY="0.0" EndX="6.0" EndY="1.5" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="6.0" StartY="0.0" EndX="4.0" EndY="2.5" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="4.0" StartY="0.0" EndX="2.0" EndY="3.5" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="2.0" StartY="0.0" EndX="0.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="0.1" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="0.4" EndY="0.2" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="0.4" StartY="0.0" EndX="0.8" EndY="0.3" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="0.8" StartY="0.0" EndX="1.2" EndY="0.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="1.2" StartY="0.0" EndX="1.6" EndY="0.7" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="1.6" StartY="0.0" EndX="2.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringZ>Y</MirroringZ>
       <MirroringY>Z</MirroringY>
-      <MirroringBlock>invalid_1x5x10_Window1x2SideLeftInv</MirroringBlock>
+      <MirroringBlock>Window1x2SideLeftInv</MirroringBlock>
       <PhysicalMaterial>Glass</PhysicalMaterial>
     </Definition>
-    <Definition> <!-- 5x5 Sloped Window -->
+    <Definition> <!-- 5x5x5  Window - Slope -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x1Slope</SubtypeId>
       </Id>
-      <DisplayName>5x5 Sloped Window</DisplayName>
+      <DisplayName>Window Slope 5x5x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x1Slope.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -6141,36 +6080,41 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x1SlopeConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x1SlopeConstruction_2.mwm" />
       </BuildProgressModels>
+      <BlockPairName>invalid_5x5x10_Window1x1Slope</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>6</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="5.0" EndY="0.5" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="4.5" EndX="5.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="1.0" StartY="1.0" EndX="2.0" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="3.0" StartY="3.0" EndX="4.0" EndY="4.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="4.0" StartY="4.0" EndX="5.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="5.0" EndX="1.0" EndY="4.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="1.0" StartY="4.0" EndX="2.0" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="2.0" StartY="3.0" EndX="3.0" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="3.0" StartY="2.0" EndX="4.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="4.0" StartY="1.0" EndX="5.0" EndY="0.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="0.1" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.0" StartY="0.9" EndX="1.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="0.2" EndY="0.2" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.2" StartY="0.2" EndX="0.4" EndY="0.4" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.4" StartY="0.4" EndX="0.6" EndY="0.6" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.6" StartY="0.6" EndX="0.8" EndY="0.8" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.8" StartY="0.8" EndX="1.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="1.0" EndX="0.2" EndY="0.8" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.2" StartY="0.8" EndX="0.4" EndY="0.6" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.4" StartY="0.6" EndX="0.6" EndY="0.4" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.6" StartY="0.4" EndX="0.8" EndY="0.2" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.8" StartY="0.2" EndX="1.0" EndY="0.0" PropertiesMask="2" />
       </MountPoints>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>Window1x2Slope</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
       <IsAirTight>true</IsAirTight>
       <MirroringZ>Y</MirroringZ>
       <MirroringY>Z</MirroringY>
       <PhysicalMaterial>Glass</PhysicalMaterial>
-      <BlockPairName>invalid_5x5x5_Window1x1Slope</BlockPairName>
     </Definition>
-    <Definition> <!-- 5x5 Sloped Triangle Window -->
+    <Definition> <!-- 5x5x5  Window - Face -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x1Face</SubtypeId>
       </Id>
-      <DisplayName>5x5 Triangle Sloped Window</DisplayName>
+      <DisplayName>Window Face 5x5x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x1Face.dds</Icon>
-      <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="5" y="5" z="5" />
@@ -6186,40 +6130,116 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x1FaceConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x1FaceConstruction_2.mwm" />
       </BuildProgressModels>
+      <BlockPairName>invalid_5x5x5_Window1x1Face</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>5</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="1.0" StartY="1.0" EndX="2.0" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="3.0" StartY="3.0" EndX="4.0" EndY="4.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="4.0" StartY="4.0" EndX="5.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.0" StartY="5.0" EndX="1.0" EndY="4.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="1.0" StartY="4.0" EndX="2.0" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="2.0" StartY="3.0" EndX="3.0" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="3.0" StartY="2.0" EndX="4.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="4.0" StartY="1.0" EndX="5.0" EndY="0.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="0.0" StartX="5.0" EndY="1.0" EndX="4.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="1.0" StartX="4.0" EndY="2.0" EndX="3.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="2.0" StartX="3.0" EndY="3.0" EndX="2.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="3.0" StartX="2.0" EndY="4.0" EndX="1.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="4.0" StartX="1.0" EndY="5.0" EndX="0.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.2" EndY="0.2" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.4" EndY="0.4" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.4" StartY="0.4" EndX="0.6" EndY="0.6" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.6" StartY="0.6" EndX="0.8" EndY="0.8" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.8" StartY="0.8" EndX="1.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="1.0" EndX="0.2" EndY="0.8" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.2" StartY="0.8" EndX="0.4" EndY="0.6" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.4" StartY="0.6" EndX="0.6" EndY="0.4" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.6" StartY="0.4" EndX="0.8" EndY="0.2" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.8" StartY="0.2" EndX="1.0" EndY="0.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="0.0" StartX="1.0" EndY="0.2" EndX="0.8" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="0.2" StartX="0.8" EndY="0.4" EndX="0.6" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="0.4" StartX="0.6" EndY="0.6" EndX="0.4" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="0.6" StartX="0.4" EndY="0.8" EndX="0.2" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="0.8" StartX="0.2" EndY="1.0" EndX="0.0" PropertiesMask="2" />
       </MountPoints>
       <IsAirTight>true</IsAirTight>
       <MirroringX>HalfY</MirroringX>
       <MirroringY>XHalfY</MirroringY>
       <MirroringZ>MinusHalfY</MirroringZ>
       <PhysicalMaterial>Glass</PhysicalMaterial>
-      <BlockPairName>invalid_5x5x5_Window1x1Face</BlockPairName>
     </Definition>
-    <Definition> <!-- 5x5 Sloped Triangle Window - Inverted -->
+    <Definition> <!-- 5x5x5  Window - Side -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>Window1x1Side</SubtypeId>
+      </Id>
+      <DisplayName>Window Side 5x5x5</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Window1x1Side.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\Window1x1Side.mwm</Model>
+      <Components>
+        <Component Subtype="Girder" Count="9" />
+        <Component Subtype="BulletproofGlass" Count="12" />
+        <Component Subtype="BulletproofGlass" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="BulletproofGlass" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x1SideConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x1SideConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>invalid_5x5x5_Window1x1Side</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>6</BuildTimeSeconds>
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="0.2" EndY="0.2" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="0.2" StartY="0.0" EndX="0.8" EndY="0.8" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="0.8" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+      </MountPoints>
+      <MirroringX>YMinusHalfX</MirroringX>
+      <MirroringY>HalfX</MirroringY>
+      <MirroringZ>MinusHalfX</MirroringZ>
+      <PhysicalMaterial>Glass</PhysicalMaterial>
+    </Definition>
+    <Definition> <!-- 5x5x5  Window - Side Inverted -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>Window1x1SideInv</SubtypeId>
+      </Id>
+      <DisplayName>Window Side Inverted 5x5x5</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Window1x1SideInv.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\Window1x1SideInv.mwm</Model>
+      <Components>
+        <Component Subtype="Girder" Count="9" />
+        <Component Subtype="BulletproofGlass" Count="12" />
+        <Component Subtype="BulletproofGlass" Count="5" />
+      </Components>
+      <CriticalComponent Subtype="BulletproofGlass" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x1SideConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x1SideConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>invalid_5x5x5_Window1x1SideInv</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>6</BuildTimeSeconds>
+      <MountPoints>
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="0.2" EndY="0.2" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="0.2" StartY="0.0" EndX="0.8" EndY="0.8" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="0.8" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+      </MountPoints>
+      <MirroringX>YMinusHalfX</MirroringX>
+      <MirroringY>HalfX</MirroringY>
+      <MirroringZ>MinusHalfX</MirroringZ>
+      <PhysicalMaterial>Glass</PhysicalMaterial>
+    </Definition>
+    <Definition> <!-- 5x5x5  Window - Flat Inverted -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x1Inv</SubtypeId>
       </Id>
-      <DisplayName>5x5 Window - Inverted</DisplayName>
+      <DisplayName>Window Flat Inverted 5x5x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x1Inv.dds</Icon>
-      <GuiVisible>false</GuiVisible>
+	  <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="5" y="5" z="5" />
@@ -6235,117 +6255,43 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x1InvConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x1InvConstruction_2.mwm" />
       </BuildProgressModels>
+      <BlockPairName>invalid_5x5x5_Window1x1Inv</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>6</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="1.0" StartY="1.0" EndX="2.0" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="3.0" StartY="3.0" EndX="4.0" EndY="4.0" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="4.0" StartY="4.0" EndX="5.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.0" StartY="5.0" EndX="1.0" EndY="4.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="1.0" StartY="4.0" EndX="2.0" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="2.0" StartY="3.0" EndX="3.0" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="3.0" StartY="2.0" EndX="4.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="4.0" StartY="1.0" EndX="5.0" EndY="0.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="0.0" StartX="5.0" EndY="1.0" EndX="4.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="1.0" StartX="4.0" EndY="2.0" EndX="3.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="2.0" StartX="6.0" EndY="3.0" EndX="2.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="3.0" StartX="2.0" EndY="4.0" EndX="1.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="4.0" StartX="1.0" EndY="5.0" EndX="0.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.2" EndY="0.2" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.4" EndY="0.4" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.4" StartY="0.4" EndX="0.6" EndY="0.6" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.6" StartY="0.6" EndX="0.8" EndY="0.8" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.8" StartY="0.8" EndX="1.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="0.0" StartY="1.0" EndX="0.2" EndY="0.8" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="0.2" StartY="0.8" EndX="0.4" EndY="0.6" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="0.4" StartY="0.6" EndX="0.6" EndY="0.4" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="0.6" StartY="0.4" EndX="0.8" EndY="0.2" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="0.8" StartY="0.2" EndX="1.0" EndY="0.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="0.0" StartX="1.0" EndY="0.2" EndX="0.8" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="0.2" StartX="0.8" EndY="0.4" EndX="0.6" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="0.4" StartX="0.6" EndY="0.6" EndX="0.4" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="0.6" StartX="0.4" EndY="0.8" EndX="0.2" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="0.8" StartX="0.2" EndY="1.0" EndX="0.0" PropertiesMask="2" />
       </MountPoints>
       <IsAirTight>true</IsAirTight>
       <MirroringX>MinusHalfY</MirroringX>
       <MirroringY>HalfZ</MirroringY>
       <MirroringZ>HalfY</MirroringZ>
       <PhysicalMaterial>Glass</PhysicalMaterial>
-      <BlockPairName>invalid_5x5x5_Window1x1Inv</BlockPairName>
     </Definition>
-    <Definition> <!-- 5x5 Triangle Window -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window1x1Side</SubtypeId>
-      </Id>
-      <DisplayName>5x5 Triangle Window</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\Window1x1Side.dds</Icon>
-      <GuiVisible>false</GuiVisible>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="5" z="5" />
-      <ModelOffset x="1" y="0" z="0" />
-      <Model>Models\Cubes\Large\Window1x1Side.mwm</Model>
-      <Components>
-        <Component Subtype="Girder" Count="9" />
-        <Component Subtype="BulletproofGlass" Count="12" />
-        <Component Subtype="BulletproofGlass" Count="5" />
-      </Components>
-      <CriticalComponent Subtype="BulletproofGlass" Index="0" />
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x1SideConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x1SideConstruction_2.mwm" />
-      </BuildProgressModels>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>6</BuildTimeSeconds>
-      <MountPoints>
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="0.5" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="0.5" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="1.0" StartY="0.0" EndX="4.0" EndY="4.0" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="4.0" StartY="0.0" EndX="5.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
-      </MountPoints>
-      <MirroringX>YMinusHalfX</MirroringX>
-      <MirroringY>HalfX</MirroringY>
-      <MirroringZ>MinusHalfX</MirroringZ>
-      <PhysicalMaterial>Glass</PhysicalMaterial>
-    </Definition>
-    <Definition> <!-- 5x5 Triangle Window - Inverted -->
-      <Id>
-        <TypeId>CubeBlock</TypeId>
-        <SubtypeId>supersize_Window1x1SideInv</SubtypeId>
-      </Id>
-      <DisplayName>5x5 Triangle Window - Inverted</DisplayName>
-      <Icon>Textures\GUI\Icons\Cubes\Window1x1SideInv.dds</Icon>
-      <GuiVisible>false</GuiVisible>
-      <CubeSize>Small</CubeSize>
-      <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="5" z="5" />
-      <ModelOffset x="1" y="0" z="0" />
-      <Model>Models\Cubes\Large\Window1x1SideInv.mwm</Model>
-      <Components>
-        <Component Subtype="Girder" Count="9" />
-        <Component Subtype="BulletproofGlass" Count="12" />
-        <Component Subtype="BulletproofGlass" Count="5" />
-      </Components>
-      <CriticalComponent Subtype="BulletproofGlass" Index="0" />
-      <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x1SideConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x1SideConstruction_2.mwm" />
-      </BuildProgressModels>
-      <EdgeType>Light</EdgeType>
-      <BuildTimeSeconds>6</BuildTimeSeconds>
-      <MountPoints>
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="0.5" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="0.5" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="1.0" StartY="0.0" EndX="4.0" EndY="4.0" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="4.0" StartY="0.0" EndX="5.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
-      </MountPoints>
-      <MirroringX>YMinusHalfX</MirroringX>
-      <MirroringY>HalfX</MirroringY>
-      <MirroringZ>MinusHalfX</MirroringZ>
-      <PhysicalMaterial>Glass</PhysicalMaterial>
-    </Definition>
-    <Definition> <!-- 5x10 Flat Window -->
+    <Definition> <!-- 5x5x10 Window - Flat -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x2Flat</SubtypeId>
       </Id>
-      <DisplayName>Flat Window - 5x10</DisplayName>
+      <DisplayName>Window Flat 5x5x10</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2Flat.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="5" z="10" />
-      <ModelOffset x="-1" y="0" z="0" /> <!-- -1.2 to center window -->
+      <Size x="5" y="5" z="10" />
+      <ModelOffset x="0" y="0" z="0" />
       <Model>Models\Cubes\Large\Window1x2Flat.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="15" />
@@ -6357,36 +6303,37 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x2FlatConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x2FlatConstruction_2.mwm" />
       </BuildProgressModels>
+      <BlockPairName>Window1x2Flat</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="1.0" EndY="10.0" />
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="10.0" />
-<!--
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="10.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="10.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="10.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
--->
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="2.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
+      <BlockVariants>
+        <BlockVariant>
+          <TypeId>CubeBlock</TypeId>
+          <SubtypeId>Window1x2FlatInv</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
       <MirroringX>Z</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
-      <BlockPairName>invalid_1x5x10_Window1x2Flat</BlockPairName>
-    </Definition>   
-    <Definition> <!-- 5x10 Flat Window - Inverted -->
+    </Definition>
+    <Definition> <!-- 5x5x10 Window - Flat Inverted -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x2FlatInv</SubtypeId>
       </Id>
-      <DisplayName>Flat Window - 5x10 Inverted</DisplayName>
+      <DisplayName>Window Flat Inverted 5x5x10</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2FlatInv.dds</Icon>
       <GuiVisible>false</GuiVisible>
-      <Public>false</Public>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="5" z="10" />
-      <ModelOffset x="-1" y="0" z="0" /> <!-- -1.2 to center -->
+      <Size x="5" y="5" z="10" />
+      <ModelOffset x="0" y="0" z="0" />
       <Model>Models\Cubes\Large\Window1x2FlatInv.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="15" />
@@ -6398,31 +6345,30 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x2FlatInvConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x2FlatInvConstruction_2.mwm" />
       </BuildProgressModels>
+      <BlockPairName>invalid_5x5x10_Window1x2FlatInv</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="10.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="10.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="10.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="2.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringX>Z</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
-      <BlockPairName>invalid_1x5x10_Window1x2FlatInv</BlockPairName>
     </Definition>
-    <Definition> <!-- Flat 5x5 Window -->
+    <Definition> <!-- 5x5x5  Window - Flat -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x1Flat</SubtypeId>
       </Id>
-      <DisplayName>Flat Window - 5x5</DisplayName>
+      <DisplayName>Window Flat 5x5x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x1Flat.dds</Icon>
-      <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="5" z="5" />
-      <ModelOffset x="-1" y="0" z="0" /> <!-- -1.2 to center in block -->
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
       <Model>Models\Cubes\Large\Window1x1Flat.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="10" />
@@ -6434,48 +6380,66 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x1FlatConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x1FlatConstruction_2.mwm" />
       </BuildProgressModels>
+      <BlockPairName>invalid_5x5x5_Window1x1Flat</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>6</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="1.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="5.0" EndY="5.0" PropertiesMask="2" />      
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringX>Y</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
-      <BlockVariants>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_5x10FlatWindow</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_5x10FlatWindowInverted</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_Window2x3Flat</SubtypeId>
-        </BlockVariant>
-        <BlockVariant>
-          <TypeId>CubeBlock</TypeId>
-          <SubtypeId>supersize_Window3x3Flat</SubtypeId>
-        </BlockVariant>
-      </BlockVariants>
-      <BlockPairName>invalid_5x5x5_Window1x1Flat</BlockPairName>
     </Definition>
-    <Definition> <!-- Flat 15x15 Window -->
+    <Definition> <!-- 5x5x5  Window - Flat Inverted -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>Window1x1FlatInv</SubtypeId>
+      </Id>
+      <DisplayName>Window Flat Inverted 5x5x5</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Window1x1FlatInv.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\Window1x1FlatInv.mwm</Model>
+      <Components>
+        <Component Subtype="Girder" Count="10" />
+        <Component Subtype="BulletproofGlass" Count="15" />
+        <Component Subtype="BulletproofGlass" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="BulletproofGlass" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window1x1FlatInvConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window1x1FlatInvConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>invalid_5x5x5_Window1x1FlatInv</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>6</BuildTimeSeconds>
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+      </MountPoints>
+      <MirroringX>Y</MirroringX>
+      <PhysicalMaterial>Glass</PhysicalMaterial>
+    </Definition>
+    <Definition> <!-- 5x15x15 Window - Flat -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window3x3Flat</SubtypeId>
       </Id>
-      <DisplayName>Flat Window - 15x15</DisplayName>
+      <DisplayName>DisplayName_Block_Window3x3Flat</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window3x3Flat.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="15" z="15" />
-      <ModelOffset x="-1.0" y="0" z="0" /> <!-- 1.2 to center in block -->
+      <Size x="5" y="15" z="15" />
+      <ModelOffset x="0" y="0" z="0" />
       <Model>Models\Cubes\Large\Window3x3Flat.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="40" />
@@ -6487,31 +6451,66 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window3x3FlatConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window3x3FlatConstruction_2.mwm" />
       </BuildProgressModels>
+      <BlockPairName>invalid_5x15x15_Window3x3Flat</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>25</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="15.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="1.0" EndY="15.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="1.0" EndY="15.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="15.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="15.0" EndY="15.0" PropertiesMask="2" />      
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringX>Y</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
-      <BlockPairName>invalid_1x15x15_Window3x3Flat</BlockPairName>
     </Definition>
-    <Definition> <!-- Flat 10x15 Window -->
+    <Definition> <!-- 5x15x15 Window - Flat Inverted -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>Window3x3FlatInv</SubtypeId>
+      </Id>
+      <DisplayName>Window Flat Inverted 5x15x15</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Window3x3FlatInv.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="15" z="15" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\Window3x3FlatInv.mwm</Model>
+      <Components>
+        <Component Subtype="Girder" Count="40" />
+        <Component Subtype="BulletproofGlass" Count="160" />
+        <Component Subtype="BulletproofGlass" Count="36" />
+      </Components>
+      <CriticalComponent Subtype="BulletproofGlass" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window3x3FlatInvConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window3x3FlatInvConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Window3x3FlatInv</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>25</BuildTimeSeconds>
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0" PropertiesMask="2" ExclusionMask="1" />
+      </MountPoints>
+      <MirroringX>Y</MirroringX>
+      <PhysicalMaterial>Glass</PhysicalMaterial>
+    </Definition>
+    <Definition> <!-- 5x10x15 Window - Flat -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window2x3Flat</SubtypeId>
       </Id>
-      <DisplayName>Flat Window - 10x15</DisplayName>
+      <DisplayName>Window Flat 5x10x15</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window2x3Flat.dds</Icon>
-      <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
-      <Size x="1" y="10" z="15" />
-      <ModelOffset x="-1.0" y="0" z="0" /> <!-- -1.2 to cente rin block -->
+      <Size x="5" y="10" z="15" />
+      <ModelOffset x="0" y="0" z="0" />
       <Model>Models\Cubes\Large\Window2x3Flat.mwm</Model>
       <Components>
         <Component Subtype="Girder" Count="25" />
@@ -6523,19 +6522,55 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window2x3FlatConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window2x3FlatConstruction_2.mwm" />
       </BuildProgressModels>
+      <BlockPairName>invalid_5x10x15_Window2x3Flat</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>20</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="10.0" EndY="15.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.0" StartY="0.0" EndX="1.0" EndY="15.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="15.0" EndY="10.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="15.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="1.0" EndY="10.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="3.0" EndY="2.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringX>Y</MirroringX>
       <MirroringY>X</MirroringY>
       <PhysicalMaterial>Glass</PhysicalMaterial>
-      <BlockPairName>invalid_1x10x15_Window2x3Flat</BlockPairName>
+    </Definition>
+    <Definition> <!-- 5x10x15 Window - Flat Inverted -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>Window2x3FlatInv</SubtypeId>
+      </Id>
+      <DisplayName>Window Flat Inverted 5x10x15</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Window2x3FlatInv.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="10" z="15" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\Window2x3FlatInv.mwm</Model>
+      <Components>
+        <Component Subtype="Girder" Count="25" />
+        <Component Subtype="BulletproofGlass" Count="115" />
+        <Component Subtype="BulletproofGlass" Count="25" />
+      </Components>
+      <CriticalComponent Subtype="BulletproofGlass" Index="0" />
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window2x3FlatInvConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window2x3FlatInvConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>invalid_5x10x15_Window2x3FlatInv</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <MountPoints>
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="3.0" EndY="2.0" PropertiesMask="2" ExclusionMask="1" />
+      </MountPoints>
+      <MirroringX>Y</MirroringX>
+      <PhysicalMaterial>Glass</PhysicalMaterial>
     </Definition>
 <!-- Windows End -->
 <!-- Collector Start -->
