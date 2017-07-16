@@ -5815,7 +5815,7 @@
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x2Slope</SubtypeId>
       </Id>
-      <DisplayName>Window Slope 5x10</DisplayName>
+      <DisplayName>Window Slope 5x5x10</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2Slope.dds</Icon>
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
@@ -5839,16 +5839,16 @@
       <MountPoints>
         <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="5.0" EndY="0.5" PropertiesMask="2" />
         <MountPoint Side="Back" StartX="0.0" StartY="4.5" EndX="5.0" EndY="5.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="0.4" EndY="0.2" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.4" StartY="0.2" EndX="0.8" EndY="0.4" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.8" StartY="0.4" EndX="1.2" EndY="0.6" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="1.2" StartY="0.6" EndX="1.6" EndY="0.8" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="1.6" StartY="0.8" EndX="2.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="1.0" EndX="0.4" EndY="0.8" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.4" StartY="0.8" EndX="0.8" EndY="0.6" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.8" StartY="0.6" EndX="1.2" EndY="0.4" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="1.2" StartY="0.4" EndX="1.6" EndY="0.2" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="1.6" StartY="0.2" EndX="2.0" EndY="0.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="2.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="2.0" StartY="1.0" EndX="4.0" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="4.0" StartY="2.0" EndX="6.0" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="6.0" StartY="3.0" EndX="8.0" EndY="4.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="8.0" StartY="4.0" EndX="10.0" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="5.0" EndX="2.0" EndY="4.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="2.0" StartY="4.0" EndX="4.0" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="4.0" StartY="3.0" EndX="6.0" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="6.0" StartY="2.0" EndX="8.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="8.0" StartY="1.0" EndX="10.0" EndY="0.0" PropertiesMask="2" />
       </MountPoints>
       <IsAirTight>true</IsAirTight>
       <MirroringZ>Y</MirroringZ>
@@ -5860,7 +5860,7 @@
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x2Inv</SubtypeId>
       </Id>
-      <DisplayName>Window Corner 5x10 - Inverted</DisplayName>
+      <DisplayName>Window Corner 5x5x10 - Inverted</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2Inv.dds</Icon>
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
@@ -5882,21 +5882,21 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.2" EndY="0.2" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.4" EndY="0.4" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.4" StartY="0.4" EndX="0.6" EndY="0.6" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.6" StartY="0.6" EndX="0.8" EndY="0.8" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.8" StartY="0.8" EndX="1.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.0" StartY="2.0" EndX="0.2" EndY="1.6" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.2" StartY="1.6" EndX="0.4" EndY="1.2" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.4" StartY="1.2" EndX="0.6" EndY="0.8" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.6" StartY="0.8" EndX="0.8" EndY="0.4" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.8" StartY="0.4" EndX="1.0" EndY="0.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="0.0" StartX="2.0" EndY="0.2" EndX="1.6" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="0.2" StartX="1.6" EndY="0.4" EndX="1.2" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="0.4" StartX="1.2" EndY="0.6" EndX="0.8" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="0.6" StartX="0.8" EndY="0.8" EndX="0.4" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="0.8" StartX="0.4" EndY="1.0" EndX="0.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="1.0" StartY="1.0" EndX="2.0" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="3.0" StartY="3.0" EndX="4.0" EndY="4.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="4.0" StartY="4.0" EndX="5.0" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="0.0" StartY="10.0" EndX="1.0" EndY="8.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="1.0" StartY="8.0" EndX="2.0" EndY="6.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="2.0" StartY="6.0" EndX="3.0" EndY="4.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="3.0" StartY="4.0" EndX="4.0" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="4.0" StartY="2.0" EndX="5.0" EndY="0.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="0.0" StartX="10.0" EndY="1.0" EndX="8.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="1.0" StartX="8.0" EndY="2.0" EndX="6.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="2.0" StartX="6.0" EndY="3.0" EndX="4.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="3.0" StartX="4.0" EndY="4.0" EndX="2.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="4.0" StartX="2.0" EndY="5.0" EndX="0.0" PropertiesMask="2" />
       </MountPoints>
       <IsAirTight>true</IsAirTight>
       <MirroringX>MinusHalfZ</MirroringX>
@@ -5930,21 +5930,21 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>6</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.2" EndY="0.2" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.4" EndY="0.4" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.4" StartY="0.4" EndX="0.6" EndY="0.6" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.6" StartY="0.6" EndX="0.8" EndY="0.8" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.8" StartY="0.8" EndX="1.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.0" StartY="2.0" EndX="0.2" EndY="1.6" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.2" StartY="1.6" EndX="0.4" EndY="1.2" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.4" StartY="1.2" EndX="0.6" EndY="0.8" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.6" StartY="0.8" EndX="0.8" EndY="0.4" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.8" StartY="0.4" EndX="1.0" EndY="0.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="0.0" StartX="2.0" EndY="0.2" EndX="1.6" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="0.2" StartX="1.6" EndY="0.4" EndX="1.2" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="0.4" StartX="1.2" EndY="0.6" EndX="0.8" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="0.6" StartX="0.8" EndY="0.8" EndX="0.4" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="0.8" StartX="0.4" EndY="1.0" EndX="0.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="1.0" StartY="1.0" EndX="2.0" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="3.0" StartY="3.0" EndX="4.0" EndY="4.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="4.0" StartY="4.0" EndX="5.0" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="10.0" EndX="1.0" EndY="8.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="1.0" StartY="8.0" EndX="2.0" EndY="6.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="2.0" StartY="6.0" EndX="3.0" EndY="4.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="3.0" StartY="4.0" EndX="4.0" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="4.0" StartY="2.0" EndX="5.0" EndY="0.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="0.0" StartX="10.0" EndY="1.0" EndX="8.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="1.0" StartX="8.0" EndY="2.0" EndX="6.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="2.0" StartX="6.0" EndY="3.0" EndX="4.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="3.0" StartX="4.0" EndY="4.0" EndX="2.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="4.0" StartX="2.0" EndY="5.0" EndX="0.0" PropertiesMask="2" />
       </MountPoints>
 <!--
       <BlockVariants>
@@ -5986,13 +5986,13 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Bottom" StartX="0.9" StartY="0.0" EndX="1.0" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.9" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="2.0" StartY="0.0" EndX="1.6" EndY="0.2" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="1.6" StartY="0.0" EndX="1.2" EndY="0.3" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="1.2" StartY="0.0" EndX="0.8" EndY="0.5" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="0.8" StartY="0.0" EndX="0.4" EndY="0.7" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="0.4" StartY="0.0" EndX="0.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Bottom" StartX="4.5" StartY="0.0" EndX="5.0" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="4.5" StartY="0.0" EndX="5.0" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="10.0" StartY="0.0" EndX="8.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="8.0" StartY="0.0" EndX="6.0" EndY="1.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="6.0" StartY="0.0" EndX="4.0" EndY="2.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="4.0" StartY="0.0" EndX="2.0" EndY="3.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="2.0" StartY="0.0" EndX="0.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
 <!--
       <BlockVariants>
@@ -6042,13 +6042,13 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Bottom" StartX="0.9" StartY="0.0" EndX="1.0" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.9" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="2.0" StartY="0.0" EndX="1.6" EndY="0.2" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="1.6" StartY="0.0" EndX="1.2" EndY="0.3" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="1.2" StartY="0.0" EndX="0.8" EndY="0.5" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="0.8" StartY="0.0" EndX="0.4" EndY="0.7" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Right" StartX="0.4" StartY="0.0" EndX="0.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Bottom" StartX="4.5" StartY="0.0" EndX="5.0" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="4.5" StartY="0.0" EndX="5.0" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="10.0" StartY="0.0" EndX="8.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="8.0" StartY="0.0" EndX="6.0" EndY="1.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="6.0" StartY="0.0" EndX="4.0" EndY="2.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="4.0" StartY="0.0" EndX="2.0" EndY="3.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Right" StartX="2.0" StartY="0.0" EndX="0.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringZ>Y</MirroringZ>
       <MirroringY>Z</MirroringY>
@@ -6082,13 +6082,13 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="0.1" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="0.4" EndY="0.2" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="0.4" StartY="0.0" EndX="0.8" EndY="0.3" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="0.8" StartY="0.0" EndX="1.2" EndY="0.5" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="1.2" StartY="0.0" EndX="1.6" EndY="0.7" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="1.6" StartY="0.0" EndX="2.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="0.5" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="0.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="2.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="2.0" StartY="0.0" EndX="4.0" EndY="1.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="4.0" StartY="0.0" EndX="6.0" EndY="2.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="6.0" StartY="0.0" EndX="8.0" EndY="3.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="8.0" StartY="0.0" EndX="10.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringZ>Y</MirroringZ>
       <MirroringY>Z</MirroringY>
@@ -6122,13 +6122,13 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="0.1" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="0.4" EndY="0.2" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="0.4" StartY="0.0" EndX="0.8" EndY="0.3" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="0.8" StartY="0.0" EndX="1.2" EndY="0.5" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="1.2" StartY="0.0" EndX="1.6" EndY="0.7" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="1.6" StartY="0.0" EndX="2.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="0.5" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="0.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="2.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="2.0" StartY="0.0" EndX="4.0" EndY="1.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="4.0" StartY="0.0" EndX="6.0" EndY="2.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="6.0" StartY="0.0" EndX="8.0" EndY="3.5" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="8.0" StartY="0.0" EndX="10.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringZ>Y</MirroringZ>
       <MirroringY>Z</MirroringY>
@@ -6161,25 +6161,27 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>6</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="1.0" EndY="0.1" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.9" EndX="1.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="0.2" EndY="0.2" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.2" StartY="0.2" EndX="0.4" EndY="0.4" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.4" StartY="0.4" EndX="0.6" EndY="0.6" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.6" StartY="0.6" EndX="0.8" EndY="0.8" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.8" StartY="0.8" EndX="1.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="1.0" EndX="0.2" EndY="0.8" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.2" StartY="0.8" EndX="0.4" EndY="0.6" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.4" StartY="0.6" EndX="0.6" EndY="0.4" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.6" StartY="0.4" EndX="0.8" EndY="0.2" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.8" StartY="0.2" EndX="1.0" EndY="0.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="5.0" EndY="0.5" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.0" StartY="4.5" EndX="5.0" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="1.0" StartY="1.0" EndX="2.0" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="3.0" StartY="3.0" EndX="4.0" EndY="4.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="4.0" StartY="4.0" EndX="5.0" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="5.0" EndX="1.0" EndY="4.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="1.0" StartY="4.0" EndX="2.0" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="2.0" StartY="3.0" EndX="3.0" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="3.0" StartY="2.0" EndX="4.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="4.0" StartY="1.0" EndX="5.0" EndY="0.0" PropertiesMask="2" />
       </MountPoints>
+<!--
       <BlockVariants>
         <BlockVariant>
           <TypeId>CubeBlock</TypeId>
           <SubtypeId>Window1x2Slope</SubtypeId>
         </BlockVariant>
       </BlockVariants>
+-->
       <IsAirTight>true</IsAirTight>
       <MirroringZ>Y</MirroringZ>
       <MirroringY>Z</MirroringY>
@@ -6211,21 +6213,21 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>5</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.2" EndY="0.2" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.4" EndY="0.4" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.4" StartY="0.4" EndX="0.6" EndY="0.6" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.6" StartY="0.6" EndX="0.8" EndY="0.8" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.8" StartY="0.8" EndX="1.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.0" StartY="1.0" EndX="0.2" EndY="0.8" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.2" StartY="0.8" EndX="0.4" EndY="0.6" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.4" StartY="0.6" EndX="0.6" EndY="0.4" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.6" StartY="0.4" EndX="0.8" EndY="0.2" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="0.8" StartY="0.2" EndX="1.0" EndY="0.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="0.0" StartX="1.0" EndY="0.2" EndX="0.8" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="0.2" StartX="0.8" EndY="0.4" EndX="0.6" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="0.4" StartX="0.6" EndY="0.6" EndX="0.4" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="0.6" StartX="0.4" EndY="0.8" EndX="0.2" PropertiesMask="2" />
-        <MountPoint Side="Left" StartY="0.8" StartX="0.2" EndY="1.0" EndX="0.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="1.0" StartY="1.0" EndX="2.0" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="3.0" StartY="3.0" EndX="4.0" EndY="4.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="4.0" StartY="4.0" EndX="5.0" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="5.0" EndX="1.0" EndY="4.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="1.0" StartY="4.0" EndX="2.0" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="2.0" StartY="3.0" EndX="3.0" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="3.0" StartY="2.0" EndX="4.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="4.0" StartY="1.0" EndX="5.0" EndY="0.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="0.0" StartX="5.0" EndY="1.0" EndX="4.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="1.0" StartX="4.0" EndY="2.0" EndX="3.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="2.0" StartX="3.0" EndY="3.0" EndX="2.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="3.0" StartX="2.0" EndY="4.0" EndX="1.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartY="4.0" StartX="1.0" EndY="5.0" EndX="0.0" PropertiesMask="2" />
       </MountPoints>
       <IsAirTight>true</IsAirTight>
       <MirroringX>HalfY</MirroringX>
@@ -6260,11 +6262,11 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>6</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="0.2" EndY="0.2" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="0.2" StartY="0.0" EndX="0.8" EndY="0.8" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="0.8" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="0.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="2.0" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="1.0" StartY="0.0" EndX="4.0" EndY="4.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="4.0" StartY="0.0" EndX="5.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringX>YMinusHalfX</MirroringX>
       <MirroringY>HalfX</MirroringY>
@@ -6298,11 +6300,11 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>6</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="0.2" EndY="0.2" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="0.2" StartY="0.0" EndX="0.8" EndY="0.8" PropertiesMask="2" ExclusionMask="1" />
-        <MountPoint Side="Left" StartX="0.8" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Bottom" StartX="0.0" StartY="0.0" EndX="0.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="0.0" StartY="0.0" EndX="0.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Left" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="1.0" StartY="0.0" EndX="4.0" EndY="4.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Left" StartX="4.0" StartY="0.0" EndX="5.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringX>YMinusHalfX</MirroringX>
       <MirroringY>HalfX</MirroringY>
@@ -6336,21 +6338,21 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>6</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.2" EndY="0.2" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.2" StartY="0.2" EndX="0.4" EndY="0.4" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.4" StartY="0.4" EndX="0.6" EndY="0.6" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.6" StartY="0.6" EndX="0.8" EndY="0.8" PropertiesMask="2" />
-        <MountPoint Side="Front" StartX="0.8" StartY="0.8" EndX="1.0" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.0" StartY="1.0" EndX="0.2" EndY="0.8" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.2" StartY="0.8" EndX="0.4" EndY="0.6" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.4" StartY="0.6" EndX="0.6" EndY="0.4" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.6" StartY="0.4" EndX="0.8" EndY="0.2" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="0.8" StartY="0.2" EndX="1.0" EndY="0.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="0.0" StartX="1.0" EndY="0.2" EndX="0.8" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="0.2" StartX="0.8" EndY="0.4" EndX="0.6" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="0.4" StartX="0.6" EndY="0.6" EndX="0.4" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="0.6" StartX="0.4" EndY="0.8" EndX="0.2" PropertiesMask="2" />
-        <MountPoint Side="Right" StartY="0.8" StartX="0.2" EndY="1.0" EndX="0.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="1.0" StartY="1.0" EndX="2.0" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="2.0" StartY="2.0" EndX="3.0" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="3.0" StartY="3.0" EndX="4.0" EndY="4.0" PropertiesMask="2" />
+        <MountPoint Side="Front" StartX="4.0" StartY="4.0" EndX="5.0" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="0.0" StartY="5.0" EndX="1.0" EndY="4.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="1.0" StartY="4.0" EndX="2.0" EndY="3.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="2.0" StartY="3.0" EndX="3.0" EndY="2.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="3.0" StartY="2.0" EndX="4.0" EndY="1.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="4.0" StartY="1.0" EndX="5.0" EndY="0.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="0.0" StartX="5.0" EndY="1.0" EndX="4.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="1.0" StartX="4.0" EndY="2.0" EndX="3.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="2.0" StartX="3.0" EndY="3.0" EndX="2.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="3.0" StartX="2.0" EndY="4.0" EndX="1.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartY="4.0" StartX="1.0" EndY="5.0" EndX="0.0" PropertiesMask="2" />
       </MountPoints>
       <IsAirTight>true</IsAirTight>
       <MirroringX>MinusHalfY</MirroringX>
@@ -6384,11 +6386,11 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="2.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="5.0" StartY="0.0" EndX="4.5" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="5.0" StartY="0.0" EndX="4.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="5.0" StartY="0.0" EndX="4.5" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="10.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <BlockVariants>
         <BlockVariant>
@@ -6426,11 +6428,11 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>8</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="2.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="5.0" StartY="0.0" EndX="4.5" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="5.0" StartY="0.0" EndX="4.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="5.0" StartY="0.0" EndX="4.5" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="10.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringX>Z</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
@@ -6461,11 +6463,11 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>6</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="5.0" StartY="0.0" EndX="4.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="5.0" StartY="0.0" EndX="4.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="5.0" StartY="0.0" EndX="4.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="5.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringX>Y</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
@@ -6497,11 +6499,11 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>6</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="1.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="1.0" EndY="1.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="5.0" StartY="0.0" EndX="4.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="5.0" StartY="0.0" EndX="4.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="5.0" StartY="0.0" EndX="4.5" EndY="5.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="5.0" EndY="5.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringX>Y</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
@@ -6532,11 +6534,11 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>25</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.5" EndY="15.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="5.0" StartY="0.0" EndX="4.5" EndY="15.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="5.0" StartY="0.0" EndX="4.5" EndY="15.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="5.0" StartY="0.0" EndX="4.5" EndY="15.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="15.0" EndY="15.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringX>Y</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
@@ -6568,11 +6570,11 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>25</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="3.0" EndY="3.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.5" EndY="15.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="5.0" StartY="0.0" EndX="4.5" EndY="15.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="5.0" StartY="0.0" EndX="4.5" EndY="15.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="5.0" StartY="0.0" EndX="4.5" EndY="15.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="15.0" EndY="15.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringX>Y</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
@@ -6603,11 +6605,11 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>20</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="3.0" EndY="2.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.5" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="5.0" StartY="0.0" EndX="4.5" EndY="15.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="5.0" StartY="0.0" EndX="4.5" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="5.0" StartY="0.0" EndX="4.5" EndY="15.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="15.0" EndY="10.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringX>Y</MirroringX>
       <MirroringY>X</MirroringY>
@@ -6640,11 +6642,11 @@
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>20</BuildTimeSeconds>
       <MountPoints>
-        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.1" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Top" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Back" StartX="1.0" StartY="0.0" EndX="0.9" EndY="2.0" PropertiesMask="2" />
-        <MountPoint Side="Bottom" StartX="1.0" StartY="0.0" EndX="0.9" EndY="3.0" PropertiesMask="2" />
-        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="3.0" EndY="2.0" PropertiesMask="2" ExclusionMask="1" />
+        <MountPoint Side="Front" StartX="0.0" StartY="0.0" EndX="0.5" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Top" StartX="5.0" StartY="0.0" EndX="4.5" EndY="15.0" PropertiesMask="2" />
+        <MountPoint Side="Back" StartX="5.0" StartY="0.0" EndX="4.5" EndY="10.0" PropertiesMask="2" />
+        <MountPoint Side="Bottom" StartX="5.0" StartY="0.0" EndX="4.5" EndY="15.0" PropertiesMask="2" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0.0" EndX="15.0" EndY="10.0" PropertiesMask="2" ExclusionMask="1" />
       </MountPoints>
       <MirroringX>Y</MirroringX>
       <PhysicalMaterial>Glass</PhysicalMaterial>
