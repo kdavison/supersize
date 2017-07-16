@@ -3299,6 +3299,38 @@
       <BlockPairName>invalid_2x4x6_DBLargeBlockFighterCockpit</BlockPairName>
     </Definition>
 <!-- Cockpits End -->
+<!-- Terminal Panel Start -->
+    <Definition> <!-- 1x1x1 Terminal Panel -->
+      <Id>
+        <TypeId>TerminalBlock</TypeId>
+        <SubtypeId>SmallControlPanel</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_ControlPanel</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\Control Panel.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ControlPanel.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="Computer" Count="1" />
+        <Component Subtype="Display" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" ExclusionMask="3" PropertiesMask="3" StartX="0.4" StartY="0.44" EndX="0.6" EndY="0.55" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\small\ControlPanelConstruction_1.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>invalid_1x1x1_ControlPanel</BlockPairName>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>3</BuildTimeSeconds>
+    </Definition>  
+<!-- Terminal Panel End -->
 <!-- Cryo Chamber Start -->
     <Definition xsi:type="MyObjectBuilder_CryoChamberDefinition"> <!-- 5x5x5 Cyro Chamber -->
       <Id>
@@ -6894,6 +6926,7 @@
         <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ConveyorConstruction_2.mwm" />
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ConveyorConstruction_3.mwm" />
       </BuildProgressModels>
+      <BlockPairName>invalid_5x5x5_Conveyor</BlockPairName>
       <MirroringY>Z</MirroringY>
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
@@ -6901,7 +6934,6 @@
       <DamageEffectId>212</DamageEffectId>
       <DamagedSound>ParticleHeavyMech</DamagedSound>
       <EmissiveColorPreset>Default</EmissiveColorPreset>
-      <BlockPairName>invalid_5x5x5_Conveyor</BlockPairName>
     </Definition>
 <!-- Conveyor End -->
 <!-- Connectors Start -->

@@ -98,16 +98,15 @@
       <EmissiveColorPreset>Default</EmissiveColorPreset>
     </Definition>
 <!-- hide control panel -->
-    <Definition> <!-- 1x1x1 (LARGE) Control Panel; copy-able, but not buildable -->
+    <Definition> <!-- Terminal Panel -->
       <Id>
         <TypeId>TerminalBlock</TypeId>
         <SubtypeId>ControlPanel</SubtypeId>
       </Id>
       <DisplayName>DisplayName_Block_ControlPanel</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Control Panel.dds</Icon>
-      <GuiVisible>false</GuiVisible>
+      <CubeSize>Large</CubeSize>
       <Public>false</Public>
-      <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
       <Size x="1" y="1" z="1" />
       <ModelOffset x="0" y="0" z="0" />
@@ -125,7 +124,7 @@
       <BuildProgressModels>
         <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ControlPanelConstruction_1.mwm" />
       </BuildProgressModels>
-      <BlockPairName>ControlPanel</BlockPairName>
+      <BlockPairName>invalid_5x5x5_ControlPanel</BlockPairName>
       <MirroringZ>Y</MirroringZ>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>3</BuildTimeSeconds>
