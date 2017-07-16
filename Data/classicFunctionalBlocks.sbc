@@ -5733,6 +5733,83 @@
     </Definition>
 <!-- Tools End -->
 <!-- Windows Start -->
+    <Definition> <!-- 5x5x5  Window - Vent -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeWindowSquare</SubtypeId>
+      </Id>
+      <DisplayName>Window Vent 5x5x5</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\window.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="1" />
+      <ModelOffset x="0" y="0" z="1" />
+      <Model>Models\Cubes\Large\WindowSquare.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="12" />
+        <Component Subtype="Construction" Count="8" />
+        <Component Subtype="SmallTube" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0.0" EndX="5" EndY="1.0" />
+        <MountPoint Side="Bottom" StartX="0" StartY="0" EndX="5" EndY="1.0" />
+        <MountPoint Side="Left" StartX="0" StartY="0" EndX="1.0" EndY="5" />
+        <MountPoint Side="Right" StartX="0.0" StartY="0" EndX="1.0" EndY="5" />
+        <MountPoint Side="Front" StartX="0" StartY="0" EndX="5" EndY="5"/>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1.0" EndY="5"/>
+        <MountPoint Side="Back" StartX="4.0" StartY="0" EndX="5.0" EndY="5"/>
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\WindowSquareConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\WindowSquareConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>invalid_5x5x5_VerticalWindow</BlockPairName>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>10</BuildTimeSeconds>
+    </Definition>
+    <Definition> <!-- 5x5x5  Window - Vent Slope -->
+      <Id>
+        <TypeId>CubeBlock</TypeId>
+        <SubtypeId>LargeWindowEdge</SubtypeId>
+      </Id>
+      <DisplayName>Window Vent Slope 5x5x5</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\window2.dds</Icon>
+      <GuiVisible>false</GuiVisible>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="5" y="5" z="5" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\WindowEdge.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="16" />
+        <Component Subtype="Construction" Count="12" />
+        <Component Subtype="SmallTube" Count="6" />
+      </Components>
+      <CriticalComponent Subtype="Construction" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="4.25" EndX="5" EndY="5" />
+        <MountPoint Side="Bottom" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="5" EndY="0.75" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="0" EndX="1.25" EndY="1.25" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="1.25" StartY="0.5" EndX="2.5" EndY="2.5" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="2.5" StartY="1.75" EndX="3.75" EndY="3.75" />
+        <MountPoint Side="Left" ExclusionMask="1" PropertiesMask="2" StartX="3.75" StartY="3.0" EndX="5" EndY="5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="0" StartY="3.0" EndX="1.25" EndY="5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="1.25" StartY="1.75" EndX="2.5" EndY="3.75" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="2.5" StartY="0.5" EndX="3.75" EndY="2.5" />
+        <MountPoint Side="Right" ExclusionMask="1" PropertiesMask="2" StartX="3.75" StartY="0" EndX="5" EndY="1.25" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Large\WindowEdgeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\WindowEdgeConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>invalid_5x5x5_DiagonalWindow</BlockPairName>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>12</BuildTimeSeconds>
+    </Definition>
     <Definition> <!-- 5x5x10 Window - Slope -->
       <Id>
         <TypeId>CubeBlock</TypeId>
@@ -5778,12 +5855,12 @@
       <MirroringY>Z</MirroringY>
       <PhysicalMaterial>Glass</PhysicalMaterial>
     </Definition>
-    <Definition> <!-- 5x5x10 Window - Face Inverted -->
+    <Definition> <!-- 5x5x10 Window - Corner Inverted -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x2Inv</SubtypeId>
       </Id>
-      <DisplayName>Window Face 5x10 - Inverted</DisplayName>
+      <DisplayName>Window Corner 5x10 - Inverted</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2Inv.dds</Icon>
       <GuiVisible>false</GuiVisible>
       <CubeSize>Small</CubeSize>
@@ -5827,12 +5904,12 @@
       <MirroringZ>YMinusHalfZ</MirroringZ>
       <PhysicalMaterial>Glass</PhysicalMaterial>
     </Definition>
-    <Definition> <!-- 5x5x10 Window - Face -->
+    <Definition> <!-- 5x5x10 Window - Corner -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x2Face</SubtypeId>
       </Id>
-      <DisplayName>Window Face 5x10</DisplayName>
+      <DisplayName>Window Corner 5x10</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x2Face.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -6108,12 +6185,12 @@
       <MirroringY>Z</MirroringY>
       <PhysicalMaterial>Glass</PhysicalMaterial>
     </Definition>
-    <Definition> <!-- 5x5x5  Window - Face -->
+    <Definition> <!-- 5x5x5  Window - Corner -->
       <Id>
         <TypeId>CubeBlock</TypeId>
         <SubtypeId>Window1x1Face</SubtypeId>
       </Id>
-      <DisplayName>Window Face 5x5x5</DisplayName>
+      <DisplayName>Window Corner 5x5x5</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\Window1x1Face.dds</Icon>
       <CubeSize>Small</CubeSize>
       <BlockTopology>TriangleMesh</BlockTopology>
@@ -6487,7 +6564,7 @@
         <Model BuildPercentUpperBound="0.5" File="Models\Cubes\Large\Window3x3FlatInvConstruction_1.mwm" />
         <Model BuildPercentUpperBound="1.0" File="Models\Cubes\Large\Window3x3FlatInvConstruction_2.mwm" />
       </BuildProgressModels>
-      <BlockPairName>Window3x3FlatInv</BlockPairName>
+      <BlockPairName>invalid_5x15x15_Window3x3FlatInv</BlockPairName>
       <EdgeType>Light</EdgeType>
       <BuildTimeSeconds>25</BuildTimeSeconds>
       <MountPoints>
