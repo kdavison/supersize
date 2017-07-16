@@ -9,7 +9,7 @@ if len(sys.argv) < 2:
 
 #read in offsets file
 OFFSET_FILE= str(os.path.dirname(os.path.realpath(sys.argv[0]))) + "\\block_offsets.xml"
-print( OFFSET_FILE )
+print( 'using conversion file: ' + OFFSET_FILE )
 block_offsets = dict()
 tree = XML.parse( OFFSET_FILE )
 blocks = tree.getroot()

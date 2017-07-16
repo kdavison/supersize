@@ -174,4 +174,8 @@ This file describes the block offsets to center a block in a
   <block subtype="Window1x2Flat">
     <offset Forward="Forward" Up="Up" x="4" y="0" z="0"/>
   </block>
+  <block subtype="LargeSteelCatwalk">
+    <offset Forward="Down" Up="Left" x="0" y="2" z="0"/>
+    <offset Forward="Up" Up="Left" x="0" y="2" z="0"/>
+  </block>
 </blocks>
