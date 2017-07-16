@@ -27,21 +27,35 @@ if blocks is not None:
           else:
             block_offsets[subtype][orientation][index] = int(0)
 
-print(block_offsets)
+#print(block_offsets)
 
 #convert blueprint
 args = iter(sys.argv)
 next(args)
 for file in args:
-  tree = XML.parse( file )
+  try:
+    tree = XML.parse( file )
+  except:
+    continue
+
   root = tree.getroot()
   root.attrib['xmlns:xsd']="http://www.w3.org/2001/XMLSchema"
-  blueprint = root.find("ShipBlueprints").find("ShipBlueprint")
-  if blueprint is not None:
-    for cubegrid in blueprint.find('CubeGrids').findall('CubeGrid'):
+  cubegrids = None
+  name = None
+  if root.tag != "Definitions":
+    continue
+
+  #either a blueprint or a prefab
+  if root.find("ShipBlueprints") is not None:
+    cubegrids = root.find("ShipBlueprints").find("ShipBlueprint").find("CubeGrids")
+  else:
+    cubegrids = cubegrids = root.find("Prefabs").find("Prefab").find("CubeGrids")
+  #if there are any cubegrids defined
+  if cubegrids is not None:
+    for cubegrid in cubegrids.findall('CubeGrid'):
       gridsize = cubegrid.find('GridSizeEnum')
       if(gridsize is not None and gridsize.text == 'Large'):
-        print('... supersizing!')
+        print('... supersizing ' + file)
         gridsize.text = 'Small'
         cubeblocks = cubegrid.find('CubeBlocks')
         if cubeblocks is not None:
@@ -69,10 +83,8 @@ for file in args:
                 subtype = block.find('SubtypeName').text
                 if subtype in block_offsets and orientation in block_offsets[subtype]:
                   min.attrib[index] = str(int(min.attrib[index]) + block_offsets[subtype][orientation][index])
-              
-
-tree.write(file,
-           xml_declaration = True,
-           encoding = 'utf-8',
-           method = 'xml',
-          )
+  tree.write(file,
+             xml_declaration = True,
+             encoding = 'utf-8',
+             method = 'xml',
+            )
