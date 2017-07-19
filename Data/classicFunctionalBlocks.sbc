@@ -2461,6 +2461,7 @@
         <TypeId>RadioAntenna</TypeId>
         <SubtypeId>LargeBlockRadioAntenna</SubtypeId>
       </Id>
+      <BroadcastRadius>20000</BroadcastRadius>
       <DisplayName>Large Antenna</DisplayName>
       <Icon>Textures\GUI\Icons\Cubes\antenna.dds</Icon>
       <GuiVisible>false</GuiVisible>
@@ -8306,6 +8307,55 @@
       <BlockPairName>invalid_1x1x1_AirVent</BlockPairName>
     </Definition>
 <!-- Air Vent end -->
+<!-- Sound Block start -->
+    <Definition xsi:type="MyObjectBuilder_SoundBlockDefinition">
+      <Id>
+        <TypeId>SoundBlock</TypeId>
+        <SubtypeId>LargeBlockSoundBlock</SubtypeId>
+      </Id>
+      <DisplayName>DisplayName_Block_SoundBlock</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\SoundBlock.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="1" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\SoundBlock.mwm</Model>
+      <Components>
+        <Component Subtype="InteriorPlate" Count="1" />
+        <Component Subtype="Construction" Count="6" />
+        <Component Subtype="Computer" Count="3" />
+        <Component Subtype="InteriorPlate" Count="3" />
+      </Components>
+      <CriticalComponent Subtype="Computer" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\SoundBlockConstruction_1.mwm" />
+      </BuildProgressModels>
+      <VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.4</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.4</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>invalid_large_SoundBlock</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <BuildTimeSeconds>20</BuildTimeSeconds>
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+    </Definition>
+<!-- Sound block end -->
 <!-- Interior Pillar start -->
 <!-- Should revisit and add more mount points -->
     <Definition> <!-- 1x1x5 Interior Pillar -->
