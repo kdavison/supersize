@@ -4345,9 +4345,9 @@
       <CriticalComponent Subtype="SteelPlate" Index="0" />
       <PhysicsOption>Convex</PhysicsOption>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\construction\LightArmorCorner2x1x1Base_3_3_3_Small_Constr1.mwm" />
+        <Model BuildPercentUpperBound="0.67" File="Models\construction\LightArmorCorner2x1x1Base_3_3_3_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\construction\LightArmorCorner2x1x1Base_3_3_3_Small_Constr3.mwm" />
       </BuildProgressModels>
       <MountPoints>
         <MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="3.00" EndY="3.00" />
@@ -5586,9 +5586,9 @@
       </Variants>
       <PhysicsOption>Convex</PhysicsOption>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\construction\HeavyArmorCorner2x1x1Base_3_3_3_Small_Constr1.mwm" />
+        <Model BuildPercentUpperBound="0.67" File="Models\construction\HeavyArmorCorner2x1x1Base_3_3_3_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\construction\HeavyArmorCorner2x1x1Base_3_3_3_Small_Constr3.mwm" />
       </BuildProgressModels>
       <Skeleton>
         <BoneInfo>
@@ -6950,11 +6950,10 @@
         <Component Subtype="SteelPlate" Count="2" />
       </Components>
       <CriticalComponent Subtype="SteelPlate" Index="0" />
-      <PhysicsOption>Convex</PhysicsOption>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\Corner2BaseConstruction_3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\construction\LightArmorCorner2x1x1Base_5_5_5_Small_Constr1.mwm" />
+        <Model BuildPercentUpperBound="0.67" File="Models\construction\LightArmorCorner2x1x1Base_5_5_5_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\construction\LightArmorCorner2x1x1Base_5_5_5_Small_Constr3.mwm" />
       </BuildProgressModels>
       <MountPoints>
         <MountPoint Side="Front" StartX="0" StartY="0" EndX="5.0" EndY="5" />
@@ -8202,9 +8201,9 @@
       </Variants>
       <PhysicsOption>Convex</PhysicsOption>
       <BuildProgressModels>
-        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_1.mwm" />
-        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_2.mwm" />
-        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\Armor\HeavyCorner2BaseConstruction_3.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\construction\HeavyArmorCorner2x1x1Base_5_5_5_Small_Constr1.mwm" />
+        <Model BuildPercentUpperBound="0.67" File="Models\construction\HeavyArmorCorner2x1x1Base_5_5_5_Small_Constr2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\construction\HeavyArmorCorner2x1x1Base_5_5_5_Small_Constr3.mwm" />
       </BuildProgressModels>
       <Skeleton>
         <BoneInfo>
